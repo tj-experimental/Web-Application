@@ -1,71 +1,3 @@
-body{
-	margin:0 auto;
-	text-align: center;
-}
-
-h1 {
-	font:caption;
-	font-family: Arial;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 100;
-	line-height: 40.6px;
-	color:#595959;
-}
-
-#start{
-	font-size: 2.8em;
-	font-stretch: extra-expanded;
-}
-
-
-h2, #second{
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 100;
-	line-height: 26.4px;	
-	padding-left: 30px;	
-}
-
-h3{
-	font-family: Arial;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 100;
-	line-height: 26.4px;
-}
-
-sup{
-	font-size: 12px;
-
-}
-
-a{
-	text-align: right;
-}
-
-hr.scroll {
-	padding: 0;
-	border: none;
-	height: 1px;
-	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgb(230, 230, 230), rgba(0,0,0,0));
-	background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgb(230, 230, 230), rgba(0,0,0,0));
-	background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgb(230, 230, 230), rgba(0,0,0,0));
-	background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgb(230, 230, 230), rgba(0,0,0,0));
-	color: #e6e6e6;
-	text-align: center;
-}
-hr.scroll:after {
-	content:" ";
-	display: inline-block;
-	position: relative;
-	top: -1.1em;
-	padding: 22px;
-	background: #a6a6a6 url(../images/arrow.jpg) no-repeat scroll center;
-}
-
 div.top-left{
 	border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
@@ -84,6 +16,11 @@ div.top-right{
 div.middle{
 	float: center;
 	padding: 150px 0px 50px 0px;
+}
+
+#start{
+	font-size: 2.8em;
+	font-stretch: extra-expanded;
 }
 
 #first{
@@ -131,7 +68,7 @@ div.middle{
     width:170px
 }
 
-.buy3{
+button.buy3{
 	background-color:#70db70;
 	height: 58px;
 	width: 170px;
@@ -169,8 +106,14 @@ div.choose-license{
 	background-color: #f2f2f2;
 }
 
-#license, #member{
+#license{
 	padding:100px 60px 30px 20px;
+	font-size: 3.2em;
+	font-stretch: semi-condensed;
+}
+
+#member{
+	padding:80px 60px 0px 20px;
 	font-size: 3.2em;
 	font-stretch: semi-condensed;
 }
@@ -181,6 +124,16 @@ div.users{
 	padding: 80px 30px;
 	text-align: initial;
 }
+
+div#info{
+	text-align: inherit;
+	padding: 0px 0px 0px 0px;
+	font-size: 1.3em;
+	float:left; 
+	font-size: 16px;
+	line-height: 100%;	
+}
+
 #user{
 	font-size: 1.8em;
 	font-stretch: expanded;
@@ -191,19 +144,44 @@ div.users{
     float: left;
 
 }
-div#info{
-	text-align: inherit;
-	padding: 0px 0px 0px 0px;
-	font-size: 1.3em;
-	float:left; 
-	font-size: 16px;
-	line-height: 100%;	
-}
-
 #name{
 	color:#666666;
 }
 
 #job{
 	color: #b3b3b3;
+}
+
+div.end{
+	width: 100%;
+	height: 95px;
+	background-color: #869aa2;
+}
+
+.useremail{
+	height: 50px;
+	width: 20%;
+	font-size: 17px;
+}
+div.join{
+	height: 80px;
+	padding-bottom: 350px;
+}
+
+div.end-items{
+	padding: 40px 15px;
+	color:white;
+}
+
+#member1{
+	font-size: 20px;
+	color:#8c8c8c;	
+}
+
+button.chat{
+	background-color:#70db70;
+	height: 58px;
+	width: 15%;
+	color:white;
+	border:none;
 }

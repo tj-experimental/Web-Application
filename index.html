@@ -1,28 +1,80 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-	<title></title>
-	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type ='text/css'>
+	<title>Web App</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
 	<link href= 'style/main.css' rel='stylesheet' type='text/css'>
-</head>
-<body ng-app="todoListApp">
-	<h2>m<sup>O2</sup></h2>
-	<h1>Share your Files with Ease</h1>
-	<h3>We push ourselves to new levels of inspired excellence with each <br> project and we sweat creativity <h3>
-
+	<link href= 'style/layout.css' rel='stylesheet' type='text/css'>
 	
+</head>
+
+<body ng-app="WebApp">
+	<div class= "top-left"><h2 id="first">m<sup><b>O2</b></sup></h2></div>
+	
+	<div class= "top-right">
+		<span id="second"><b>Get free trial</b></span>
+		<button class="button buy1"><b>Buy now</b></button>
+	</div>
+
+	<div class = "middle">
+		<h1 id="start">Share your Files with Ease</h1>
+		<h3 id= "motto">We push ourselves to new levels of inspired excellence with each <br> project and we sweat creativity </h3>	
+	</div>
+
+	<div class ="chart">
+		<button class="button buy2"><b>Buy now</b><span id="divider"> | </span>&euro;23</button>
+	</div>
+	
+	<div class = "objective">
+		<h1 id="obj">We push ourselves to new levels of inspired excellence with each <br> project and we sweat creativity. You won't see anything until we're <br> done drolling at the result.</h1><br>
+		<button class="button buy3"><b>Buy now for &euro;23</b></button>
+	</div>
+	<hr class="scroll"><button type="hidden"></button>>
+	<div ng-controller = 'userCtrl' class="users">
+		<img src="images/irina.jpg" id= "user-img"/>
+		<h1 id= "user">"Just Started Using awesome Module. Great way to boost the hard <br> 
+		designing or prototyping process. Also a perfect tool for creative<br> 
+		studios and freelancers"</h1>
+			<div id= "info">
+				<h3 id="name">{{user.name}}</h3>
+				<h3 id="job">{{user.job}}, {{user.team}}</h3>
+			</div>
+
+	</div>
+
+	<div class="choose-license">
+		<h1 id= "license">Choose Your License</h1>
+	</div>
+
+	<div class="join">
+		<h1 id="member">Become One of Us</h1>
+		<!-- </div>
+		<div ng-controller = 'chartCtrl' class= 'chart'>
+			<div>
+				{{chart.message}}
+			</div>
+		</div> -->
+
+			<h3 id ="member1">Module 01 is big, stylish and handy UI Kit, full of <br> 
+			many useful elements</h3><br>
+			<input type="text" name="email" class="useremail" value="Email Address"><button class="button chat">Let's chat</button> 
+	</div>
 	<script src='vendor/angular.min.js' type='text/javascript' ></script>
 	<script src='scripts/app.js' type='text/javascript' ></script>
 	
 </body>
 
+<footer>
+	<div class="end">
+		<div class="end-items">
+			<img src="images/end image.jpg">
+			&copy;2016 Great Simple
+		</div>
+	</div>
 
 
-
-
-
-
-
-
+</footer>
 
 </html>
