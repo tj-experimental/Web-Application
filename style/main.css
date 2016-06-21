@@ -1,6 +1,7 @@
 body{
 	margin:0 auto;
 	text-align: center;
+	width: 100%;
 }
 
 h1 {
@@ -17,7 +18,6 @@ h1 {
 	font-size: 2.8em;
 	font-stretch: extra-expanded;
 }
-
 
 h2, #second{
 	text-align: left;
@@ -43,7 +43,21 @@ sup{
 }
 
 a{
-	text-align: right;
+	margin-right: 30px;
+	color:#f2f2f2;
+	text-decoration: none;
+	font-size: 17px;
+	font-family: Arial;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+.button:hover{
+	box-shadow: 0 10px 13px 0 rgba(0,0,0,0.10),0 17px 50px 0 rgba(0,0,0,0.10);
+	background-color: #d9d9d9; /* Grey */
+    color: white;
 }
 
 hr.scroll {
@@ -57,6 +71,7 @@ hr.scroll {
 	color: #e6e6e6;
 	text-align: center;
 }
+
 hr.scroll:after {
 	content:" ";
 	display: inline-block;
@@ -83,90 +98,34 @@ div.top-right{
 
 div.middle{
 	float: center;
-	padding: 150px 0px 50px 0px;
+	padding: 150px 40px 50px 40px;
 }
 
-#first{
-	font-size: 43px;
-	color:#999999;
-	font-stretch: ultra-expanded;
-	font-weight: 400;
-}
-
-#second{
-	font-size: 15px;
-	padding-right: 25px;
-	color:#a6a6a6;
-}
-
-.button{
-    border-radius: 8px;
-    font-size: 15px;  
-}
-
-#divider{
-	word-spacing: 2px;
-	color:#e6e6e6;
-	font-size: 18px;
-
-}
-.buy1{
-	background-color: white;
-	color: #BFBFBF;
-	border: 2px solid #d9d9d9;
-	height:40px;
-    width:105px
-}
-
-.button:hover{
-	background-color: white;
-	box-shadow: 0 10px 13px 0 rgba(0,0,0,0.10),0 17px 50px 0 rgba(0,0,0,0.10);
-}
-
-.buy2{
-	background-color: white;
-    color: #a6a6a6;
-    border: 2px solid #d9d9d9;
-    height:55px;
-    width:170px
-}
-
-.buy3{
-	background-color:#70db70;
-	height: 58px;
-	width: 170px;
-	color:white;
-	border:none;
-}
-
-.list{
-	border-top-color: #9a9898;
-	border-top-width:24px;
-  	border-top-style:solid;
-	text-align: left;
-}
-
-.actions{
-	text-align: center;
-}
-#motto{
-	font-size: 20px;
-	color:#8c8c8c;	
-}
-
-.objective{
-	padding: 40px 40px 120px 40px;
-}
-
-#obj{
-	font-size: 1.9em;
-	color:#737373;	
-}
 
 div.choose-license{
 	width: 100%;
 	height: 650px;
 	background-color: #f2f2f2;
+}
+
+div.top-left{
+	border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 5px;
+    float: left;
+}
+
+div.top-right{
+	float: right;
+	font-size: 12px;
+	padding: 40px 60px 40px 0px;
+
+}
+
+div.middle{
+	float: center;
+	padding: 150px 0px 50px 0px;
 }
 
 #license, #member{
@@ -181,16 +140,7 @@ div.users{
 	padding: 80px 30px;
 	text-align: initial;
 }
-#user{
-	font-size: 1.8em;
-	font-stretch: expanded;
-}
 
-#user-img{
-	padding: 0px 5px 0px 40px;
-    float: left;
-
-}
 div#info{
 	text-align: inherit;
 	padding: 0px 0px 0px 0px;
@@ -198,12 +148,4 @@ div#info{
 	float:left; 
 	font-size: 16px;
 	line-height: 100%;	
-}
-
-#name{
-	color:#666666;
-}
-
-#job{
-	color: #b3b3b3;
 }

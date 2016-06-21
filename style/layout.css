@@ -1,21 +1,88 @@
-div.top-left{
-	border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 5px;
+#first{
+	font-size: 43px;
+	color:#999999;
+	font-stretch: ultra-expanded;
+	font-weight: 400;
+}
+
+#second{
+	font-size: 15px;
+	padding-right: 25px;
+	color:#a6a6a6;
+}
+
+#user{
+	font-size: 1.8em;
+	font-stretch: expanded;
+}
+
+#name{
+	color:#666666;
+}
+
+#job{
+	color: #b3b3b3;
+}
+
+#user-img{
+	padding: 0px 5px 0px 40px;
     float: left;
-}
-
-div.top-right{
-	float: right;
-	font-size: 12px;
-	padding: 40px 60px 40px 0px;
 
 }
 
-div.middle{
-	float: center;
-	padding: 150px 0px 50px 0px;
+#divider{
+	word-spacing: 2px;
+	color:#e6e6e6;
+	font-size: 18px;
+
+}
+.buy1{
+	background-color: white;
+	color: #BFBFBF;
+	border: 2px solid #d9d9d9;
+	height:40px;
+    width:105px
+}
+
+
+.buy2{
+	background-color: white;
+    color: #a6a6a6;
+    border: 2px solid #d9d9d9;
+    height:55px;
+    width:170px
+}
+
+.buy3{
+	background-color:#70db70;
+	height: 58px;
+	width: 170px;
+	border:none;
+}
+
+.list{
+	border-top-color: #9a9898;
+	border-top-width:24px;
+  	border-top-style:solid;
+	text-align: left;
+}
+
+.actions{
+	text-align: center;
+}
+
+#motto{
+	font-size: 20px;
+	color:#8c8c8c;	
+}
+
+.objective{
+	padding: 40px 40px 120px 40px;
+}
+
+#obj{
+	font-size: 1.9em;
+	color:#737373;	
 }
 
 #start{
@@ -55,11 +122,6 @@ div.middle{
     width:105px
 }
 
-.button:hover{
-	background-color: white;
-	box-shadow: 0 10px 13px 0 rgba(0,0,0,0.10),0 17px 50px 0 rgba(0,0,0,0.10);
-}
-
 .buy2{
 	background-color: white;
     color: #a6a6a6;
@@ -83,9 +145,6 @@ button.buy3{
 	text-align: left;
 }
 
-.actions{
-	text-align: center;
-}
 #motto{
 	font-size: 20px;
 	color:#8c8c8c;	
@@ -105,17 +164,17 @@ div.choose-license{
 	height: 650px;
 	background-color: #f2f2f2;
 }
-
-#license{
-	padding:100px 60px 30px 20px;
+#license, #member{
 	font-size: 3.2em;
 	font-stretch: semi-condensed;
 }
 
+#license{
+	padding:100px 60px 30px 20px;
+}
+
 #member{
 	padding:80px 60px 0px 20px;
-	font-size: 3.2em;
-	font-stretch: semi-condensed;
 }
 
 div.users{
@@ -126,12 +185,12 @@ div.users{
 }
 
 div#info{
-	text-align: inherit;
+	margin-left: 230px;
 	padding: 0px 0px 0px 0px;
-	font-size: 1.3em;
 	float:left; 
-	font-size: 16px;
-	line-height: 100%;	
+	font-size: 17px;
+	line-height: 25px;
+	font-family: Arial;	
 }
 
 #user{
@@ -153,24 +212,36 @@ div#info{
 }
 
 div.end{
-	width: 100%;
-	height: 95px;
+	padding:2px;
 	background-color: #869aa2;
 }
 
 .useremail{
-	height: 50px;
-	width: 20%;
+	height: 110%;
+	width: 30%;
 	font-size: 17px;
+	color: #6f6f6f;
+	vertical-align: top;
+	border-radius: 3px 0px 0px 3px;
+	display:inline-block; 
+	border: 2px solid #e6e6ff; 
+	font-weight:400; 
+	margin:0;
 }
+.useremail:focus{
+	border: 2px solid red;
+}
+
 div.join{
-	height: 80px;
+	height: 50px;
 	padding-bottom: 350px;
+	text-align: center;
 }
 
 div.end-items{
-	padding: 40px 15px;
+	padding: 36px 15px;
 	color:white;
+	display: block;
 }
 
 #member1{
@@ -178,10 +249,24 @@ div.end-items{
 	color:#8c8c8c;	
 }
 
-button.chat{
+.chat{
+	border-radius: 4px;
+    font-size: 15px; 
 	background-color:#70db70;
-	height: 58px;
-	width: 15%;
+	height: 120%;
+	width: 11%;
 	color:white;
-	border:none;
+	border:0px;
+	border-radius:0px 3px 3px 0px;
+	display:inline-block;
+    border-width:0px 0px 0px 1px;
+    margin:0;
+}
+
+#logo{
+	float: right;
+	margin-right: 12px; 
+	color: #d9d9d9;
+	font-family: Arial;
+	font-size: 14px;
 }
