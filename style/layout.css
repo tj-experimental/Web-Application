@@ -181,7 +181,9 @@ div.users{
 	display: block;
 	width: 90%;
 	padding: 80px 30px;
+	height: 200px;
 	text-align: initial;
+	position: initial;
 }
 
 div#info{
@@ -227,6 +229,7 @@ div.end{
 	border: 2px solid #e6e6ff; 
 	font-weight:400; 
 	margin:0;
+	!important;
 }
 .useremail:focus{
 	border: 2px solid red;
