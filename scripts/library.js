@@ -2,12 +2,6 @@
 // Get the modal
 var modal = $('.modal');
 
-// Get the button that opens the modal
-
-
-// Get the <span> element that closes the modal
-
-
 // When the user clicks the button, open the modal
 $('.chat').click(function() {
     modal.css("display","block");
