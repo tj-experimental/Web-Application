@@ -1,0 +1,236 @@
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 15px;
+    font-size: 1.3em;
+    border: 1px solid #000000 ;
+    cursor: pointer;
+    width: 200px;
+    text-align:left;
+    align: left;
+    position: fixed;
+}
+.dropdown {
+    position: fixed;
+    display: inline-block;
+}
+ .center {
+ 	position: absolute;
+    right: 0px; 
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border: 1px solid #000000;   
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #c0c0c0}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+.table{
+    border-collapse: collapse;
+    width: 75%;
+}
+
+h1{
+text-align: left;
+color: black;	
+font-size: 35px;
+
+}
+#file {
+    text-align: center;
+    padding: 10px;
+    background-color: #0080c0;
+    color: white;
+}
+
+table.table tr, th{
+	text-align: center;
+	padding: 9px;
+	postion: fixed;
+}
+
+tr{
+	height: 20px;
+}
+tr:nth-child(even){background-color: #c0c0c0}
+
+#file:hover{
+	cursor: pointer;	
+}
+td{
+	text-align: center;
+	padding: 1px;
+	height: 3px;
+	
+}
+input[type=text]{
+	
+	border: 1px solid #666;
+	
+}
+input[type=text]:hover{
+	
+  background: #ffffff;	
+}
+
+h2{
+text-align: right;
+font-size: 0.8em;	
+}
+.upload {
+	text-indent: 16px;
+	text-align: justify;
+    font-size: 14px;
+    height:35px;
+    width:200px;
+    background-color: #ffffff;
+    color: #000000;
+}
+.upload:hover{
+	color:#c0c0c0;
+	cursor: pointer;
+	background-color: #0080c0;
+	}
+.button1:hover, .button:hover, .button3:hover{
+	color:#3b3b3b;
+	cursor: pointer;
+	background-color: #78c57c;
+	}
+.button3:hover{	
+	color:#3b3b3b;
+	cursor: pointer;
+	background-color: #ff0000;
+	}
+	
+.button1{
+	text-align: center;
+	height:35px;
+    width:70px;
+    font-size: 14px;
+    border: 2px solid #4CAF50;
+    }
+
+.button, input[type=submit] {
+    background-color: white; 
+    border: 1px solid #008040;
+    color: green;
+    padding: 4px 10px;
+    text-align: justify;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 2px 0px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 13px 0 rgba(0,0,0,0.2), 0 6px 15px 0 rgba(0,0,0,0.19);
+}
+.buttonf{
+	-moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";	
+}
+
+.button3{
+    background-color: white; 
+    border: 1px solid #ff0000;
+    color: red;
+    padding: 4px 10px;
+    text-align: justify;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 2px 0px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 13px 0 rgba(0,0,0,0.2), 0 6px 15px 0 rgba(0,0,0,0.19);
+}
+
+input[type=submit]:hover{
+	color:#3b3b3b;
+	cursor: pointer;
+	background-color: #78c57c;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+.modal-content {
+	position: relative;
+    background-color: #dadada;
+    height: 185px;
+	width: 430px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 80px;
+    margin-left: 300px;
+    padding: 15px;
+    border: 1px solid #353535;
+}
+
+/* The Close Button */
+.close, .close1, .close2 {
+    color: #808080;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover, .close:focus, .close1:hover,
+ .close1:focus, .close2:hover, .close2:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.hidden {
+	background: #fdd;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	width: 1px;
+	height: 1px;
+	opacity: 0;
+	filter: alpha(opacity = 0);
+	-ms-filter: "alpha(opacity=0)";
+	-khtml-opacity: 0;
+	-moz-opacity: 0;
+}
+#list span
+{
+    text-decoration:underline;
+    background-color:yellow;    
+}
