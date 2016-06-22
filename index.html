@@ -36,61 +36,49 @@
 	</div>
 
 	<hr class="scroll"><button type="hidden"></button>>
-	<div ng-controller = 'userCtrl' class="users">
-		<div class= "slide">
-		<img src="images/irina.jpg" id= "user-img"/>
-		<h1 id= "user">"Just Started Using awesome Module. Great way to boost the hard <br> 
-			designing or prototyping process. Also a perfect tool for creative<br> 
-			studios and freelancers"</h1>
-			
-			<div id= "info">
-				<span id="name">{{user.name}}</span><br>
-				<span id="job">{{user.job}}, {{user.team}}</span>
-			</div>
-		</div>
-		<div class= "slide">
-		<img src="images/irina.jpg" id= "user-img"/>
-		<h1 id= "user">"Just Started Ueweweme Module. Great way to boost the hard <br> 
-			designing or prototyping process.ive<br> 
-			studios and freelancers"</h1>
-			
-			<div id= "info">
-				<span id="name">{{user.name}}</span><br>
-				<span id="job">{{user.job}}, {{user.team}}</span>
-			</div>
-		</div>
-		<div class= "slide">
-		<img src="images/irina.jpg" id= "user-img"/>
-		<h1 id= "user">"Just Started Using awesome Modddwweeotyping process. Also a perfect tool for creative<br> 
-			studios and freelancers"</h1>
-			
-			<div id= "info">
-				<span id="name">{{user.name}}</span><br>
-				<span id="job">{{user.job}}, {{user.team}}</span>
+    <div ng-controller = 'userCtrl' class="users">
+		<div ng-repeat="users in user">
+			 <div class= "slide">
+				<img src="images/irina.jpg" id= "user-img"/>
+				<h1 id= "user">{{users.message1}}</h1>
+				<h1 id= "user">{{users.message2}}</h1>
+				<h1 id= "user">{{users.message3}}</h1>
+			    <div id= "info">
+					<span id="name">{{users.name}}</span><br>
+					<span id="job">{{users.job}}, {{user.team}}</span>
+				</div>
 			</div>
 		</div>
 		<div>
 			<a class="w3-btn-floating" style="color:#a6a6a6;position:absolute;left:0" onclick="plusDivs(-1)">❮</a>
 			<a class="w3-btn-floating" style="color:#a6a6a6;position:absolute;right:0" onclick="plusDivs(1)">❯</a>
-
 		</div>
-</div>
-
-
-		
-
+	</div>
+	<br>
+	<br>
 		<div class="choose-license">
 			<h1 id= "license">Choose Your License</h1>
+			<div id="container">
+				<div class="box">
+					<div class="text">Text</div>
+					<hr class ="line">
+					<button class="button p1"></button>
+				</div>
+				<div class="box">
+					<div class="text">Text</div>
+					<hr class="line">
+					<button class="button p2"></button>
+				</div>
+				<div class="box">
+					<div class="text">Text</div>
+					<hr class = "line">
+					<button class="button p3"></button>
+				</div>
+			</div>
 		</div>
 
 		<div  ng-controller ='emailCtrl' class="join">
 			<h1 id="member">Become One of Us</h1>
-		<!-- </div>
-		<div ng-controller = 'chartCtrl' class= 'chart'>
-			<div>
-				{{chart.message}}
-			</div>
-		</div> -->
 
 		<h3 id ="member1">Module 01 is big, stylish and handy UI Kit, full of <br> 
 			many useful elements</h3><br>	
@@ -102,6 +90,24 @@
 			  <!-- Modal content -->
 			  <div class="modal-content">
 			    <span class="close">×</span>
+			    <form>
+					  <fieldset class="account-info">
+					    <label>
+					      Username
+					      <input type="text" name="username">
+					    </label>
+					    <label>
+					      Password
+					      <input type="password" name="password">
+					    </label>
+					  </fieldset>
+					  <fieldset class="account-action">
+					    <input class="btn" type="submit" name="submit" value="Login">
+					    <label>
+					      <input type="checkbox" name="remember"> Stay signed in
+					    </label>
+					  </fieldset>
+				</form>
 			  </div>
 			</div>
 

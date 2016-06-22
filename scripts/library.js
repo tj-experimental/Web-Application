@@ -1,52 +1,4 @@
 
-
-// function area(modal, btn, span, er) {
-// 	btn.onclick = function() {
-// 		modal.style.display = "block";
-// 	}
-// 	// When the user clicks on <span> (x), close the modal
-// 	span.onclick = function() {
-// 		er.value = "";
-// 		br.value = "";
-// 		alert_hide();
-// 		modal.style.display = "none";
-// 	}
-// 	// When the user clicks anywhere outside of the modal, close it
-// 	window.onclick = function(event) {
-// 		if (event.target == modal) {
-// 			er.value = "";
-// 			br.value = "";
-// 			alert_hide();
-// 			modal.style.display = "none";
-// 		}
-// 	}
-// }
-
-// function chat() {
-// 	var modal = document.getElementById('test1');
-// 	var btn = document.getElementById("upload1");
-// 	var span = document.getElementsByClassName("close1");
-// 	var er = document.getElementById("createfile");
-// 	area(modal, btn, span, er);
-// }
-
-// $(function() {
-// 	var modal = $('#test1');
-//     $( ".buy1" ).click(function() {
-// 			modal.style.display = "block";
-// 	})  
-// 	$( ".close1" ).click(function() {
-// 		modal.style.display = "none";
-// 	})
-// 	$( ".close1" ).click(function() {
-// 		window.onclick = function(event) {
-// 			if (event.target == modal) {
-// 				modal.style.display = "none";
-// 			}
-// 		}
-// 	})
-// });
-
 // Get the modal
 var modal = $('.modal');
 
@@ -75,7 +27,9 @@ $(window).click(function(event) {
 
 	
 var slideIndex = 1;
-showDivs(slideIndex);
+$(function(){
+	showDivs(slideIndex);
+})
 
 function plusDivs(n) {
   showDivs(slideIndex += n);
