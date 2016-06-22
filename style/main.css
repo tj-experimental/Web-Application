@@ -189,6 +189,9 @@ div#info{
     cursor: pointer;
 }
 
+.box:hover {
+    border: 2px solid #80a3bb;  
+}
 
 form {
   border: 1px solid #c6c7cc;

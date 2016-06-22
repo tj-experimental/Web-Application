@@ -205,6 +205,13 @@ div#info{
     float: left;
 
 }
+input.useremail
+{
+    background-image: url(../images/mail.jpg);
+    background-repeat: no-repeat;
+    text-indent: 50px;
+}
+
 #name{
 	color:#666666;
 }
