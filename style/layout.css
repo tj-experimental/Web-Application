@@ -198,7 +198,7 @@ div.choose-license{
 	height: 700px;
 	background-color: #f2f2f2;
 }
-#license, #member{
+#license, #member,#start{
 	font-size: 3.2em;
 	font-stretch: semi-condensed;
 }
@@ -219,6 +219,7 @@ div.users{
 	text-align: initial;
 	position: initial;
 }
+
 
 div#info{
 	margin-left: 2px;

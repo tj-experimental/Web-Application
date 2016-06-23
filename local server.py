@@ -34,8 +34,8 @@ class WebServer:
                                         try:
                                                 PORT = int(input("Select the port you want the Server >"))
                                                 if len(str(PORT)) != 4 or PORT == 8080:
-                                                        PORT = 8080
                                                         print("Port Has to be 4 numbers other than 8080")
+                                                        continue
                                                 elif len(str(PORT)) == 4 and PORT != 8080:
                                                         PORT = PORT
                                                         webbrowser.open("http://localhost:"+str(PORT)+"/")
@@ -47,7 +47,7 @@ class WebServer:
 
                         elif user != 's':
                                 print("Sorry Not a Valid Choice !!!")
-                                raise
+                                continue
                 
 
 

@@ -6,17 +6,12 @@ body{
 
 h1 {
 	font: caption;
-	font-family: Arial;
+	font-family: 'Roboto', sans-serif;
 	font-style: normal;
 	font-variant: normal;
-	font-weight: 100;
 	line-height: 40.6px;
 	color:#595959;
-}
 
-#start{
-	font-size: 2.8em;
-	font-stretch: extra-expanded;
 }
 
 h2, #second{
@@ -129,13 +124,6 @@ div.middle{
 	padding:100px 60px 30px 20px;
 	font-size: 3.2em;
 	font-stretch: semi-condensed;
-}
-
-div.users{
-	display: block;
-	width: 90%;
-	padding: 80px 30px;
-	text-align: initial;
 }
 
 div#info{
