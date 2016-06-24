@@ -34,6 +34,12 @@
 
 }
 
+.imginfo{
+	float:right;
+	margin:-46px -4px 3px -37px;
+	display: none;
+}
+
 #divider{
 	word-spacing: 2px;
 	color:#e6e6e6;
@@ -159,43 +165,53 @@ button.buy3{
 .plan,.planA{
 	font-size: 300%;
 	font-stretch: semi-condensed;
-	text-align: left;
-	margin-left: 15%;
+	float: left;
+	margin-left: 10%;
+
 }
 
 .small{
-	text-align: right;
-	margin: 2px 10px 30px 0px ;
+	margin-left: 10%;
+	margin-top: 10%;
+	margin-right: 15%;
+	float: middle;
+	text-align: left;
+	display: inline-block;
+
 }
 
 .head{
 	font-size:210%;
 	font-family: Arial;
 	font-stretch: semi-condensed;
-	margin-top: 50px;
+	margin-top: 40px;
 
 }
 .text{
-	max-height: 90px;
-	margin-bottom: 50px;
+	margin-bottom: 20%;
 }
 
 #text{
-	font-size: 100%;
+	font-size: 90%;
 	font-family: Arial;
 	font-stretch: semi-condensed;
 	margin-bottom: 10px;
+	display: inline;
+	overflow-wrap: break-word;
 }
 
 .planA{
-	color:green;
+	color:#00e600;
 
+}
+.price{
+	padding-bottom: 10%; 
 }
 
 
 div.choose-license{
 	width: 100%;
-	height: 700px;
+	height: 700%;
 	background-color: #f2f2f2;
 }
 #license, #member,#start{
@@ -204,7 +220,7 @@ div.choose-license{
 }
 
 #license{
-	padding:100px 60px 30px 20px;
+	padding:80px 60px 15px 20px;
 }
 
 #member{
@@ -215,7 +231,7 @@ div.users{
 	display: block;
 	width: 90%;
 	padding: 80px 30px;
-	height: 400px;
+	height: 600%;
 	text-align: initial;
 	position: initial;
 }
@@ -321,20 +337,20 @@ div.end-items{
 	font-stretch: semi-condensed;
 	font-size: 17px;
 }
-
 .box {
     background-color: white;
-    width: 30%;
+    width: 37%;
     display:inline-block;
-    margin: 2% 3% 6% 7%;
+    margin: 0% 2% 6% 4%;
     border-radius:5px;
-    padding-right: 	10px;
+    padding-right: 	3px;
     box-shadow: 3px 0px 0 rgba(0,0,0,0.06);
     border-radius: 6px;
      -webkit-animation: panel-fade-up 0.4s ease;
     -moz-animation: panel-fade-up 0.4s ease;
     animation: panel-fade-up 0.4s ease;
 }
+
 .texty {
     padding: 150px 0;
     color:#a6a6a6;
@@ -346,7 +362,7 @@ div.end-items{
 #container {
     white-space:nowrap;
     text-align:center;
-    width: 75%;
+    max-width: 70%;
 }
 
 
@@ -366,9 +382,10 @@ div.end-items{
 }
 
 .line{
-	width:103%;
-	border-top: 1px solid #a6a6a6;
+	width:100%;
 	text-align: center;
 	margin-left: 2px;
+	border:1px solid #f2f2f2;
+
 }
 

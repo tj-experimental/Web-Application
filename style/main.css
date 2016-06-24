@@ -136,7 +136,7 @@ div#info{
 }
 
 /* The Modal (background) */
-.modal {
+.modal{
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -153,17 +153,19 @@ div#info{
 /* Modal Content */
 .modal-content {
     background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 40%;
+    margin: 10% 0% 60% 30%;
+    height: 40%
+    padding: 1px;
+    border: 1px solid #a6a6a6;
+    border-radius: 4px;
+    width: 30%;
 }
 
 /* The Close Button */
 .close {
     color: #aaaaaa;
     float: right;
-    font-size: 28px;
+    font-size: 30px;
     font-weight: bold;
 }
 
@@ -175,16 +177,17 @@ div#info{
 }
 
 .box:hover {
-    outline: 2px solid #80a3bb;
+    outline: 2px solid #cce6ff;
 }
 
-.box:hover:before{
-    
+/*.box:hover:before{
     content: url(../images/information.jpg);
     position: absolute;
     display: block;
-
-}
+    margin: 0% 0% 40% 20%;
+    width: 20px;
+  	height: 100px;
+}*/
 
 
 

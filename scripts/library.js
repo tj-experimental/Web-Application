@@ -1,4 +1,30 @@
 
+$( ".b1" )
+  .mouseover(function() {
+    $('.1').css("display","block");
+})
+.mouseout(function() {
+    $('.1').css("display","none");
+});
+
+$( ".b2" )
+  .mouseover(function() {
+  $('.2').css("display","block");
+})
+  .mouseout(function() {
+$('.2').css("display","none");
+});
+
+$( ".b3" )
+  .mouseover(function() {
+   $('.3').css("display","block");
+})
+.mouseout(function() {
+   $('.3').css("display","none");
+});
+
+
+
 // Get the modal
 var modal = $('.modal');
 
