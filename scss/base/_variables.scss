@@ -1,0 +1,48 @@
+//Descriptive color variables
+
+$white           : #fff;
+$black           : #000;
+$jordy-blue      : #7EA9F1;
+$concrete        : #F2F2F2;
+$scorpion        : #595959;
+$nobel           : #B3B3B3;
+$heathered-gray  : #B8B894;
+$alto            : #D9D9D9;
+$silver-chalice  : #A6A6A6;
+$screaming-green : #66FF66;
+$mercury         : #E6E6E6;
+$silver          : #BFBFBF;
+$pastel-green    : #70DB70;
+$grey            : #8C8C8C;
+$dove-grey       : #6F6F6F;
+$regent-grey     : #869aa2; 
+$dusty-grey		 : #999999;
+$green           : #00e600;
+
+//Functional Color Variables
+
+$color-link-hover      : $jordy-blue;
+$color-link-visted     : $alto;
+$color-link-unvisted   : $heathered-gray;
+$color-link 		   : $concrete;
+$color-h1              : $scorpion;
+$color-button          : $screaming-green;
+
+
+
+//Fonts Stacks
+
+$stack-arial-font : Arial;
+$stack-sans-serif : sans-serif;
+$stack-roboto     : 'Roboto';
+
+
+//Asset Paths
+
+$path-img     : '../images';
+$path-font    : '../fonts';
+
+
+//Font Type
+
+$FontType        : Thin;

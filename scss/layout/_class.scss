@@ -1,0 +1,154 @@
+.objective {
+    padding: 16% 0% 25% 0%;
+    @extend %box-sizing;
+}
+
+.buy1,
+.buy2,
+{
+	@extend %white-background;
+}
+
+.buy1,
+.buy2{
+   border: 2px solid $alto;
+}
+
+.buy1{
+	color: $silver;
+	height:40px;
+  width:105px
+}
+
+.buy2{
+    color: $silver-chalice;
+    height:55px;
+    width:170px
+}
+
+.buy1:hover, .buy2:hover{
+  background-color: $silver;
+  color: $white;
+}
+
+.buy3{
+	background-color: $pastel-green;
+	height: 58px;
+	width: 170px;
+	border:none;
+}
+
+.plan,.planA{
+	margin-left: 8%;
+	padding-right: 5px;
+	width:20%;
+}
+
+.small{
+	text-align: left;
+	color: $dusty-grey;
+	font-size:90%;
+	width:50%;
+	margin-top: 7%;
+}
+
+.text{
+	margin-bottom: 20%;
+}
+
+.planA{
+	color: $green;
+
+}
+.price{
+	padding-bottom: 10%;
+	@extend %width-max;
+    margin: 0 auto;
+}
+
+.user{
+	font-stretch: expanded;
+}
+
+.slide{
+	width: 90%;
+	padding-right: 3px;
+	padding-left: 3px;
+}
+
+
+.useremail
+{
+  background: url('#{$path-img}/mail.jpg') no-repeat;
+  text-indent: 50px;
+	font-size: 17px;
+	color: $dove-grey;
+	vertical-align: top;
+	border-radius: 3px 0px 0px 3px;
+	border: 2px solid #e6e6ff;
+	font-weight:400;
+	@extend %margin_0;
+}
+
+.useremail:focus{
+	border: 2px solid red;
+}
+
+.chat{
+	border-radius: 4px;
+  font-size: 15px;
+	background-color: $pastel-green;
+	border:0px;
+	border-radius:0px 3px 3px 0px;
+  border-width:0px 0px 0px 1px;
+  @extend %margin_0;
+}
+
+.texty {
+    padding: 150px 0;
+    color: $silver-chalice;
+    font-weight:bold;
+}
+
+.p1,.p2,.p3 {
+	background-color: $pastel-green;
+	height: 58px;
+	width: 80%;
+	border:none;
+	margin: 9% 0%
+}
+
+.line{
+	@extend %width-max;
+	margin-left: 2px;
+	border:1px solid #f2f2f2;
+
+}
+
+.user-information
+{
+  margin: 3%;
+}
+
+
+/*Type Selectors*/
+
+input[type="submit"] {
+    /*background:*/
+    background: url('#{$path-img}/buy-now-flashing.gif') no-repeat;
+    background-size: 70px 45px;
+    background-size: 109px 50px;
+    width: 109px; /* width of image */
+    height: 50px; /* height of image */
+    border: 0;
+}
+
+label#personal, label#agency, label#unlimited
+{
+	display: inline;
+	@extend %break-word;
+  word-break: break-word;
+  font-size: 20px;
+}
+
+

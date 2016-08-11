@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Web App</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" >
+	<!-- <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'> -->
+	<link rel="icon" type="images/jpg" href="images/favicon.jpg" />
+	<link rel="stylesheet" type="text/css" href="scripts/line_chart/LineChart.min.css">
+	<link href= 'style/application.css' rel='stylesheet' type='text/css'>
+    <script src='vendor/angular.min.js' type='text/javascript' ></script>
+    <script src='scripts/d3.js' type='text/javascript' ></script>
+	<script src="scripts/line_chart/LineChart.min.js" type="text/javascript"></script>
+
+	<!--[if IE]>
+		<style>
+		  .box:hover{
+		     /*outline-style: 3px solid #cce6ff;*/
+		     border-style: solid;
+		     border-width: 3px;
+		     border-color: #cce6ff;
+		   }
+		   .imginfo{
+				margin:-44px -4px 3px -39px;
+			}
+		</style>
+	[endif]>-->
+</head>
+
+<body>
+<script src='scripts/app.js' type='text/javascript' ></script>
+<header>
+	<div class= "top-left"><h2 id="first">m<sup id="num"><b>O2</b></sup></h2></div>
+
+
+	<div class= "top-right">
+		<span id="second"><b>Get free trial</b></span>
+		<button class="button buy1" onclick="buynow()"><b>Buy now</b></button>
+	</div>
+
+	<div class = "middle">
+		<h1 id="start">Share your Files with Ease</h1>
+		<h3 id= "motto">We push ourselves to new levels of inspired excellence with each <br> project and we sweat creativity </h3>
+	</div>
+    <button class="button buy2" onclick="buynow()"><b>Buy now</b><span id="divider"> | </span>&euro;23</button>
+    <div ng-app="GraphApp" ng-controller ='chartCtrl' class ="chart">
+            <!-- <linechart data="data" options="options"></linechart> -->
+			<p ng-bind= "content[0].month"></p>
+	</div>
+</header>
+<main>
+	<div class = "objective">
+		<h1 id="obj">We push ourselves to new levels of inspired excellence with each <br> project and we sweat creativity. You won't see anything until we're <br> done drolling at the result.</h1><br>
+		<button class="button buy3" onclick="buynow()"><b>Buy now for &euro;23</b></button>
+	</div>
+	<a href="#license" class="navigate"><hr class="scroll"></a>
+    <div ng-app="WebApp" ng-controller = 'userCtrl' class="users" id= 'users'>
+		<div ng-repeat="users in user">
+			 <div class= "slide">
+				 	<img ng-src='{{users.image}}' id="user-img" alt="Users image">
+					<h1 ng-bind="users.message1 + users.message2" id="user"></h1>
+				  <div id= "info">
+						<span ng-bind="users.name" id="name"></span><br>
+						<span ng-bind="(users.job)+(users.team)" id="job"></span>
+					</div>
+			</div>
+		</div>
+		<div id="pointers">
+			<a class="btn-floating1" onclick="plusDivs(-1)">❮</a>
+			<a class="btn-floating2" onclick="plusDivs(1)">❯</a>
+		</div>
+	</div>
+	<br>
+	<br>
+	<div class="choose-license">
+		<h1 id= "license">Choose Your License</h1>
+		<div id="container">
+			<div class="box b1">
+			    <img src="images/information.jpg" class="imginfo 1">
+				<div class="text ">
+					<h1 class ="head">Personal</h1>
+					<span id = "text">Just started using awesome Module.<br>
+						Great way to boost the hard designing<br>or prototyping process.
+				    </span>
+				</div>
+				<hr class ="line" size="1px">
+				<div class= "price">
+					<h1 class ="planA">Free</h1>
+					<span class = "small">Per month billed anually<br>
+						or $250 from month to<br>
+					 	month.
+					</span>
+				</div><button class="button p1" onclick= buyButton("p1")>Get it</button>
+			</div>
+			<div class="box b2">
+			    <img src="images/information.jpg" class="imginfo 2">
+				<div class="text">
+					<h1 class ="head">Agency</h1>
+					<p id = "text">Also a perfect tool for creative studios<br>
+						and freelancers.
+				    </p>
+				</div>
+				<hr class ="line" size="1px">
+				<div class= "price">
+					<h1 class="plan"><sup class="sign">$</sup>123</h1>
+						<span class ="small">Per month billed anually<br>
+							or $250 from month to<br>
+					 		month.
+					 	</span>
+				</div><button class="button p2" onclick= buyButton("p2") >Buy now</button>
+			</div>
+			<div class="box b3">
+			    <img src="images/information.jpg" class="imginfo 3">
+				<div class="text">
+					<h1 class ="head">Unlimited</h1>
+					<span id = "text">Living in today's mobile world of<br>
+					cellullar phones and mobile computers.
+					</span>
+				</div>
+				<hr class ="line" size="1px">
+				<div class= "price">
+					<h1 class="plan"><sup class="sign">$</sup>232</h1>
+						<span class = "small">Per month billed anually<br>
+							or $250 from month to<br>
+					 		month.
+					 	</span>
+				</div><button class="button p3" onclick= buyButton("p3")>Buy now</button>
+			</div>
+		</div>
+	</div>
+
+	<div  ng-controller ='emailCtrl' class="join">
+		<h1 id="member">Become One of Us</h1>
+
+		<h3 id ="member1">Module 01 is big, stylish and handy UI Kit, full of <br>
+		many useful elements</h3><br>
+		<input ng-model= emailadd.email type="email" name="email" class="useremail" placeholder="E-mail Address"
+		pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"><button class="chat">Let's chat</button>
+
+ 	</div>
+
+	 <div class="buymodal">
+	  <!-- Modal content -->
+	  <div class="buycontent">
+		    <span class="buyclose"><img src="images/close.png"></span>
+		    <form action="" method="">
+					<label class= "account_type">
+					   <h1> Select a License: </h1>
+					</label>
+					<lable for="personal"><input type="radio" name="user_license" id="personal" value="personal">Personal</lable>
+					<lable for="agency"><input type="radio" name="user_license" id="agency" value="agency">Agency</lable>
+					<lable for="unlimited"><input type="radio" name="user_license" id="unlimited" value="unlimited">Unlimited</lable>
+					<hr width="100%" style="border:1px dashed grey">
+				<fieldset class= "user-information">
+					<label for="user_name">Name:</label><input type="text" id="user_name" name="name" placeholder="Enter UserName">
+					<label for="user_email">Email:</label><input type="email" id="user_email" name="email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="Enter Email (abc@xyz.com)">
+					<label for="password">Password:</label><input type="password" id="password" name="password" pattern=".{6,}" placeholder="Enter Password minimum 6">
+					<label for="confirm_password">Confirm Password:</label><input type="password" id="confirm_password"
+					 name="password" placeholder="Confirm Password" autocomplete="off">
+					<label for="address">Address:</label><input type="text"  id="address" name="address"  placeholder="Address1">
+					<label for="address2">Address2:</label><input type="text"  id="address2" name="address2" placeholder="Address2 Optional">
+					<label for="city">City:</label><input type="text"  id="city" name="city" placeholder="City">
+					<label for="country">Country:</label><input type="text" id="country" name="country" placeholder="Country">
+					<label for="zipcode">ZipCode:</label><input type="text" id="zipcode" name="zipcode" placeholder="Zip-Code">
+				</fieldset>
+				<fieldset class="checkout">
+				    <input type="submit" name="submit" value="" placeholder="">
+			  	</fieldset>
+		    </form>
+	  	</div>
+	</div>
+
+    <div class ="planmodal">
+    	<div class="plancontent">
+		    <span class="planclose"><img src="images/close.png"></span>
+			    <div id="pers">
+		             <p><h2>Personal</h2></p>
+		             <hr>
+		             <div id= "personal_plan"></div>
+			    </div>
+			    <div id= "agn">
+		             <p><h2>Agency</h2></p>
+		             <hr>
+		             <div id= "agency_plan"></div>
+			    </div>
+			    <div id= "unl">
+		             <p><h2>Unlimited</h2></p>
+		             <hr>
+		             <div id= "unlimited_plan"></div>
+			 	</div>
+	 	</div>
+	</div>
+
+</main>
+
+<footer>
+	<div class="end">
+		<img src="images/end image.jpg" align="left" style="margin-top:2%; margin-left:1%">
+		<div class="end-items">
+			<a href="" class="url">Gadget</a>
+			<a href="" class="url">Science</a>
+			<a href="" class="url">Nature</a>
+			<a href="" class="url">Creative</a>
+		</div>
+		<span id="logo">&copy;2016 Great Simple</span>
+	</div>
+</footer>
+<script src="scripts/jquery-3.0.0.min.js" type="text/javascript"></script>
+<script src='scripts/library.js' type='text/javascript'></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+#license, #member,#start{
+	font-size: 3.2em;
+}
+
+#license, #member{
+	font-size: 3.2em;
+	font-stretch: semi-condensed;
+}
+#license{
+  padding:70px 60px 30px 0px;
+}
+
+#useroptions{
+  list-style-type: none;
+}
+
+#name{
+	color:$dove-grey;
+}
+
+#job{
+	color: $nobel;
+}
+
+#member1{
+	font-size: 20px;
+	color: $grey;
+	overflow-wrap: break-word;
+	padding:80px 0px 0px 0px;
+}
+
+#obj{
+	font-size: 1.9em;
+	color: $dove-grey;
+}
+
+#start{
+	line-height: 50px;
+}
+
+#second{
+	font-size: 15px;
+	padding-right: 25px;
+	color: $silver-chalice;
+}
+
+#text{
+	font-size: 100%;
+	margin-bottom: 10px;
+	overflow-wrap: break-word;
+	color: $dusty-grey;
+}
+
+#first{
+	font-size: 43px;
+	color:$dusty-grey;
+	font-stretch: ultra-expanded;
+	font-weight: 400;
+}
+
+#num{
+	font-size: 12px;
+}
+
+#pointers{
+	width: 93%;
+}
+
+.sign{
+	font-size: 50%;
+}
+
+#name{
+	color: $dove-grey;
+}
+
+#user-img{
+	padding: 0px 5px 0px 40px;
+}
+
+#motto{
+	font-size: 20px;
+	color:#8c8c8c;
+	@extend %break-word;
+}
