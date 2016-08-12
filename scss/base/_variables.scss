@@ -46,3 +46,25 @@ $path-font    : '../fonts';
 //Font Type
 
 $FontType        : Thin;
+
+//Media Query breakpoints
+
+$brk-smartphone-landscape : '(max-width : 360px)';
+$brk-smartphone-portrait  : '(max-width : 320px)';
+$brk-small-screen-width   : '(min-width: 360px) and (max-width: 545px)';
+
+$brk-ipads-landscape      : '(min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape)' ;
+
+$brk-ipdas-portrait       : '(min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait)' ;
+
+$brk-medium-screen-width  : '(min-width: 545px) and (max-width: 768px)' ;
+
+$brk-tablets              : '(max-width : 970px) and (min-width: 768px)' ;
+
+$brk-desktops-laptops     : '(max-width : 1600px) and (min-width: 970px)' ;
+
+$brk-large-screen-width   : '(min-width : 1824px)' ;
+
+$brk-iphone4              : '(min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2)' ;
+
+

@@ -42,6 +42,9 @@
 	margin-left: 8%;
 	padding-right: 5px;
 	width:20%;
+	@media only screen and #{$brk-smartphone-landscape}{
+	     font-size:200%;
+	}
 }
 
 .small{
@@ -88,6 +91,11 @@
 	border: 2px solid #e6e6ff;
 	font-weight:400;
 	@extend %margin_0;
+	@media only screen and #{$brk-smartphone-landscape}{
+	    height: 45px;
+    	width: 60%;
+	}
+
 }
 
 .useremail:focus{
@@ -96,12 +104,16 @@
 
 .chat{
 	border-radius: 4px;
-  font-size: 15px;
+	font-size: 15px;
 	background-color: $pastel-green;
 	border:0px;
 	border-radius:0px 3px 3px 0px;
-  border-width:0px 0px 0px 1px;
-  @extend %margin_0;
+	border-width:0px 0px 0px 1px;
+	@extend %margin_0;
+	@media only screen and #{$brk-smartphone-landscape}{
+	    height: 45px;
+	    width: 22%;
+    }
 }
 
 .texty {

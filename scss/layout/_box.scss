@@ -7,4 +7,35 @@
     -webkit-animation: panel-fade-up 0.4s ease;
     -moz-animation: panel-fade-up 0.4s ease;
     animation: panel-fade-up 0.4s ease;
+    @media only screen and #{$brk-smartphone-landscape}{
+        width: 290px;
+    }
+	@media only screen and #{$brk-smartphone-portrait}{
+		width:250px;
+	}
+    @media only screen and #{$brk-small-screen-width}{
+	    width:346px;
+	}
+	@media only screen and #{$brk-ipads-landscape} 
+	{
+	   width: 90%;
+	}
+	@media only screen and #{$brk-ipdas-portrait}{
+       width: 90%;
+	}
+	@media only screen and #{$brk-medium-screen-width}{
+	   width: 90%;
+	}
+	@media only screen and #{$brk-tablets}{
+      width: 90%;
+	}
+	@media only screen and #{$brk-desktops-laptops}{
+	  width: 90%;
+	}
+	@media only screen and #{$brk-large-screen-width}{
+      width: 96%;
+	}
+	@media only screen and #{$brk-iphone4}{
+      width:240px;
+	}
 }

@@ -1,48 +1,16 @@
-/* Smartphones (portrait and landscape) ----------- */
-/*@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 480px) {
-/* Styles /
-
-}*/
-
 /* Smartphones (landscape) ----------- */
 @media only screen and (max-width : 360px) {
 /* Styles */
 	#container {
     	display: inline;
       }
-    .box{
-		width: 290px;
-	}
 	div#info{
 		font-size: 14px;
 	}
 	#user{
 		font-size: 1.2em;
 	}
-	/*.users {
-	 	height:460px;
-	 }*/
-	.imginfo{
-		margin: 0px -4px 3px -37px;
-	}
-	.useremail{
-    	height: 40px;
-    	width: 60%;
-    }
-    .chat{
-    	height: 40px;
-    	width: 22%;
-    }
-    .planA, .plan{
-    	font-size:200%;
-    }
-     .modal-content{
-   		width: 70%;
-    	margin-left: 13%;
-   	}
-
+    
 }
 
 /* Smartphones (portrait) ----------- */
@@ -62,28 +30,15 @@ and (max-device-width : 480px) {
 	#container {
     	display:block;
       }
-   /* .users {
-	 	height:580px;
-	 }*/
-  	.box {
-  		width:250px;
-  	}
     .planA, .plan{
     	font-size:200%;
     }
     div#info{
 		font-size: 13px;
 	}
-	.imginfo{
-		margin: 0px -4px 3px -37px;
-	}
 	.url{
 		display: block;
 	}
-	 .modal-content{
-   		width: 70%;
-    	margin-left: 13%;
-   	}
 }
 
 @media only screen and (min-width: 360px) and (max-width: 545px) {
@@ -93,9 +48,6 @@ and (max-device-width : 480px) {
 	}
 	div#info{
 		font-size: 16px;
-	}
-	.box{
-		width:346px;
 	}
 	.useremail{
     	height: 50px;
@@ -111,25 +63,8 @@ and (max-device-width : 480px) {
     .planA,.plan{
     	font-size: 300%;
     }
-    .modal-content{
-   		width: 70%;
-    	margin-left: 13%;
-   	}
-   	.imginfo{
-		margin: 0px -4px 3px -37px;
-	}
 
 }
-
-/* iPads (portrait and landscape) ----------- */
-/*@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px) {
-/* Styles /
-	#container {
-    	display:block;
-      }
-}*/
 
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
@@ -140,14 +75,8 @@ and (max-device-width : 1024px) {
 	#user{
 		font-size: 1.8em;
 	}
-	.box{
-		width: 90%;
-	}
 	div#info{
 		font-size: 16px;
-	}
-	.imginfo{
-		margin: 0px -4px 3px -37px;
 	}
 	.useremail{
 		height: 50px;
@@ -169,15 +98,9 @@ and (max-device-width : 1024px) {
     	display: inline-flex;
     	margin-left: -40px;
       }
-  	.box {
-  	    width: 90%;
-  	}
     .useremail{
 		height: 60px;
 		width: 46%;
-	}
-	.imginfo{
-		margin:0px -4px 3px -37px;
 	}
 	.chat{
 		height: 60px;
@@ -203,9 +126,6 @@ and (max-device-width : 1024px) {
 	div#info{
 		font-size: 16px;
 	}
-	.box{
-		width: 90%;
-	}
 	.useremail{
     	height: 50px;
     	width: 30%;
@@ -223,13 +143,6 @@ and (max-device-width : 1024px) {
 	.planA,.plan{
     	font-size: 280%;
     }
-    .modal-content{
-	   width: 50%;
-	   margin-left: 25%;
-    }
-    .imginfo{
-		margin: 0px -4px 3px -37px;
-	}
 }
 
 /* Tablets ----------- */
@@ -242,15 +155,9 @@ and (max-device-width : 1024px) {
     	display: inline-flex;
     	margin-left: -40px;
       }
-  	.box {
-  	    width: 90%;
-  	}
     .useremail{
 		height: 60px;
 		width: 46%;
-	}
-	.imginfo{
-		margin:0px -4px 3px -37px;
 	}
 	.chat{
 		height: 60px;
@@ -265,10 +172,6 @@ and (max-device-width : 1024px) {
 	#obj{
 		font-size: 1.4em;
 	}
-	.modal-content{
-	   width: 45%;
-	   margin-left: 25%;
-    }
 }
 
 
@@ -300,15 +203,8 @@ and (max-device-width : 1024px) {
 	.users {
 	 	height:420px;
 	 }
-	.imginfo{
-		margin: 0px -4px 3px -37px;
-	}
     .planA,.plan{
     	font-size: 270%;
-    }
-    .modal-content{
-	   width: 45%;
-	   margin-left: 25%;
     }
 }
 
@@ -320,9 +216,6 @@ and (max-device-width : 1024px) {
 	}
 	div#info{
 		font-size: 18px;
-	}
-	.box{
-		width:400px;
 	}
 	#user{
 		font-size: 1.9em;
@@ -338,13 +231,6 @@ and (max-device-width : 1024px) {
 	.users {
 	 	height:430px;
 	 }
-	.imginfo{
-		margin: 0px -4px 3px -37px;
-	}
-	.modal-content{
-	   width: 55%;
-	   margin-left: 30%;
-    }
 }
 
 /* iPhone 4 ----------- */
@@ -359,9 +245,6 @@ and (max-device-width : 1024px) {
 	.users {
 	 	height:400px;
 	 }
-  	.box {
-  		width:240px;
-  	}
     .chat{
     	height:40px;
     	width:20%;
@@ -399,3 +282,23 @@ and (max-device-width : 1024px) {
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
 /* Styles */
 }
+
+/* Smartphones (portrait and landscape) ----------- */
+/*@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+/* Styles /
+
+}*/
+
+
+/* iPads (portrait and landscape) ----------- */
+/*@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+/* Styles /
+	#container {
+    	display:block;
+      }
+}*/
+

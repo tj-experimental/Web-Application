@@ -18,14 +18,14 @@ div#info, .btn-floating1, .account-info label ,
 .name, .pwd, .account-action .btn, .account-action label,
 div.top-left, div.top-left
 {
-	float: left;
+  float: left;
 }
 
 .account-action .btn, .button:hover, .chat:hover,
 .close:hover, .planclose:hover, .buyclose:hover, .buyclose:hover,
 .close:focus, .planclose:focus, .btn-floating1:hover,.btn-floating2:hover
 {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .line, .actions, div.join, #container, .texty
@@ -35,7 +35,7 @@ div.top-left, div.top-left
 
 .account-info label, .account-info input, div.join
 {
-	display: block;
+  display: block;
 }
 
 #text, .account_type, .licenses
@@ -47,7 +47,7 @@ div.top-left, div.top-left
 .user-information > label + input, .useremail, 
 #member1, .chat , #logo
 {
-	display: inline-block;
+  display: inline-block;
 }
 
 #agn, #pers, #unl, .imginfo, .modal, .planmodal,
