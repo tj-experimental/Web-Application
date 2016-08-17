@@ -1,3 +1,6 @@
+## Author: Tonye Jack
+## Email: jtonye@ymail.com
+
 angular.element(document).ready(function(){
 	angular.bootstrap(document.getElementById("users"),['WebApp']);
 });
