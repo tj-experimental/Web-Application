@@ -223,7 +223,9 @@ div#info {
   font-size: 18px; }
 
 .user-information > label {
-  clear: both; }
+  clear: both;
+  font-weight: bold;
+  width: 20%; }
 
 .user-information > label + input {
   margin-right: 30%;

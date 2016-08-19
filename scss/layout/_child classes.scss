@@ -10,6 +10,8 @@
 	@extend %margin-top;
 	clear:both;
 	@extend %break-word;
+    font-weight: bold;
+    width: 20%;
 }
 
 .user-information > label + input
@@ -19,7 +21,7 @@
 	width: 50%;
 	clear: right;
 	@extend %margin-top;
-  margin-left: 0px;
+    margin-left: 0px;
 }
 
 .account_type > select {

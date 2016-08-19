@@ -25,7 +25,10 @@ var $content = $('<div class="modal-content"></div>');
  // Modal content
 var $close = $('<span class="close"></span>');
 $close.append('<img src="images/close.png">');
-var $form = $('<form></form>');
+var $form = $('<form></form>').attr({
+                method: "POST",
+                action: ""
+                });
 var formdata = '<fieldset class="account-info">';
 formdata += '<label for="username"class= "name">Username:</label><input type="text" id="username" name="username"><br>';
 formdata += '<label for="password" class= "pwd">Password:</label><input type="password" name="password" id="password"><br>';
