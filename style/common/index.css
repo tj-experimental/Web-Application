@@ -4,7 +4,7 @@
 .close, .planclose, .buyclose {
   float: right; }
 
-a, #text, h3, h2, #logo, .small, div#info, .head, #second {
+a, .text_info, h3, h2, #logo, .small, div#info, .head, #second {
   font-family: Arial; }
 
 .user-information > label, .account_type > select,
@@ -25,7 +25,7 @@ div.top-left, div.top-left {
 .account-info label, .account-info input, div.join {
   display: block; }
 
-#text, .account_type, .licenses {
+.text_info, .account_type, .licenses {
   display: inline; }
 
 .user-information > label, hr.scroll::after, div.users,
@@ -38,7 +38,7 @@ div.top-left, div.top-left {
   display: none;
   /* Hidden by default */ }
 
-.plan, .planA, .head, #text, #license, #member, #start {
+.plan, .planA, .head, .text_info, #license, #member, #start {
   font-stretch: semi-condensed; }
 
 .buy3, .chat, .p1, .p2, .p3, .buy3 {

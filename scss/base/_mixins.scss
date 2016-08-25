@@ -1,11 +1,12 @@
 @mixin font-face($family,$FontVersion, $FontType) {
    @font-face{
 	    font-family: $family;
-		src:	url('#{$path-font}/roboto-gh-pages/fonts/#{$FontType}/#{$family}-#{$FontType}.woff2?v=#{$FontVersion}') format('woff2'),
-				url('#{$path-font}/roboto-gh-pages/fonts/#{$FontType}/#{$family}-#{$FontType}.woff?v=#{$FontVersion}') format('woff'),
-				url('#{$path-font}/roboto-gh-pages/fonts/#{$FontType}/#{$family}-#{$FontType}.ttf?v=#{$FontVersion}') format('truetype');
+		src:	url('#{$path-font}/roboto-gh-pages/fonts/#{$FontType}/#{$family}-#{$FontType}.woff2') format('woff2'),
+				url('#{$path-font}/roboto-gh-pages/fonts/#{$FontType}/#{$family}-#{$FontType}.woff') format('woff'),
+				url('#{$path-font}/roboto-gh-pages/fonts/#{$FontType}/#{$family}-#{$FontType}.ttf') format('truetype');
 	}
 }
+
 
 //Text mixin 
 @mixin text($size: null,$l-height: null, $weight: null, $color: null,$f-style: null,$f-variant: null)

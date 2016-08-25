@@ -7,7 +7,7 @@
    float: right;
 }
 
-a, #text, h3, h2, #logo, .small, div#info, .head, #second
+a, .text_info, h3, h2, #logo, .small, div#info, .head, #second
 {
   font-family: Arial;
 }
@@ -38,7 +38,7 @@ div.top-left, div.top-left
   display: block;
 }
 
-#text, .account_type, .licenses
+.text_info, .account_type, .licenses
 {
   display: inline;
 }
@@ -56,7 +56,7 @@ div.top-left, div.top-left
     display: none; /* Hidden by default */
 }
 
-.plan, .planA, .head, #text, #license, #member, #start
+.plan, .planA, .head, .text_info, #license, #member, #start
 {
   font-stretch: semi-condensed;
 }

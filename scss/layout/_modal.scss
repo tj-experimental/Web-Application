@@ -9,35 +9,35 @@
     @extend %box-sizing;
     max-width: 80%;
     @media only screen and #{$brk-smartphone-landscape}{
-      width: 70%;
+      width: 80%;
       margin-left: 13%;
     }
     @media only screen and #{$brk-smartphone-portrait}{
-      width: 70%;
+      width: 80%;
       margin-left: 13%;
     }
     @media only screen and #{$brk-small-screen-width}{
-      width: 70%;
+      width: 80%;
       margin-left: 13%;
     }
     @media only screen and #{$brk-medium-screen-width}{
-      width: 50%;
+      width: 80%;
       margin-left: 25%;
     }
     @media only screen and #{$brk-tablets}{
-      width: 45%;
+      width: 80%;
       margin-left: 25%;
     }
     @media only screen and #{$brk-desktops-laptops}{
-      width: 45%;
+      width: 80%;
       margin-left: 25%;
     }
     @media only screen and #{$brk-large-screen-width}{
-      width: 55%;
+      width: 90%;
       margin-left: 30%;
     }
     @media only screen and #{$brk-iphone4}{
-      width: 70%;
+      width: 80%;
       margin-left: 13%;
     }
 }

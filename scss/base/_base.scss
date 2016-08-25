@@ -9,10 +9,9 @@ body{
     max-width: 100%;
 }
 
-h{
+h1{
   &1 {
     @include text($l-height:40.6px, $color:$scorpion);
-	font: caption;
 	font-family: $stack-roboto , $stack-sans-serif;
 	}	
 }

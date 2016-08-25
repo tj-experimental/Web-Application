@@ -7,10 +7,9 @@ body {
   width: 100vw;
   max-width: 100%; }
 
-h1 {
+h11 {
   line-height: 40.6px;
   color: #595959;
-  font: caption;
   font-family: "Roboto", sans-serif; }
 
 h2, #second, h3 {
@@ -141,35 +140,35 @@ div#info {
   max-width: 80%; }
   @media only screen and (max-width: 360px) {
     .modal-content, .plancontent, .buycontent {
-      width: 70%;
+      width: 80%;
       margin-left: 13%; } }
   @media only screen and (max-width: 320px) {
     .modal-content, .plancontent, .buycontent {
-      width: 70%;
+      width: 80%;
       margin-left: 13%; } }
   @media only screen and (min-width: 360px) and (max-width: 545px) {
     .modal-content, .plancontent, .buycontent {
-      width: 70%;
+      width: 80%;
       margin-left: 13%; } }
   @media only screen and (min-width: 545px) and (max-width: 768px) {
     .modal-content, .plancontent, .buycontent {
-      width: 50%;
+      width: 80%;
       margin-left: 25%; } }
   @media only screen and (max-width: 970px) and (min-width: 768px) {
     .modal-content, .plancontent, .buycontent {
-      width: 45%;
+      width: 80%;
       margin-left: 25%; } }
   @media only screen and (max-width: 1600px) and (min-width: 970px) {
     .modal-content, .plancontent, .buycontent {
-      width: 45%;
+      width: 80%;
       margin-left: 25%; } }
   @media only screen and (min-width: 1824px) {
     .modal-content, .plancontent, .buycontent {
-      width: 55%;
+      width: 90%;
       margin-left: 30%; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
     .modal-content, .plancontent, .buycontent {
-      width: 70%;
+      width: 80%;
       margin-left: 13%; } }
 
 /* The Modal (background) */
@@ -279,7 +278,7 @@ div#info {
   padding-right: 25px;
   color: #A6A6A6; }
 
-#text {
+.text_info {
   font-size: 100%;
   margin-bottom: 10px;
   overflow-wrap: break-word;
@@ -422,7 +421,6 @@ div#info {
 input[type="submit"] {
   /*background:*/
   background: url("../images/buy-now-flashing.gif") no-repeat;
-  background-size: 70px 45px;
   background-size: 109px 50px;
   width: 109px;
   /* width of image */
@@ -790,7 +788,7 @@ and (max-device-width : 1024px) {
 /*-------------Web Fonts-------------------*/
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/roboto-gh-pages/fonts/Light/Roboto-Light.woff2?v=1.0.0") format("woff2"), url("../fonts/roboto-gh-pages/fonts/Light/Roboto-Light.woff?v=1.0.0") format("woff"), url("../fonts/roboto-gh-pages/fonts/Light/Roboto-Light.ttf?v=1.0.0") format("truetype"); }
+  src: url("../fonts/roboto-gh-pages/fonts/Light/Roboto-Light.woff2") format("woff2"), url("../fonts/roboto-gh-pages/fonts/Light/Roboto-Light.woff") format("woff"), url("../fonts/roboto-gh-pages/fonts/Light/Roboto-Light.ttf") format("truetype"); }
 .account-info {
   padding: 33px 0px 33px 30px;
   width: 80%; }
@@ -839,13 +837,18 @@ hr.scroll {
     padding: 22px;
     background: #A6A6A6 url("../images/arrow.jpg") no-repeat scroll center; }
 
+#error_page {
+  background-image: url("../../images/background-404.jpg");
+  width: 1920px;
+  height: 877px; }
+
 /*Common Styles*/
 #logo, .small, .user-information > label + input,
 .btn-floating2, .small, .imginfo, div.top-right,
 .close, .planclose, .buyclose {
   float: right; }
 
-a, #text, h3, h2, #logo, .small, div#info, .head, #second {
+a, .text_info, h3, h2, #logo, .small, div#info, .head, #second {
   font-family: Arial; }
 
 .user-information > label, .account_type > select,
@@ -866,7 +869,7 @@ div.top-left, div.top-left {
 .account-info label, .account-info input, div.join {
   display: block; }
 
-#text, .account_type, .licenses {
+.text_info, .account_type, .licenses {
   display: inline; }
 
 .user-information > label, hr.scroll::after, div.users,
@@ -879,7 +882,7 @@ div.top-left, div.top-left {
   display: none;
   /* Hidden by default */ }
 
-.plan, .planA, .head, #text, #license, #member, #start {
+.plan, .planA, .head, .text_info, #license, #member, #start {
   font-stretch: semi-condensed; }
 
 .buy3, .chat, .p1, .p2, .p3, .buy3 {
