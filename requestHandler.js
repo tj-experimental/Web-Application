@@ -18,7 +18,7 @@ function home(req, res) {
     if (filePath == './'){
         filePath = './index.html';
     }
-    var extension = path.extname(filePath);
+    var extension = path.extname(filePath).toLowerCase();
     var contentType = 'text/html';
 
     switch(extension){
