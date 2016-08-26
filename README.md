@@ -1,7 +1,7 @@
 # Web Application
 
 ### Contains a Web Application.
-#### Mobile Responsive than is supported on multiple devices.
+#### Mobile Responsive that is supported on multiple devices.
 #### Using jquery plugins like LineChart.js and n3charts.js 
 #### Angularjs 
 #### SASS
