@@ -12,8 +12,8 @@ body{
 h{
   &1 {
     @include text($l-height:40.6px, $color:$scorpion);
-	font-family: $stack-roboto , $stack-sans-serif;
-	}	
+    font-family: caption, $stack-roboto, $stack-sans-serif;
+  }
 }
 
 h2, #second, h3
@@ -29,7 +29,7 @@ h2, #second
 
 
 h1, h2, h3, #second{
-    @include text($f-style:normal, $f-variant:normal);
+    @include text($f-style:normal, $weight:300 ,$f-variant:normal);
 }
 
 a{

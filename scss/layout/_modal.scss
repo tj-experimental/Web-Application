@@ -8,40 +8,44 @@
     margin-top: 7%;
     @extend %box-sizing;
     max-width: 80%;
-    @media only screen and #{$brk-smartphone-landscape}{
-      width: 80%;
-      margin-left: 13%;
-    }
-    @media only screen and #{$brk-smartphone-portrait}{
-      width: 80%;
-      margin-left: 13%;
-    }
-    @media only screen and #{$brk-small-screen-width}{
-      width: 80%;
-      margin-left: 13%;
-    }
-    @media only screen and #{$brk-medium-screen-width}{
-      width: 80%;
-      margin-left: 25%;
-    }
-    @media only screen and #{$brk-tablets}{
-      width: 80%;
-      margin-left: 25%;
-    }
-    @media only screen and #{$brk-desktops-laptops}{
-      width: 80%;
-      margin-left: 25%;
-    }
-    @media only screen and #{$brk-large-screen-width}{
-      width: 90%;
-      margin-left: 30%;
-    }
-    @media only screen and #{$brk-iphone4}{
-      width: 80%;
-      margin-left: 13%;
-    }
 }
 
+.modal-content{
+  @include smallModalContent($width: null,$margin-left: null);
+  @include mediumModalContent($width: null,$margin-left: null)
+  @media only screen and #{$brk-smartphone-landscape}{
+    width: 80%;
+    margin-left: 13%;
+  }
+  @media only screen and #{$brk-smartphone-portrait}{
+    width: 80%;
+    margin-left: 13%;
+  }
+  @media only screen and #{$brk-small-screen-width}{
+    width: 80%;
+    margin-left: 13%;
+  }
+  @media only screen and #{$brk-medium-screen-width}{
+    width: 80%;
+    margin-left: 25%;
+  }
+  @media only screen and #{$brk-tablets}{
+    width: 80%;
+    margin-left: 25%;
+  }
+  @media only screen and #{$brk-desktops-laptops}{
+    width: 80%;
+    margin-left: 25%;
+  }
+  @media only screen and #{$brk-large-screen-width}{
+    width: 90%;
+    margin-left: 30%;
+  }
+  @media only screen and #{$brk-iphone4}{
+    width: 80%;
+    margin-left: 13%;
+  }
+}
 
 /* The Modal (background) */
 .modal,.planmodal,.buymodal {
@@ -60,10 +64,43 @@
  .buycontent 
 {
     margin-left: 16%;
+   @media only screen and #{$brk-smartphone-landscape}{
+     width: 80%;
+     margin-left: 13%;
+   }
+   @media only screen and #{$brk-smartphone-portrait}{
+     width: 80%;
+     margin-left: 13%;
+   }
+   @media only screen and #{$brk-small-screen-width}{
+     width: 80%;
+     margin-left: 13%;
+   }
+   @media only screen and #{$brk-medium-screen-width}{
+     width: 80%;
+     margin-left: 25%;
+   }
+   @media only screen and #{$brk-tablets}{
+     width: 80%;
+     margin-left: 25%;
+   }
+   @media only screen and #{$brk-desktops-laptops}{
+     width: 80%;
+     margin-left: 25%;
+   }
+   @media only screen and #{$brk-large-screen-width}{
+     width: 90%;
+     margin-left: 30%;
+   }
+   @media only screen and #{$brk-iphone4}{
+     width: 80%;
+     margin-left: 13%;
+   }
 }
 .plancontent
 {
    margin-left: 10%;
+
 }
 /* The Close Button */
 

@@ -17,7 +17,6 @@ function showDivs(n) {
 }
 
 
-
 //Get the overlay with class modal
 var $overlay = $('<div class="modal"></div>');
 // Get the content on the modal
@@ -29,14 +28,14 @@ var $form = $('<form></form>').attr({
                 method: "POST",
                 action: ""
                 });
-var formdata = '<fieldset class="account-info">';
-formdata += '<label for="username"class= "name">Username:</label><input type="text" id="username" name="username"><br>';
-formdata += '<label for="password" class= "pwd">Password:</label><input type="password" name="password" id="password"><br>';
-formdata +='<label for="mail" class= "mail">Email:</label><input type="email"  name="email" id ="email"><br></fieldset>';
-formdata += '<fieldset class="account-action"><input class="btn" type="submit" name="submit" value="Login">';
-formdata +='<label><input type="checkbox" name="remember" id="signin"> Stay signed in </label></fieldset>';
+var formData = '<fieldset class="account-info">';
+formData += '<label for="username"class= "name">Username:</label><input type="text" id="username" name="username"><br>';
+formData += '<label for="password" class= "pwd">Password:</label><input type="password" name="password" id="password"><br>';
+formData +='<label for="mail" class= "mail">Email:</label><input type="email"  name="email" id ="email"><br></fieldset>';
+formData += '<fieldset class="account-action"><input class="btn" type="submit" name="submit" value="Login">';
+formData +='<label><input type="checkbox" name="remember" id="signin"> Stay signed in </label></fieldset>';
 
-$form.append(formdata);
+$form.append(formData);
 
 //append the object to the content  div
 $content.append($close);
@@ -72,7 +71,7 @@ $(".join button").click(function(){
         //hide the modal and contents upon closing it
         $(this).hide();
       }
-})
+});
 
 // $close.click(function() {
 //      $overlay.hide();
@@ -120,7 +119,7 @@ function buyButton(id){
             {
               divid:"p3",
               location: "unl"
-            },
+            }
          ];  
    
     for(var i = 0 ; i < divObj.length; ++i){
@@ -212,11 +211,11 @@ $(function(){
 
     $(".1").click(function(){
           chosenplan(0);
-      })
+      });
     $(".2").click(function(){
           chosenplan(1);
-      })
+      });
     $(".3").click(function(){
           chosenplan(2);
-      })
+      });
 });

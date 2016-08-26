@@ -1,0 +1,40 @@
+
+@mixin smallModalContent($width: null, $margin-left: null){
+@media only screen and #{$brk-smartphone-landscape}{
+    width: $width;
+    margin-left: $margin-left;
+  }
+  @media only screen and #{$brk-smartphone-portrait}{
+    width: $width;
+    margin-left: $margin-left;
+  }
+  @media only screen and #{$brk-small-screen-width}{
+    width: $width;
+    margin-left: $margin-left;
+  }
+  @media only screen and #{$brk-iphone4}{
+    width: $width;
+    margin-left: $margin-left;
+  }
+
+}
+
+@mixin mediumModalContent($width: null,$margin-left: null){
+    @media only screen and #{$brk-medium-screen-width}{
+        width: $width;
+        margin-left: $margin-left;
+    }
+    @media only screen and #{$brk-tablets}{
+        width: $width;
+        margin-left: $margin-left;
+    }
+    @media only screen and #{$brk-desktops-laptops}{
+        width: $width;
+        margin-left: $margin-left;
+    }
+    @media only screen and #{$brk-large-screen-width}{
+        width: $width;
+        margin-left: $margin-left;
+    }
+}
+

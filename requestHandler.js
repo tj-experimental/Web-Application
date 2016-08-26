@@ -1,17 +1,26 @@
+const qs = require('querystring');
 const path =  require('path');
 const fs = require('fs');
 
 function formRequest(req, res){
 
     if (req.method === 'POST'){
-        req.on("data", function(body){
+        var body = '';
+        req.on('data', function( data){
+            body += data;
 
+            if (body.length > 1e6){
+                req.connection.destroy();
+            }
+        });
+        req.on('end', function(){
+            var POST = qs.parse(body);
+            console.log(POST);
         });
     }
 
 
 }
-
 
 function home(req, res) {
     var filePath = '.' + req.url;
