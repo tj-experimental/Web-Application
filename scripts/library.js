@@ -33,7 +33,8 @@ formData += '<label for="username"class= "name">Username:</label><input type="te
 formData += '<label for="password" class= "pwd">Password:</label><input type="password" name="password" id="password"><br>';
 formData +='<label for="mail" class= "mail">Email:</label><input type="email"  name="email" id ="email"><br></fieldset>';
 formData += '<fieldset class="account-action"><input class="btn" type="submit" name="submit" value="Login">';
-formData +='<label><input type="checkbox" name="remember" id="signin"> Stay signed in </label></fieldset>';
+formData +='<input class="btn" id="create_new" type="submit" name="create_account" value="Create New Account" >';
+formData +='<label for="signin"><input type="checkbox" name="remember" id="signin"> Stay signed in </label></fieldset>';
 
 $form.append(formData);
 

@@ -51,13 +51,13 @@ a {
   animation: panel-fade-up 0.4s ease; }
   @media only screen and (max-width: 360px) {
     .box {
-      width: 290px; } }
+      width: 80%; } }
   @media only screen and (max-width: 320px) {
     .box {
-      width: 250px; } }
+      width: 80%; } }
   @media only screen and (min-width: 360px) and (max-width: 545px) {
     .box {
-      width: 346px; } }
+      width: 90%; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     .box {
       width: 90%; } }
@@ -987,5 +987,11 @@ label#personal, label#agency, label#unlimited {
   display: inline;
   word-break: break-word;
   font-size: 20px; }
+
+#create_new {
+  width: 43%;
+  float: right;
+  height: 10%;
+  padding: 1%; }
 
 /*# sourceMappingURL=application.css.map */
