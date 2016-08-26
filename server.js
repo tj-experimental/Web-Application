@@ -13,3 +13,10 @@ http.createServer(function(req, res){
 
 console.log("Started Server on port http://127.0.0.1:" +port);
 
+process.on('SIGINT', function() {
+    console.log("Caught interrupt signal CTRl^C");
+    console.log('\nShutting down the Web server')
+    setTimeout(function () {
+        process.exit(0);
+    },3000);
+});
