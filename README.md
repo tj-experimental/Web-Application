@@ -1,8 +1,9 @@
 # Web Application
 
 ### Contains a Web Application.
+#### Mobile Responsive than is supported on multiple devices.
 #### Using jquery plugins like LineChart.js and n3charts.js 
 #### Angularjs 
-#### Sass
-#### Python web server using Django
-#### Selenium for Testing using Chrome\Firefox Drivers. 
+#### SASS
+#### Node js Web Server 
+#### Selenium on Python with Chrome driver for Test. 
