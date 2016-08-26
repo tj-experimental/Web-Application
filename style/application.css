@@ -417,7 +417,8 @@ div#info {
   color: #999999;
   font-size: 90%;
   width: 50%;
-  margin-top: 7%; }
+  margin-top: 7%;
+  margin-right: 5%; }
 
 .text {
   margin-bottom: 20%; }
@@ -474,7 +475,7 @@ div#info {
 .p1, .p2, .p3 {
   background-color: #70DB70;
   height: 58px;
-  width: 80%;
+  width: 85%;
   border: none;
   margin: 9% 0%; }
 
@@ -912,7 +913,7 @@ hr.scroll {
 #error_page > a {
   border-radius: 8px;
   border: 2px outset #fff;
-  margin-left: -10%;
+  margin-left: -7%;
   padding: 1%;
   background-color: #e6e6e6;
   color: #395870;
