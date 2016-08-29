@@ -4,7 +4,7 @@
 }
 
 .buy1,
-.buy2,
+.buy2
 {
 	@extend %white-background;
 }
@@ -39,7 +39,7 @@
 }
 
 .plan,.planA{
-	margin-left: 8%;
+	margin-left: 6%;
 	padding-right: 5px;
 	width:20%;
 	@media only screen and #{$brk-smartphone-landscape}{
@@ -53,7 +53,7 @@
 	font-size:90%;
 	width:50%;
 	margin-top: 7%;
-	margin-right: 5%;
+	margin-right: 2%;
 }
 
 .text{
@@ -104,12 +104,10 @@
 }
 
 .chat{
-	border-radius: 4px;
 	font-size: 15px;
 	background-color: $pastel-green;
-	border:0px;
-	border-radius:0px 3px 3px 0px;
-	border-width:0px 0px 0px 1px;
+	border-radius:0 3px 3px 0;
+	border-width:0 0 0 1px;
 	@extend %margin_0;
 	@media only screen and #{$brk-smartphone-landscape}{
 	    height: 45px;
