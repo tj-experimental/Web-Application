@@ -1,0 +1,56 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+	margin:0 auto;
+	text-align: center;
+	width: 100vw;
+    max-width: 100%;
+}
+
+h{
+  &1 {
+    @include text($l-height:40.6px, $color:$scorpion);
+    font-family: caption, $stack-roboto, $stack-sans-serif;
+  }
+}
+
+h2, #second, h3
+{
+	@include text($l-height: 26.4px, $weight:100);
+}
+
+h2, #second
+{  
+	text-align: left;	
+	padding-left: 30px;	
+}
+
+
+h1, h2, h3, #second{
+    @include text($f-style:normal, $weight:300 ,$f-variant:normal);
+}
+
+a{
+    margin-right: 30px;
+	color: $concrete;
+	text-decoration: none;
+	font-size: 17px;
+   /* unvisited link */
+   &:link {
+	    color: $heathered-gray;
+	}
+
+	/* visited link */
+	&:visited {
+	    color: $alto;
+	}
+
+	/* mouse over link */
+	&:hover {
+	    color: $jordy-blue;
+	    text-decoration: underline;
+	}
+
+}
