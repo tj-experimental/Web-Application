@@ -202,7 +202,7 @@ $("a").on('click', function(event) {
 
 $(function(){
       showDivs(slideIndex);  //remove all the extra messages in the message div
-     
+
     $( ".box" ).mouseover(function() {
         $(this).find("img").css("display","flex");
     }).mouseout(function() {
@@ -210,13 +210,20 @@ $(function(){
     });
 
 
-    $(".1").click(function(){
+    $(".imgInfo__1").click(function(){
           chosenplan(0);
       });
-    $(".2").click(function(){
+    $(".imgInfo__2").click(function(){
           chosenplan(1);
       });
-    $(".3").click(function(){
+    $('.imgInfo__3').click(function(){
           chosenplan(2);
       });
+    var isIE = function () {
+        var userAgent = navigator.userAgent;
+        return userAgent.indexOf("MSIE") > -1 || userAgent.indexOf("Trident/") > -1 || userAgent.indexOf("Edge/") > -1;
+    };
+    if(isIE()){
+        $('.box:hover').css({outline: "3px solid #cce6ff", 'outline-offset': '1px'});
+        }
 });

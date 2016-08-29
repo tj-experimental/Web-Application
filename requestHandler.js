@@ -29,6 +29,9 @@ function home(req, res) {
     var contentType = 'text/html';
 
     switch(extension){
+        case '.svg':
+            contentType = 'image/svg+xml';
+            break;
         case '.js':
             contentType = 'text/javascript';
             break;
