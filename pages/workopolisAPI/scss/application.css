@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0 auto;
+  width: 100vw;
+  max-width: 100vw;
+  border-radius: 6px 6px 0 0;
+  border: 2px solid #3c7eeb; }
+
+h1 {
+  font-size: 2em;
+  line-height: 41px;
+  font-weight: 700;
+  color: #fff;
+  font-family: caption, sans-serif;
+  background-color: #3c7eeb;
+  margin-top: 0;
+  padding: 1%;
+  text-shadow: 2px 1px #000; }
+h1, h2, h3 {
+  font-style: normal;
+  font-variant: normal; }
+
+a {
+  color: #6863f2;
+  text-decoration: none;
+  word-wrap: break-word;
+  font-size: 1.4em;
+  /* unvisited link */
+  /* visited link */
+  /* mouse over link */ }
+  a:link {
+    color: #3c7eeb; }
+  a:visited {
+    color: #00e600; }
+  a:hover {
+    color: #417cf1;
+    text-decoration: underline; }
+
+.form__input, .form__submit {
+  width: 50%; }
+
+label, .form__submit, .close-icon::after {
+  display: block; }
+
+form {
+  font-size: 18px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-bottom: 4%;
+  margin: 1em; }
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+label {
+  margin-bottom: 1%;
+  font-size: 0.8em; }
+
+.form__input {
+  height: 2.5em;
+  margin-bottom: 1.4em;
+  border-radius: 4px; }
+
+.form__input:focus {
+  border: 2px solid #3c7eeb; }
+
+.form__submit {
+  color: white;
+  font-size: 0.9em;
+  background-color: #3c7eeb;
+  padding: .3em 20%;
+  border: 3px solid #313e7b;
+  outline: 3px solid #2fc4c1;
+  cursor: pointer; }
+
+.close-icon {
+  position: relative;
+  padding: 10px;
+  border: 1px solid transparent;
+  background-color: transparent;
+  display: inline-block;
+  vertical-align: middle;
+  outline: 0;
+  cursor: pointer; }
+  .close-icon::after {
+    content: "X";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    z-index: 1;
+    right: 35px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 2px;
+    border-radius: 50%;
+    text-align: center;
+    color: #3c7eeb;
+    font-size: 14px;
+    font-weight: bolder;
+    cursor: pointer; }
+
+.form__input:not(:valid) ~ .close-icon {
+  display: none; }
+
+.form__submit:disabled {
+  background-color: #6d7f80;
+  cursor: not-allowed; }
+
+ul {
+  list-style: none none;
+  font-size: 1.6em; }
+
+.search__result > div:nth-of-type(2n) {
+  background-color: #d9d9d9; }
+
+.c__image {
+  height: 130px;
+  width: 150px;
+  float: left;
+  margin-right: 2%;
+  display: block; }
+
+.job__info {
+  margin-left: 1%; }
+
+.job__info > p, .job__info > a {
+  text-align: justify; }
+
+/*# sourceMappingURL=application.css.map */

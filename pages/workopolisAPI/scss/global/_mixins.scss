@@ -1,0 +1,15 @@
+//Text mixin
+@mixin text($size: null,$l-height: null, $weight: null, $color: null,$f-style: null,$f-variant: null, $f-family:null)
+{
+    font-size: $size;
+    line-height: $l-height;
+    font-weight: $weight;
+    color: $color;
+    font-family: $f-family;
+    font-style: $f-style;
+	font-variant: $f-variant;
+}
+
+@mixin backgroundColor($color:null){
+    background-color: $color;
+}

@@ -1,0 +1,25 @@
+ul{
+  list-style: none none;
+  font-size: 1.6em;
+}
+
+.search__result > div:nth-of-type(2n){
+  background-color: $dove-grey;
+}
+
+.c__image{
+  height: 130px;
+  width: 150px;
+  float: left;
+  margin-right: 2%;
+  display: block;
+}
+
+
+.job__info{
+  margin-left: 1%;
+}
+
+.job__info > p , .job__info > a {
+  text-align: justify;
+}

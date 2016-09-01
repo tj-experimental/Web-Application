@@ -1,0 +1,80 @@
+form {
+  @include text($size: 18px, $f-family:("Helvetica Neue", Helvetica, Arial, sans-serif));
+  padding-bottom: 4%;
+  margin: 1em;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+label
+{
+  @extend %d-block;
+  margin-bottom: 1%;
+  font-size: 0.8em;
+}
+
+.form__input{
+  @extend %width_50;
+  height: 2.5em;
+  margin-bottom: 1.4em;
+  border-radius: 4px;
+}
+
+.form__input:focus{
+  border: 2px solid $lightBlue;
+}
+
+
+.form__submit{
+  @extend %d-block;
+  color: white;
+  font-size: 0.9em;
+  @include backgroundColor($color: $lightBlue);
+  padding: .3em 20%;
+  @extend %width_50;
+  border: 3px solid #313e7b;
+  outline: 3px solid #2fc4c1;
+  cursor: pointer;
+}
+
+.close-icon{
+  position: relative;
+  padding: 10px;
+  border:1px solid transparent;
+  background-color: transparent;
+  display: inline-block;
+  vertical-align: middle;
+  outline: 0;
+  cursor: pointer;
+  &::after {
+    content: "X";
+    @extend %d-block;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    z-index: 1;
+    right: 35px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 2px;
+    border-radius: 50%;
+    text-align: center;
+    color: $lightBlue;
+    @include text($weight: bolder, $size: 14px);
+    cursor: pointer;
+  }
+}
+
+.form__input:not(:valid) ~ .close-icon {
+  display: none;
+}
+
+.form__submit:disabled{
+  background-color: #6d7f80;
+  cursor: not-allowed;
+}
