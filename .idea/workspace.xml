@@ -5,19 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bda15ab5-6784-4017-84ee-549af04e957a" name="Default" comment="modified the server">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/flickrAPI_searchForm/css/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/flickrAPI_searchForm/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/flickrAPI_searchForm/js/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/flickrapi/css/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/flickrapi/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/flickrapi/js/flickr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/Interactive-Form/index.html" afterPath="$PROJECT_DIR$/pages/Interactive-Form/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/Object-prototype-JavaScript/OO-JavaScript-Media-Player/index.html" afterPath="$PROJECT_DIR$/pages/Object-prototype-JavaScript/OO-JavaScript-Media-Player/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/Object-prototype-JavaScript/Quiz-OO-Javascript/index.html" afterPath="$PROJECT_DIR$/pages/Object-prototype-JavaScript/Quiz-OO-Javascript/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/Pagination-Content-Filter/index.html" afterPath="$PROJECT_DIR$/pages/Pagination-Content-Filter/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/tic-tac-toe/index.html" afterPath="$PROJECT_DIR$/pages/tic-tac-toe/index.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/flickrapi/js/flickr.js" afterPath="" />
     </list>
     <ignored path="Web.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -101,19 +89,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/flickrAPI_searchForm/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="15" column="76" selection-start-line="15" selection-start-column="76" selection-end-line="15" selection-end-column="76" />
-              <folding>
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/flickrAPI_searchForm/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
@@ -121,6 +97,16 @@
               <folding>
                 <marker date="1472701156310" expanded="true" signature="654:664" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pages/test/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -185,7 +171,6 @@
         <option value="$PROJECT_DIR$/pages/Object-prototype-JavaScript/OO JavaScript Media Player/index.html" />
         <option value="$PROJECT_DIR$/requestHandler.js" />
         <option value="$PROJECT_DIR$/pages/tic-tac-toe/css/style.css" />
-        <option value="$PROJECT_DIR$/pages/test/index.html" />
         <option value="$PROJECT_DIR$/scss/layout/_class.scss" />
         <option value="$PROJECT_DIR$/scss/media/_mobile.scss" />
         <option value="$PROJECT_DIR$/scss/layout/_box.scss" />
@@ -202,6 +187,7 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/pages/test/scripts/app.js" />
         <option value="$PROJECT_DIR$/pages/flickrAPI_searchForm/js/app.js" />
+        <option value="$PROJECT_DIR$/pages/test/index.html" />
       </list>
     </option>
   </component>
@@ -270,6 +256,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -370,6 +374,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\IT Loaner\Desktop\Web\pages\test" />
       <recent name="C:\Users\jtony\Documents\PROJECTS\Web" />
       <recent name="C:\Users\IT Loaner\Desktop\Web" />
     </key>
@@ -453,12 +458,12 @@
       <workItem from="1472161093461" duration="17784000" />
       <workItem from="1472188517332" duration="4426000" />
       <workItem from="1472446464557" duration="5346000" />
-      <workItem from="1472696164509" duration="4449000" />
+      <workItem from="1472696164509" duration="4627000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32005000" />
+    <option name="totallyTimeSpent" value="32183000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="505" y="0" width="738" height="760" extended-state="0" />
@@ -683,6 +688,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -690,10 +696,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/test/index.html" />
     <entry file="file://$PROJECT_DIR$/scss/media/_mobile.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -861,6 +867,14 @@
           <folding>
             <marker date="1472701156310" expanded="true" signature="654:664" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/test/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
