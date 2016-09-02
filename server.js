@@ -12,8 +12,8 @@ http.createServer(function(req, res){
 
 }).listen(port);
 
-console.log("Started Server on port http://127.0.0.1:" + port);
-open('http://127.0.0.1:' +port, 'chrome');
+console.log("Started Server on port http://mysite:" + port);
+open('http://mysite:' +port, 'chrome');
 process.on('SIGINT', function() {
     console.log("Caught interrupt signal CTRl^C");
     console.log('\nShutting down the Web server');
