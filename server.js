@@ -3,7 +3,7 @@ const open = require('open');
 var requestHandler = require('./requestHandler.js');
 
 
-var port  = process.argv[2] || 8080;
+var port  = process.env.PORT || process.argv[2] || 8080;
 
 
 http.createServer(function(req, res){
