@@ -1,5 +1,5 @@
 const http = require('http');
-const open = require('open');
+//const open = require('open');
 var requestHandler = require('./requestHandler.js');
 
 
@@ -13,11 +13,11 @@ http.createServer(function(req, res){
 }).listen(port);
 
 console.log("Started Server on port http://mysite:" + port);
-open('http://mysite:' +port, 'chrome');
-process.on('SIGINT', function() {
-    console.log("Caught interrupt signal CTRl^C");
-    console.log('\nShutting down the Web server');
-    setTimeout(function () {
-        process.exit(0);
-    },3000);
-});
+// open('http://mysite:' +port, 'chrome');
+// process.on('SIGINT', function() {
+//     console.log("Caught interrupt signal CTRl^C");
+//     console.log('\nShutting down the Web server');
+//     setTimeout(function () {
+//         process.exit(0);
+//     },3000);
+// });
