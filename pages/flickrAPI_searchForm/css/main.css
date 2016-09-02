@@ -2064,4 +2064,15 @@ footer p {
 
 input[type=search] {
     font-size: 2em;
+    border-radius: 10px;
+}
+
+#submit{
+    border-radius: 4px;
+    padding: 6px;
+    border: outset;
+}
+
+input[type=search]:focus{
+   outline: none;
 }

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Geolocation Demo</title>
+    <meta name="viewport" content="initial-scale=0.60">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="error">You need JavaScript enabled for this application to work!</div>
+<p id="hud">Aquiring Location<br /><img src="bar.gif" alt="Progress bar"></p>
+<div id="restaurants">
+    <h1>Places I visit</h1>
+    <ul>
+        <li><span data-lat="43.765136" data-lon="-79.503321">? miles</span>to My house 37 Delabo Drive</li>
+        <li><span data-lat="43.7624018" data-lon="-79.490171">? miles</span>to McDonalds at  3929 Keele St, North York, ON M3J 1N6 </li>
+        <li><span data-lat="43.756195" data-lon="-79.518981">? miles</span>to KFC at 1971 Finch Ave W</li>
+        <li><span data-lat="43.666981" data-lon="-79.385293">? miles</span>to BHS Consultants 300-615 Yonge Street</li>
+        <li><span data-lat="43.789214"  data-lon="-79.529211">? miles</span>to Former company Mircom Group</li>
+    </ul>
+</div>
+<a href="../../index.html" style="font-size:large" >Home</a>
+<script src="../../scripts/jquery-3.0.0.min.js"></script>
+<script src="./distanceCalculator.js"></script>
+<script src="./geolocation.js"></script>
+</body>
+</html>
