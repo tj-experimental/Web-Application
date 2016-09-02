@@ -23,3 +23,14 @@ ul{
 .job__info > p , .job__info > a {
   text-align: justify;
 }
+
+
+#loading{
+  margin: 23% 30%;
+  width: 40%;
+  height: 39%;
+  top: 0;
+  position: absolute;
+  background: transparent;
+  z-index: -1;
+}

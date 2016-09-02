@@ -47,7 +47,7 @@ searchModule = function (parameters) {
         });
         $button = $('<button>').attr({
             class:"close-icon",
-            type: "reset",
+            type: "reset"
         }).css("display", "hidden");
         $submit = $('<input>').attr({
             type: "submit",
@@ -59,6 +59,7 @@ searchModule = function (parameters) {
             class: "search__result"
         });
         $("main").append($form,'<span id="search-val"></span><br><hr>',  $div);
+        setTimeout(function(){$('#loading').hide();},1000);
     };
 
     return exports;
@@ -67,55 +68,59 @@ searchModule = function (parameters) {
 
 
 $(function(){
+    $('body').append('<img src="images/Loading_icon.gif" id="loading">');
     searchModule.loadSearchBox();
     $('#search_box').focus();
     searchModule.checkInput();
     $('.close-icon').on("click", function () {
-        $('.search__result').children().remove();
+        $(".search__result").html('');
         $('#search-val').hide();
     });
-    $('#search-form').on("submit", function(event){
+    $("#search-form").on("submit", function(event){
         event.preventDefault();
-        var $form, url, method, xml, x, i, $input, $searchResult;
+        $('#loading').show();
+        var $form, $searchBox;
         var company, image, location, postDate, title, jobUrl, job = "";
-        $searchResult = $('.search__result');
-        $input = $('.form__input');
         $form = $(this);
-        url = $form.attr("action") + '/'+ $form.serialize();
-        method = $form.attr('method').toUpperCase();
-        $('#search-val').show();
-        $('#search-val').html('Search Result for "'+ $input.val()+'"');
-        var xhr = new XMLHttpRequest();
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState == 4) {
-                    if (xhr.status == 200) {
-                        xml = xhr.responseXML;
-                        x = xml.getElementsByTagName("job");
-                        for (i = 0; i < x.length; i++) {
-                            company = x[i].childNodes[1].textContent;
-                            image = x[i].childNodes[2].textContent;
-                            location = x[i].childNodes[10].childNodes[0].textContent;
-                            postDate = x[i].childNodes[11].textContent;
-                            title = x[i].childNodes[13].textContent;
-                            jobUrl = x[i].childNodes[9].textContent;
-                            job  += '<div class = "job__info">' +
-                                '<img src=' + image + '  alt = "Company image" class="c__image">' +
-                                '<a href=' + "https://www.workopolis.com" + jobUrl + ' target="__blank">' + title + '</a>' +
-                                '<p class="c__info"> Company:  ' + company + '</p>' +
-                                '<p class="job__loc">Location:  ' + location + '<p>' +
-                                '<p class="post__date" id="date">Posted:  ' + postDate + '</p>' +
-                                '<hr>'+
-                                '</div>';
-                        }
-                        $searchResult.html(job);
-                    }
-                    else{
-                        alert(xhr.statusText);
-                    }
+        $searchBox = $('.form__input');
+        $searchBox.prop("disabled", true);
+        $('.form__submit').prop("disabled", true).val("Searching.....");
+        $('#search-val').show().html('Search Result for "'+ $searchBox.val()+'"');
+
+        $.ajax({
+                url: $form.attr("action"),
+                method: 'GET',
+                data : $form.serialize(),
+                success:function (data) {
+                    $(data).find("jobs").find("job").each(function(){
+                        image = $(this).find("companyImageUrl").text();
+                        jobUrl =  $(this).find("companyImageUrl").text();
+                        title =  $(this).find("title").text();
+                        company = $(this).find("company").text();
+                        location = $(this).find("locations").find("a").text();
+                        postDate =  $(this).find("postDate").text();
+
+                        job  += '<div class = "job__info">' +
+                            '<img src=' + image + '  alt = "Company image" class="c__image">' +
+                            '<a href=' + "https://www.workopolis.com" + jobUrl + ' target="_blank">' + title + '</a>' +
+                            '<p class="c__info"> Company:  ' + company + '</p>' +
+                            '<p class="job__loc">Location:  ' + location + '<p>' +
+                            '<p class="post__date" id="date">Posted:  ' + postDate + '</p>' +
+                            '<hr>'+
+                            '</div>';
+                    });
+                    $(".search__result").html(job);
+                },
+                error: function (jXHR) {
+
+                },
+                complete: function () {
+                    $searchBox.prop("disabled", false);
+                    $('.form__submit').prop("disabled", false).val("Search");
+                    $('#loading').hide();
                 }
-            };
-            xhr.open(method, url , true);
-            xhr.send();
+        });
+
     });
 
 });
