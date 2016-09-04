@@ -92,6 +92,8 @@ $(function(){
                 url: $form.attr("action"),
                 method: 'GET',
                 data : queryString,
+                contentType: 'application/x-www-form-urlencoded;charset=utf-8',
+                dataType:'application/xml',
                 success:function (data) {
                     $(data).find("jobs").find("job").each(function(){
                         image = $(this).find("companyImageUrl").text();
