@@ -236,11 +236,11 @@ fieldset.activities label::after{
 }
 
 .selectize-control {
-  float: left;
-  margin-right: 40px;
-  width: 40%;
-  cursor: pointer;
-  margin-top: 20px;
+	float: left;
+	margin-right: 2px;
+	width: 49%;
+	cursor: pointer;
+	margin-top: 20px;
 }
 
 
