@@ -964,6 +964,7 @@ label#personal, label#agency, label#unlimited {
   width: 47%;
   font-size: 15px;
   float: right;
+  border-radius: 6px;
   height: 10%;
   padding: 1%; }
 
