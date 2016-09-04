@@ -229,7 +229,7 @@ $searchBox.on("change keyup", function () {
     pageNumber.children().removeClass("active");
     var box =   $(this)[0];
     var $notFound = $('#notFound');
-    var filter = $(this).val();
+    var filter = $(this).val().toLowerCase();
     if(filter !== "") {
         box.style.border = "none";
         //Remove the active class of all children li's
