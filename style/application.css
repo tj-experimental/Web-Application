@@ -226,7 +226,7 @@ div#info {
   /* Black w/ opacity */ }
 
 .buycontent {
-  margin-left: 9%; }
+  margin-left: 13%; }
 
 .plancontent {
   margin-left: 10%; }
@@ -238,8 +238,8 @@ div#info {
   font-weight: bold; }
 
 .buycontent {
-  width: 85%;
-  height: 80%;
+  width: 70%;
+  height: 55%;
   margin-top: 3%;
   border: 2px solid #ffa949; }
 
@@ -897,13 +897,12 @@ hr.scroll {
   color: #edffcd; }
 
 /*Common Styles*/
-#logo, .small, .user-information > label + input,
-.btn-floating2, .small, .imginfo, div.top-right,
+#logo, .small, .btn-floating2, .small, .imginfo, div.top-right,
 .close, .planclose, .buyclose {
   float: right; }
 
 a, .text_info, h3, h2, #logo, .small, div#info, .head, #second {
-  font-family: Arial; }
+  font-family: Arial, serif; }
 
 .user-information > label, .account_type > select,
 .account_type > h1, #user-img, .plan, .planA,
@@ -959,6 +958,20 @@ label#personal, label#agency, label#unlimited {
   display: inline;
   word-break: break-word;
   font-size: 20px; }
+
+#user_license {
+  width: 45%;
+  font-size: 19px; }
+
+.user-information > label {
+  font-size: medium;
+  float: left; }
+
+.user-information > input {
+  font-size: medium;
+  margin-bottom: 6px;
+  border-radius: 6px;
+  float: left; }
 
 #create_new {
   width: 47%;

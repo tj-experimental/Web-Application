@@ -19,6 +19,23 @@ label#personal, label#agency, label#unlimited
     font-size: 20px;
 }
 
+#user_license{
+  width: 45%;
+  font-size: 19px;
+}
+
+.user-information > label{
+  font-size: medium;
+  float: left;
+}
+
+.user-information > input{
+  font-size: medium;
+  margin-bottom: 6px;
+  border-radius: 6px;
+  float: left;
+}
+
 #create_new{
   width: 47%;
   font-size: 15px;

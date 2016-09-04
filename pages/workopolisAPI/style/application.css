@@ -4,8 +4,7 @@
 body {
   margin: 0 auto;
   max-width: 100vw;
-  border-radius: 6px 6px 0 0;
-  border: 2px solid #3c7eeb; }
+  border-radius: 6px 6px 0 0; }
 
 h1 {
   font-size: 2em;
@@ -130,10 +129,10 @@ ul {
   text-align: justify; }
 
 #loading {
-  margin: 23% 30%;
-  width: 40%;
-  height: 39%;
-  top: 0;
+  width: 20%;
+  height: 15%;
+  top: 40%;
+  left: 40%;
   position: absolute;
   background: transparent;
   z-index: -1; }

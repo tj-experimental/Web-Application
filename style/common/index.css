@@ -1,11 +1,10 @@
 /*Common Styles*/
-#logo, .small, .user-information > label + input,
-.btn-floating2, .small, .imginfo, div.top-right,
+#logo, .small, .btn-floating2, .small, .imginfo, div.top-right,
 .close, .planclose, .buyclose {
   float: right; }
 
 a, .text_info, h3, h2, #logo, .small, div#info, .head, #second {
-  font-family: Arial; }
+  font-family: Arial, serif; }
 
 .user-information > label, .account_type > select,
 .account_type > h1, #user-img, .plan, .planA,

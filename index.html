@@ -143,22 +143,16 @@
 	  <div class="buycontent">
 		    <span class="buyclose"><img src="images/close.png"></span>
 		    <form action="./purchase/buy.html" method="POST">
-                    <h1> Select a License: </h1>
-					<lable for="personal"><input type="radio" name="user_license" id="personal" value="personal">Personal</lable>
-					<lable for="agency"><input type="radio" name="user_license" id="agency" value="agency">Agency</lable>
-					<lable for="unlimited"><input type="radio" name="user_license" id="unlimited" value="unlimited">Unlimited</lable>
+                <h1><label for="user_license">Select a License: </label></h1>
+                    <select id="user_license">
+                        <option id="personal" value="personal">Personal</option>
+                        <option id="agency" value="agnecy">Agency</option>
+                        <option id="unlimited" value="personal">Unlimited</option>
+                    </select>
 					<hr width="100%" style="border:1px dashed grey">
 				<fieldset class= "user-information">
-					<label for="user_name">Name:</label><input type="text" id="user_name" name="name" placeholder="Enter UserName">
-					<label for="user_email">Email:</label><input type="email" id="user_email" name="email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="Enter Email (abc@xyz.com)">
-					<label for="password">Password:</label><input type="password" id="password" name="password" pattern=".{6,}" placeholder="Enter Password minimum 6">
-					<label for="confirm_password">Confirm Password:</label><input type="password" id="confirm_password"
-					 name="password" placeholder="Confirm Password" autocomplete="off">
-					<label for="address">Address:</label><input type="text"  id="address" name="address"  placeholder="Address1">
-					<label for="address2">Address2:</label><input type="text"  id="address2" name="address2" placeholder="Address2 Optional">
-					<label for="city">City:</label><input type="text"  id="city" name="city" placeholder="City">
-					<label for="country">Country:</label><input type="text" id="country" name="country" placeholder="Country">
-					<label for="zipcode">ZipCode:</label><input type="text" id="zipcode" name="zipcode" placeholder="Zip-Code">
+					<label for="user_name">Name:</label><input type="text" id="user_name" name="name" placeholder="Full Name">
+					<label for="user_email">Email:</label><input type="email" id="user_email" name="email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="abc@xyz.com">
 				</fieldset>
 				<fieldset class="checkout">
 				    <input type="submit" name="submit" value="" placeholder="">
