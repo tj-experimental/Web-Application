@@ -37,7 +37,7 @@ var $form = $('<form></form>').attr({
 var formData = '<fieldset class="account-info">';
 formData += '<label for="username"class= "name">Username:</label><input type="text" id="username" name="username"><br>';
 formData += '<label for="password" class= "pwd">Password:</label><input type="password" name="password" id="password"><br>';
-formData +='<label for="mail" class= "mail">Email:</label><input type="email"  name="email" id ="email"><br></fieldset>';
+formData +='<label for="mail" class= "mail">Email:</label><input type="email" name="email" id ="email"><br></fieldset>';
 formData += '<fieldset class="account-action"><input class="btn" type="submit" name="submit" value="Login">';
 formData +='<a href="pages/signUp/index.html" class="btn" id="create_new">Create New Account</a>';
 formData +='<label for="signin"><input type="checkbox" name="remember" id="signin"> Stay signed in </label></fieldset>';
@@ -54,8 +54,14 @@ $overlay.append($content);
 $(".join button").click(function(){
     //append the overlay to the body
     $overlay.appendTo("body");
-    //show the ovelay and the the content
-    $overlay.show();
+    var $userEmail =  $('.useremail');
+    if($userEmail.val() == ""){
+        $userEmail.css("border", "1px solid red");
+    }else{
+        $('#email').val($userEmail.val());
+        //show the ovelay and the the content
+        $overlay.show();
+    }
 });
 
 $overlay.click(function(event){
