@@ -8,10 +8,11 @@ ul{
 }
 
 .c__image{
-  height: 130px;
-  width: 150px;
+  height: 77px;
+  width: 110px;
   float: left;
   margin-right: 2%;
+  margin-bottom: 3%;
   display: block;
 }
 
@@ -21,9 +22,12 @@ ul{
 }
 
 .job__info > p , .job__info > a {
-  text-align: justify;
+  text-align: inherit;
 }
 
+.job__info > p{
+
+}
 
 #loading{
   width: 20%;

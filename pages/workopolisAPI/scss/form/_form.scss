@@ -28,7 +28,6 @@ label
   border: 2px solid $lightBlue;
 }
 
-
 .form__submit{
   @extend %d-block;
   color: white;
@@ -78,3 +77,21 @@ label
   background-color: #6d7f80;
   cursor: not-allowed;
 }
+
+
+@media only screen and (max-width: 540px)  {
+  .form__submit{
+    outline: none;
+  }
+  .job__info > p , .job__info > a {
+   display: inline-block;
+  }
+}
+
+@media screen and (min-width: 540px){
+  .job__info > p , .job__info > a {
+    display: block;
+  }
+}
+
+

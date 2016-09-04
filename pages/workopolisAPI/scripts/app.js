@@ -92,17 +92,18 @@ $(function(){
                 method: 'GET',
                 data : $form.serialize(),
                 success:function (data) {
+                    console.log(data);
                     $(data).find("jobs").find("job").each(function(){
                         image = $(this).find("companyImageUrl").text();
-                        jobUrl =  $(this).find("companyImageUrl").text();
+                        jobUrl =  $(this).find("jobViewUrl").text();
                         title =  $(this).find("title").text();
                         company = $(this).find("company").text();
-                        location = $(this).find("locations").find("a").text();
+                        location = $(this).find("locations").children()[0].innerHTML;
                         postDate =  $(this).find("postDate").text();
 
                         job  += '<div class = "job__info">' +
                             '<img src=' + image + '  alt = "Company image" class="c__image">' +
-                            '<a href=' + "https://www.workopolis.com" + jobUrl + ' target="_blank">' + title + '</a>' +
+                            '<a href=' + 'https://www.workopolis.com' + jobUrl + ' target="_blank">' + title + '</a>' +
                             '<p class="c__info"> Company:  ' + company + '</p>' +
                             '<p class="job__loc">Location:  ' + location + '<p>' +
                             '<p class="post__date" id="date">Posted:  ' + postDate + '</p>' +
