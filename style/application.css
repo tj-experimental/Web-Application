@@ -184,13 +184,14 @@ div#info {
 @media only screen and (max-width: 360px) {
   .plancontent, .buycontent {
     width: 80%;
-    height: 80%; } }
+    height: 55%; } }
 @media only screen and (max-width: 320px) {
   .plancontent, .buycontent {
     width: 80%; } }
 @media only screen and (min-width: 360px) and (max-width: 545px) {
   .plancontent, .buycontent {
-    width: 80%; } }
+    width: 80%;
+    height: 55%; } }
 @media only screen and (min-width: 545px) and (max-width: 768px) {
   .plancontent, .buycontent {
     width: 80%; } }
@@ -240,7 +241,6 @@ div#info {
 
 .buycontent {
   width: 70%;
-  height: 55%;
   margin-top: 3%;
   border: 2px solid #ffa949; }
 

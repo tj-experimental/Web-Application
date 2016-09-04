@@ -35,9 +35,9 @@
 }
 
 .plancontent, .buycontent{
-  @include modalContent($width: 80%, $device: $brk-smartphone-landscape, $height: 80%);
+  @include modalContent($width: 80%, $device: $brk-smartphone-landscape, $height: 55%);
   @include modalContent($width: 80%, $device: $brk-smartphone-portrait);
-  @include modalContent($width: 80%, $device: $brk-small-screen-width);
+  @include modalContent($width: 80%, $device: $brk-small-screen-width, $height: 55%);
   @include modalContent($width: 80%, $device: $brk-medium-screen-width);
   @include modalContent($width: 80%, $device: $brk-tablets);
   @include modalContent($width: 80%, $device: $brk-desktops-laptops);
@@ -78,7 +78,6 @@
 
 .buycontent{
   width: 70%;
-  height: 55%;
   margin-top: 3%;
   border: 2px solid #ffa949;
 }
