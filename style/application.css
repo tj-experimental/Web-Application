@@ -146,7 +146,7 @@ div#info {
   border: 2px solid #a6a6a6;
   border-radius: 7px;
   margin-top: 7%;
-  max-width: 80%; }
+  max-width: 89%; }
 
 @media only screen and (max-width: 360px) {
   .modal-content {
@@ -238,7 +238,7 @@ div#info {
   font-weight: bold; }
 
 .buycontent {
-  width: 80%;
+  width: 85%;
   height: 80%;
   margin-top: 3%;
   border: 2px solid #ffa949; }
