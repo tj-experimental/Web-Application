@@ -22,11 +22,12 @@ ul{
 }
 
 .job__info > p , .job__info > a {
-  text-align: inherit;
+  text-align: left;
+  clear: left;
 }
 
-.job__info > p{
-
+.job__info > a{
+   margin-right: 5% ;
 }
 
 #loading{

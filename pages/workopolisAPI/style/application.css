@@ -113,7 +113,7 @@ label {
     outline: none; }
 
   .job__info > p, .job__info > a {
-    display: inline-block; } }
+    display: flex; } }
 @media screen and (min-width: 540px) {
   .job__info > p, .job__info > a {
     display: block; } }
@@ -136,7 +136,11 @@ ul {
   margin-left: 1%; }
 
 .job__info > p, .job__info > a {
-  text-align: inherit; }
+  text-align: left;
+  clear: left; }
+
+.job__info > a {
+  margin-right: 5%; }
 
 #loading {
   width: 20%;
