@@ -35,7 +35,7 @@
 }
 
 .plancontent, .buycontent{
-  @include modalContent($width: 80%, $device: $brk-smartphone-landscape);
+  @include modalContent($width: 80%, $device: $brk-smartphone-landscape, $height: 80%);
   @include modalContent($width: 80%, $device: $brk-smartphone-portrait);
   @include modalContent($width: 80%, $device: $brk-small-screen-width);
   @include modalContent($width: 80%, $device: $brk-medium-screen-width);

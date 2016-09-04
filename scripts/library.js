@@ -58,6 +58,7 @@ $(".join button").click(function(){
     if($userEmail.val() == ""){
         $userEmail.css("border", "1px solid red");
     }else{
+        $userEmail.css("border", "none");
         $('#email').val($userEmail.val());
         //show the ovelay and the the content
         $overlay.show();
