@@ -3,7 +3,7 @@
 <head>
 	<title>Web App</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=0.90" >
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=0.90, maximum-scale=1, user-scalable=0" >
 	<link rel="icon" type="images/jpg" href="images/favicon.jpg">
 	<link rel="stylesheet" type="text/css" href="scripts/line_chart/LineChart.min.css">
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
@@ -57,17 +57,13 @@
 		<div ng-repeat="users in user" class="user__profiles">
 			 <div class= "slide">
 				 	<img ng-src='{{users.image}}' id="user-img" alt="Users image">
-					<h1 ng-bind="users.message1 + users.message2" id="user"></h1>
+					<h1 style="font-size: 180%" ng-bind="users.message1 + users.message2" id="user"></h1>
 				  <div id= "info">
 						<span ng-bind="users.name" id="name"></span><br>
 						<span ng-bind="(users.job)+(users.team)" id="job"></span>
 					</div>
 			</div>
 		</div>
-		<!--<div id="pointers">-->
-			<!--<a class="btn-floating1" onclick="plusDivs(-1)">❮</a>-->
-			<!--<a class="btn-floating2" onclick="plusDivs(1)">❯</a>-->
-		<!--</div>-->
 	</div>
 	<br>
 	<br>

@@ -492,10 +492,7 @@ div.join, div.choose-license, .price, .line {
     display: inline; }
 
   div#info {
-    font-size: 14px; }
-
-  #user {
-    font-size: 1.2em; } }
+    font-size: 14px; } }
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 320px) {
   /* Styles */
@@ -506,9 +503,6 @@ div.join, div.choose-license, .price, .line {
   .chat {
     height: 45px;
     width: 22%; }
-
-  #user {
-    font-size: 1.2em; }
 
   #container {
     display: block; }
@@ -536,9 +530,6 @@ div.join, div.choose-license, .price, .line {
     height: 50px;
     width: 20%; }
 
-  #user {
-    font-size: 1.4em; }
-
   .planA, .plan {
     font-size: 200%; } }
 /* iPads (landscape) ----------- */
@@ -546,9 +537,6 @@ div.join, div.choose-license, .price, .line {
   /* Styles */
   #container {
     display: inline-flex; }
-
-  #user {
-    font-size: 1.8em; }
 
   div#info {
     font-size: 16px; }
@@ -563,9 +551,6 @@ div.join, div.choose-license, .price, .line {
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   /* Styles */
-  #user {
-    font-size: 1.4em; }
-
   #container {
     display: inline-flex;
     margin-left: -40px; }
@@ -601,9 +586,6 @@ div.join, div.choose-license, .price, .line {
     height: 50px;
     width: 15%; }
 
-  #user {
-    font-size: 1.6em; }
-
   .users {
     height: 460px; }
 
@@ -611,9 +593,6 @@ div.join, div.choose-license, .price, .line {
     font-size: 200%; } }
 /* Tablets ----------- */
 @media only screen and (max-width: 970px) and (min-width: 768px) {
-  #user {
-    font-size: 1.4em; }
-
   #container {
     display: inline-flex;
     margin-left: -40px; }
@@ -655,9 +634,6 @@ div.join, div.choose-license, .price, .line {
     height: 50px;
     width: 10%; }
 
-  #user {
-    font-size: 1.9em; }
-
   .users {
     height: 420px; }
 
@@ -671,9 +647,6 @@ div.join, div.choose-license, .price, .line {
 
   div#info {
     font-size: 18px; }
-
-  #user {
-    font-size: 1.9em; }
 
   .useremail {
     height: 60px;
@@ -690,9 +663,6 @@ div.join, div.choose-license, .price, .line {
   /* Styles */
   #container {
     display: inline-flex; }
-
-  #user {
-    font-size: 1.3em; }
 
   .users {
     height: 400px; }
@@ -879,15 +849,15 @@ hr.scroll {
     background: #A6A6A6 url("../images/arrow.jpg") no-repeat scroll center; }
 
 #error_page > img {
-  height: 100vh;
+  height: 99vh;
   width: 100vw; }
 
 #error_page > a {
   border-radius: 8px;
   border: 2px outset #fff;
   margin: 0;
-  padding: 2%;
-  right: 38%;
+  padding: 1%;
+  right: 46%;
   background-color: #e6e6e6;
   color: #395870;
   position: fixed;

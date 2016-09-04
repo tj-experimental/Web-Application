@@ -91,7 +91,7 @@ angular.element(document).ready(function(){
 			pauseOnDotsHover: true,
 			touchMove: true,
 			swipe: true,
-			arrows: true,
+			arrows: false,
 			dots: true,
 			mobileFirst: true,
 			swipeToSlide: true
