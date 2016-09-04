@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bda15ab5-6784-4017-84ee-549af04e957a" name="Default" comment=" modified the job search page">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/workopolisAPI/.sass-cache/07a823f33d4bb702560e94e370c1c70ae9aa5286/_form.scssc" afterPath="$PROJECT_DIR$/pages/workopolisAPI/.sass-cache/07a823f33d4bb702560e94e370c1c70ae9aa5286/_form.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/workopolisAPI/.sass-cache/5fab0577622541686e0fd887034eee8803328091/_layout.scssc" afterPath="$PROJECT_DIR$/pages/workopolisAPI/.sass-cache/5fab0577622541686e0fd887034eee8803328091/_layout.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/workopolisAPI/.sass-cache/a2dc54ed3db677808e9a904f36dd467fafc99d70/_base.scssc" afterPath="$PROJECT_DIR$/pages/workopolisAPI/.sass-cache/a2dc54ed3db677808e9a904f36dd467fafc99d70/_base.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/workopolisAPI/.sass-cache/a2dc54ed3db677808e9a904f36dd467fafc99d70/_variables.scssc" afterPath="$PROJECT_DIR$/pages/workopolisAPI/.sass-cache/a2dc54ed3db677808e9a904f36dd467fafc99d70/_variables.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/workopolisAPI/scripts/app.js" afterPath="$PROJECT_DIR$/pages/workopolisAPI/scripts/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/workopolisAPI/scss/base/_base.scss" afterPath="$PROJECT_DIR$/pages/workopolisAPI/scss/base/_base.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/workopolisAPI/scss/base/_variables.scss" afterPath="$PROJECT_DIR$/pages/workopolisAPI/scss/base/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/workopolisAPI/scss/form/_form.scss" afterPath="$PROJECT_DIR$/pages/workopolisAPI/scss/form/_form.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/workopolisAPI/scss/layout/_layout.scss" afterPath="$PROJECT_DIR$/pages/workopolisAPI/scss/layout/_layout.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/workopolisAPI/style/application.css" afterPath="$PROJECT_DIR$/pages/workopolisAPI/style/application.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/workopolisAPI/style/application.css.map" afterPath="$PROJECT_DIR$/pages/workopolisAPI/style/application.css.map" />
@@ -52,8 +45,8 @@
       <file leaf-file-name="_layout.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/workopolisAPI/scss/layout/_layout.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state relative-caret-position="431">
+              <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -62,11 +55,21 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/workopolisAPI/scripts/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="109" column="23" selection-start-line="109" selection-start-column="23" selection-end-line="109" selection-end-column="23" />
+            <state relative-caret-position="389">
+              <caret line="53" column="27" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
               <folding>
-                <marker date="1472974820063" expanded="true" signature="4102:4118" ph="..." />
+                <marker date="1472977591007" expanded="true" signature="4081:4097" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_index.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/workopolisAPI/scss/layout/_index.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -107,20 +110,6 @@
             <state relative-caret-position="17">
               <caret line="159" column="0" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/workopolisAPI/search.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#754#758#0" expanded="true" />
-                <element signature="e#1648#1652#0" expanded="true" />
-                <element signature="e#2005#2009#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -696,12 +685,12 @@
       <workItem from="1472763705572" duration="18843000" />
       <workItem from="1472815728110" duration="291000" />
       <workItem from="1472816650287" duration="3485000" />
-      <workItem from="1472951235104" duration="22596000" />
+      <workItem from="1472951235104" duration="25551000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77865000" />
+    <option name="totallyTimeSpent" value="80820000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -942,14 +931,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/workopolisAPI/scss/layout/_index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scss/layout/_index.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1106,14 +1087,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/workopolisAPI/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/workopolisAPI/style/application.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1146,20 +1119,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pages/workopolisAPI/scss/layout/_index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pages/workopolisAPI/scss/layout/_layout.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state relative-caret-position="431">
+          <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/workopolisAPI/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/workopolisAPI/scripts/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="109" column="23" selection-start-line="109" selection-start-column="23" selection-end-line="109" selection-end-column="23" />
+        <state relative-caret-position="389">
+          <caret line="53" column="27" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
           <folding>
-            <marker date="1472974820063" expanded="true" signature="4102:4118" ph="..." />
+            <marker date="1472977591007" expanded="true" signature="4081:4097" ph="..." />
           </folding>
         </state>
       </provider>

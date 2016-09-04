@@ -27,13 +27,12 @@ searchModule = function (parameters) {
         var $div;
         var $button;
         $form = $('<form>').attr({
-            name: "searchForm",
             method: "get",
-            id: "search-form",
             action: "https://www.workopolis.com/jobsearch/api/jobs/search",
             class: "form search--form",
-            encoding: "text/plain"
-        }).prop({"accept-charset":"utf-8" }).attr("enctype","text/plain");
+            enctype: 'text/plain',
+            encoding: 'text/plain'
+        });
         $label = $('<label>').attr({for:"search_box"}).prop("innerText","Keyword");
         $searchBox = $('<input>').attr({
             type: "text",
@@ -52,6 +51,7 @@ searchModule = function (parameters) {
         $submit = $('<input>').attr({
             type: "submit",
             class: "form__submit",
+            name: "submit",
             value: "Search"
         }).prop({disabled: true});
         $form.append($label, $searchBox, $button, $submit);
@@ -76,11 +76,12 @@ $(function(){
         $(".search__result").html('');
         $('#search-val').hide();
     });
-    $("#search-form").on("submit", function(event){
+    $('form').on("submit", function(event){
+        var $form, $searchBox, queryString;
+        var company, image, location, postDate, title, jobUrl, job = "";
+        queryString = $(this).serialize();
         event.preventDefault();
         $('#loading').show();
-        var $form, $searchBox;
-        var company, image, location, postDate, title, jobUrl, job = "";
         $form = $(this);
         $searchBox = $('.form__input');
         $searchBox.prop("disabled", true);
@@ -90,7 +91,7 @@ $(function(){
         $.ajax({
                 url: $form.attr("action"),
                 method: 'GET',
-                data : $form.serialize(),
+                data : queryString,
                 success:function (data) {
                     $(data).find("jobs").find("job").each(function(){
                         image = $(this).find("companyImageUrl").text();
