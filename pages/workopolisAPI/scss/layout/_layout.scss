@@ -23,11 +23,15 @@ ul{
 
 .job__info > p , .job__info > a {
   text-align: left;
-  clear: left;
 }
 
 .job__info > a{
    margin-right: 5% ;
+}
+
+.job__info > p{
+  font-size: 1em;
+  font-family: cursive;
 }
 
 #loading{

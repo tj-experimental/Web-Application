@@ -85,12 +85,14 @@ label
   }
   .job__info > p , .job__info > a {
    display: flex;
+    clear: left;
   }
 }
 
 @media screen and (min-width: 540px){
   .job__info > p , .job__info > a {
     display: block;
+    clear: right;
   }
 }
 

@@ -11,7 +11,7 @@ h1 {
   line-height: 41px;
   font-weight: 700;
   color: #fff;
-  font-family: caption, sans-serif;
+  font-family: caption, Arial, sans-serif;
   background-color: #3c7eeb;
   margin-top: 0;
   padding: 1%;
@@ -113,10 +113,12 @@ label {
     outline: none; }
 
   .job__info > p, .job__info > a {
-    display: flex; } }
+    display: flex;
+    clear: left; } }
 @media screen and (min-width: 540px) {
   .job__info > p, .job__info > a {
-    display: block; } }
+    display: block;
+    clear: right; } }
 ul {
   list-style: none none;
   font-size: 1.6em; }
@@ -136,11 +138,14 @@ ul {
   margin-left: 1%; }
 
 .job__info > p, .job__info > a {
-  text-align: left;
-  clear: left; }
+  text-align: left; }
 
 .job__info > a {
   margin-right: 5%; }
+
+.job__info > p {
+  font-size: 1em;
+  font-family: cursive; }
 
 #loading {
   width: 20%;

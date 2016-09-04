@@ -6,12 +6,11 @@ body{
   margin:0 auto;
   max-width: 100vw;
   border-radius: 6px 6px 0 0;
-  //border:2px solid $lightBlue;
 }
 
 h{
   &1 {
-    @include text($l-height:41px, $color:$white,$size: 2em, $weight: 700, $f-family:(caption, $stack-sans-serif));
+    @include text($l-height:41px, $color:$white,$size: 2em, $weight: 700, $f-family:(caption, $stack-arial-font, $stack-sans-serif));
     @include backgroundColor($lightBlue);
     margin-top: 0;
     padding: 1%;
