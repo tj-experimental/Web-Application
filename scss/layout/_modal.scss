@@ -18,15 +18,15 @@
   padding: 1%;
   border: 2px solid #a6a6a6;
   border-radius: 7px;
-  margin-top: 7%;
+  margin-top: 4%;
   @extend %box-sizing;
   max-width: 89%;
 }
 
 .modal-content{
-  @include modalContent($width: 80%,$margin-left: 6%, $device: $brk-smartphone-landscape);
-  @include modalContent($width: 80%,$margin-left: 6%, $device: $brk-smartphone-portrait);
-  @include modalContent($width: 80%,$margin-left: 6%, $device: $brk-small-screen-width);
+  @include modalContent($width: 85%,$margin-left: 6%, $device: $brk-smartphone-landscape);
+  @include modalContent($width: 85%,$margin-left: 6%, $device: $brk-smartphone-portrait);
+  @include modalContent($width: 85%,$margin-left: 6%, $device: $brk-small-screen-width);
   @include modalContent($width: 50%,$margin-left: 23%, $device: $brk-medium-screen-width);
   @include modalContent($width: 50%,$margin-left: 23%, $device: $brk-tablets);
   @include modalContent($width: 40%,$margin-left: 25%, $device: $brk-desktops-laptops);

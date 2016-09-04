@@ -145,20 +145,20 @@ div#info {
   padding: 1%;
   border: 2px solid #a6a6a6;
   border-radius: 7px;
-  margin-top: 7%;
+  margin-top: 4%;
   max-width: 89%; }
 
 @media only screen and (max-width: 360px) {
   .modal-content {
-    width: 80%;
+    width: 85%;
     margin-left: 6%; } }
 @media only screen and (max-width: 320px) {
   .modal-content {
-    width: 80%;
+    width: 85%;
     margin-left: 6%; } }
 @media only screen and (min-width: 360px) and (max-width: 545px) {
   .modal-content {
-    width: 80%;
+    width: 85%;
     margin-left: 6%; } }
 @media only screen and (min-width: 545px) and (max-width: 768px) {
   .modal-content {
