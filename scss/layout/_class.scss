@@ -155,8 +155,8 @@ input[type="submit"] {
 
 label#personal, label#agency, label#unlimited
 {
-	display: inline;
-	@extend %break-word;
+  display: inline;
+  @extend %break-word;
   word-break: break-word;
   font-size: 20px;
 }

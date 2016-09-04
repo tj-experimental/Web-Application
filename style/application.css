@@ -742,6 +742,10 @@ and (max-device-width : 1024px) {
 .btn-floating2 {
   right: 0; }
 
+.account-action label[for="signin"] {
+  float: right;
+  clear: right; }
+
 #pointers {
   width: 93%; }
 
@@ -790,7 +794,7 @@ and (max-device-width : 1024px) {
 
 .slick-dots {
   position: relative;
-  width: 80%;
+  width: 90%;
   bottom: 10px; }
 
 .slick-prev, .slick-next {
@@ -945,11 +949,11 @@ label#personal, label#agency, label#unlimited {
   float: left; }
 
 #create_new {
-  width: 47%;
-  font-size: 15px;
+  width: 40%;
+  font-size: 12px;
   float: right;
-  border-radius: 6px;
-  height: 10%;
-  padding: 1%; }
+  border-radius: 3px;
+  padding: 1%;
+  margin-right: 0; }
 
 /*# sourceMappingURL=application.css.map */

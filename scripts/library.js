@@ -216,7 +216,7 @@ $("a").on('click', function(event) {
 $(function(){
     var isIE = function () {
         var userAgent = navigator.userAgent;
-        return userAgent.indexOf("MSIE") > -1 || userAgent.indexOf("Trident/") > -1 || userAgent.indexOf("Edge/") > -1;
+        return userAgent.indexOf("MSIE") > -1 || userAgent.indexOf("Trident/") > -1 ;//|| userAgent.indexOf("Edge/") > -1;
     };
     $( ".box" ).mouseover(function() {
         if(isIE()){
