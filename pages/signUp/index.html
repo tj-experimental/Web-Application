@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Create Account</title>
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" >
+  <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="../../scripts/jquery-3.0.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+
+    $('form').submit(function(evt) {
+      evt.preventDefault();
+      var url = $(this).attr("action");
+      var formData = $(this).serialize();
+      $.ajax(url, {
+         data: formData,
+         type: "POST",
+         success: function(response){
+             $('#signup').html("<p>Thanks for signing up!</p><br><a href='../../index.html'>Home</a>");
+         }
+      });
+    });
+  });
+  </script>
+</head>
+<body>
+  <div class="grid-container centered">
+    <div class="grid-100">
+      <div class="contained">
+        <div class="grid-100">
+          <div class="heading">
+            <h1>Create New Account</h1>
+            <div id="signup">
+              <form method="post" action="">
+                  <label for="userName">Name:</label>
+                  <input type="text" name="userName" id="userName" placeholder="Enter Username"><br>
+                  <label for="email">Email address:</label>
+                  <input type="email" name="email" id="email" placeholder="abc@xyz.com" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"><br>
+        					<label for="password">Password:</label>
+                  <input type="password" id="password" name="password" pattern=".{6,}" placeholder="Enter Password minimum 6"><br>
+        					<label for="confirm_password">Confirm Password:</label>
+                  <input type="password" id="confirm_password" name="password" placeholder="Confirm Password" autocomplete="off"><br>
+        					<label for="address">Address:</label>
+                  <input type="text"  id="address" name="address"  placeholder="Address1"><br>
+        					<label for="address2">Address2:</label>
+                  <input type="text"  id="address2" name="address2" placeholder="Address2 Optional"><br>
+        					<label for="city">City:</label>
+                  <input type="text"  id="city" name="city" placeholder="City"><br>
+        					<label for="country">Province:</label>
+                  <input type="text" id="country" name="country" placeholder="Province"><br>
+        					<label for="zipcode">ZipCode:</label>
+                  <input type="text" id="zipcode" name="zipcode" placeholder="Zip-Code"><br>
+                  <label for="submit"></label>
+                <input type="submit" value="Signup!" id="submit">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

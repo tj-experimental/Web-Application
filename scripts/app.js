@@ -1,77 +1,102 @@
-angular.element(document).ready(function(){
-	angular.bootstrap(document.getElementById("users"),['WebApp']);
+var userModule = angular.module("WebApp", []);
+userModule.controller("userCtrl",function($scope, $http){
+		  $http.get('chart/user.json')
+            .success(function (userData) {
+                $scope.user = userData;
+            }).error(function (userData, status, error, config) {
+              alert (userData, status, erroe, config);
+            });
+	      //$scope.
 });
 
+userModule.controller("emailCtrl",function($scope, $http){
+		$scope.emailadd= {
+			"email": ""
+		};
+});
 
-var graphModule = angular.module("GraphApp",['n3-line-chart'])
+//
+// var theApp = angular.module('theApp', []);
+//
+// theApp.factory('mainTagFactory', function() {
+//
+// 	var mainTags = [
+//
+// 		{ mainTag: 'Tag 1'},
+// 		{ mainTag: 'Tag 2'},
+// 		{ mainTag: 'Tag 3'}
+//
+// 	];
+//
+// 	var factory = {};
+//
+// 	factory.getMainTags = function() {
+//
+// 		return mainTags;
+//
+// 	};
+//
+// 	return factory;
+//
+// });
+//
+// theApp.controller('mainTagController', function ($scope, mainTagFactory) {
+//
+// 	init();
+//
+// 	function init() {
+//
+// 		$scope.mainTags = mainTagFactory.getMainTags();
+//
+// 	}
+//
+// });
 
 
-graphModule.controller("chartCtrl",function($scope, $http){
-		$http.get('chart/chart.json')
-		.success(function(data){
-			$scope.content = data[0].numbers;
-			console.log($scope.content[0]);
-			// $scope.data = {
-			// months: [
-		 //               {x:1},
-		 //               {x:2}
-			// 		]
-			// 	};
+var graphModule = angular.module("GraphApp",['n3-line-chart']);
 
-			// $scope.options = {
-			// 	series: [
-			// 	{
-			// 		axis: "y",
-			// 		dataset: "months",
-			// 		key: "",
-			// 		label: "Months of the Year",
-			// 		color: "#000000",
-			// 		type: ['line', 'dot', 'area'],
-			// 		id: '11'
-			// 	}],
-			// 	axes: {x:{key:'months'}}
 
-			// };
+graphModule.factory("Graph", function($scope, $http){
+	$http.get('chart/chart.json')
+		.success(function(userData){
+			var factory = {};
+
+			factory.getChart= function() {
+
+				return userData[0];
+
+			};
+
+			return factory;
 		})
-		.error(function(data, status, error, config){
-			 $scope.data = '<p>Error Getting JSON data object: </p>' + status + error + config;
-
+		.error(function(userData, status, error, config){
+			$scope.content = '<p>Error Getting JSON data object: </p>' + status + error + config;
 		});
 
 });
-
-
-var userModule = angular.module("WebApp", [])
-userModule.controller("userCtrl",function($scope){
-		$scope.user = [
-		{
-			"image":"images/irina.jpg",
-			"name": "Irina Bykova",
-			"job": "Photographer",
-			"team": "works with Slack team",
-			"message1": "Just Started Using awesome Module. Great way to boost the hard designing or prototyping process.",
-			"message2": " Also a perfect tool for creative studios and freelancers"
-		},
-		{
-			"image":"images/jane.jpg",
-			"name": "Jane Peter",
-			"job": "UI Developer",
-			"team": "works with Genpak team",
-			"message1": "It works great I can make new protoypes faster and with high detial orientation.",
-			"message2": " What a relive from a user standpoint."
-		},
-		{
-			"image":"images/john.jpg",
-			"name": "John Mark",
-			"job": "Tech Writer",
-			"team": "works with Flexnet Team",
-			"message1": "Great way to boost output and makes design changes easy.Will definately recommend",
-			"message2": "this product to freelancers,It's a 5 star rating for me."
-		},]
-})
-
-userModule.controller("emailCtrl",function($scope){
-		$scope.emailadd= {
-			"email": ""
-		}
+graphModule.controller("graphCtrl", function(Graph){
+	  console.log(Graph.getChart());
 });
+
+
+
+angular.element(document).ready(function(){
+	setTimeout(function () {
+		$('.users').slick({
+			infinite: true,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 4000,
+			pauseOnDotsHover: true,
+			touchMove: true,
+			swipe: true,
+			arrows: true,
+			dots: true,
+			mobileFirst: true,
+			swipeToSlide: true
+		});
+	},500);
+	//angular.bootstrap(document.getElementById("chart"),['GraphApp']);
+});
+

@@ -9,35 +9,35 @@
 .imginfo{
 	clear:left;
 	@media only screen and #{$brk-smartphone-landscape}{
-	   margin: 0px -4px 3px -37px;
+	   margin: 0 0 3px -37px;
 	}
 	@media only screen and #{$brk-smartphone-portrait}{
-		margin: 0px -4px 3px -37px;
+		margin: 0 0 3px -37px;
 	}
     @media only screen and #{$brk-small-screen-width}{
-	    margin: 0px -4px 3px -37px;
+	    margin: 0 0 3px -37px;
 	}
 	@media only screen and #{$brk-ipads-landscape} 
 	{
-	   margin:0px -4px 3px -37px;
+	   margin:0 0 3px -37px;
 	}
 	@media only screen and #{$brk-ipdas-portrait}{
-       margin: 0px -4px 3px -37px;
+       margin: 0 0 3px -37px;
 	}
 	@media only screen and #{$brk-medium-screen-width}{
-	   margin: 0px -4px 3px -37px;
+	   margin: 0 0 3px -37px;
 	}
 	@media only screen and #{$brk-tablets}{
-      margin: 0px -4px 3px -37px;
+      margin: 0 0 3px -37px;
 	}
 	@media only screen and #{$brk-desktops-laptops}{
-	  margin: 0px -4px 3px -37px;
+	  margin: 0 0 3px -37px;
 	}
 	@media only screen and #{$brk-large-screen-width}{
-      margin:0px -4px 3px -37px;
+      margin:0 0 3px -37px;
 	}
 	@media only screen and #{$brk-iphone4}{
-      margin:0px -4px 3px -37px;
+      margin:0 0 3px -37px;
 	}
 }
 

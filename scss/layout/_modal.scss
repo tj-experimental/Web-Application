@@ -8,39 +8,6 @@
     margin-top: 7%;
     @extend %box-sizing;
     max-width: 80%;
-
-    @media only screen and #{$brk-smartphone-landscape}{
-      width: 70%;
-      margin-left: 13%;
-    }
-    @media only screen and #{$brk-smartphone-portrait}{
-      width: 70%;
-      margin-left: 13%;
-    }
-    @media only screen and #{$brk-small-screen-width}{
-      width: 80%;
-      margin-left: 13%;
-    }
-    @media only screen and #{$brk-medium-screen-width}{
-      width: 80%;
-      margin-left: 25%;
-    }
-    @media only screen and #{$brk-tablets}{
-      width: 85%;
-      margin-left: 25%;
-    }
-    @media only screen and #{$brk-desktops-laptops}{
-      width: 85%;
-      margin-left: 25%;
-    }
-    @media only screen and #{$brk-large-screen-width}{
-      width: 85%;
-      margin-left: 30%;
-    }
-    @media only screen and #{$brk-iphone4}{
-      width: 80%;
-      margin-left: 13%;
-    }
 }
 
 
@@ -57,9 +24,9 @@
 }
 
 .modal-content{
-  @include modalContent($width: 80%,$margin-left: 13%, $device: $brk-smartphone-landscape);
-  @include modalContent($width: 80%,$margin-left: 13%, $device: $brk-smartphone-portrait);
-  @include modalContent($width: 60%,$margin-left: 13%, $device: $brk-small-screen-width);
+  @include modalContent($width: 80%,$margin-left: 6%, $device: $brk-smartphone-landscape);
+  @include modalContent($width: 80%,$margin-left: 6%, $device: $brk-smartphone-portrait);
+  @include modalContent($width: 80%,$margin-left: 6%, $device: $brk-small-screen-width);
   @include modalContent($width: 50%,$margin-left: 23%, $device: $brk-medium-screen-width);
   @include modalContent($width: 50%,$margin-left: 23%, $device: $brk-tablets);
   @include modalContent($width: 40%,$margin-left: 25%, $device: $brk-desktops-laptops);
@@ -89,13 +56,13 @@
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: none; /* Enable scroll if needed */
-  background-color: $black; /* Fallback color */
+ // background-color: $black; /* Fallback color */
   background-color: rgba($black, 0.4); /* Black w/ opacity */
 }
 
 .buycontent
 {
-  margin-left: 16%;
+  margin-left: 9%;
 }
 .plancontent
 {
@@ -110,7 +77,7 @@
 }
 
 .buycontent{
-  width: 70%;
+  width: 80%;
   height: 80%;
   margin-top: 3%;
   border: 2px solid #ffa949;
