@@ -1,4 +1,4 @@
-const http = require('http');
+const https = require('https');
 //const open = require('open');
 var requestHandler = require('./requestHandler.js');
 
@@ -6,7 +6,7 @@ var requestHandler = require('./requestHandler.js');
 var port  = process.env.PORT || process.argv[2] || 8080;
 
 
-http.createServer(function(req, res){
+https.createServer(function(req, res){
     requestHandler.formRequest(req, res);
     requestHandler.home(req, res);
 
