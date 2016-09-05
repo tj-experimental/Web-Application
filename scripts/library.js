@@ -232,9 +232,10 @@ $(function(){
         }
     });
 
-    $('.dropbtn').on("blur", function (){
-        $('.dropdown-content').hide();
+    $('.dropbtn').on("click focusout", function (){
+        $('.dropdown-content').toggleClass("show-list");
     });
+
 
 
     $(".imgInfo__1").click(function(){
