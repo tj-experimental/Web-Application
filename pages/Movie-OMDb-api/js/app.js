@@ -31,7 +31,7 @@ getMovie = function (element) {
                 if(movie.Poster === 'N/A') {
                     movieInfo += '<i class="material-icons poster-placeholder">crop_original</i>';
                 }else {
-                    movieInfo += '<img src='+ movie.Poster +' class="movie-poster-large" alt="movie-image">';
+                    movieInfo += '<img type="" src='+ movie.Poster +' class="movie-poster-large" alt="movie-image">';
                 }
                 movieInfo += '<h2>'+ movie.Title +' ('+ movie.Year +')</h2>';
                 movieInfo += '<span>IMDB Rating: '+ movie.imdbRating +'</span><br>';
