@@ -302,7 +302,7 @@ button {
     height: 176%;
   }
   #back-search{
-    width: 15%;
+    width: 22%;
   }
 }
 
@@ -343,7 +343,7 @@ button {
 .movie-poster-large{
   float: left;
   position: static;
-    margin: 56px 6px 0 26px;
+    margin: 8% 2% 0 4%;
 }
 
 #back-search{
