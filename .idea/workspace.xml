@@ -41,10 +41,10 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/Movie-OMDb-api/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="31" column="75" selection-start-line="31" selection-start-column="75" selection-end-line="31" selection-end-column="75" />
+            <state relative-caret-position="289">
+              <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
               <folding>
-                <marker date="1473102474567" expanded="true" signature="3971:3984" ph="..." />
+                <marker date="1473102624401" expanded="true" signature="3962:3975" ph="..." />
               </folding>
             </state>
           </provider>
@@ -303,6 +303,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Movie-OMDb-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -347,6 +369,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -369,11 +405,11 @@
       <recent name="C:\Users\IT Loaner\Desktop\Web\vendor" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jtony\Documents\PROJECTS\Web\pages\Movie-OMDb-api\images" />
       <recent name="C:\Users\jtony\Documents\PROJECTS\Web\pages\angularApp\scripts" />
       <recent name="C:\Users\IT Loaner\Desktop\Web\pages\workopolisAPI\scss\base" />
       <recent name="C:\Users\IT Loaner\Desktop\Web\pages" />
       <recent name="C:\Users\IT Loaner\Desktop\Web\geolocation " />
-      <recent name="C:\Users\IT Loaner\Desktop\Web\pages\test" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.requestHandler.js">
@@ -457,12 +493,12 @@
       <workItem from="1472763705572" duration="18843000" />
       <workItem from="1472815728110" duration="291000" />
       <workItem from="1472816650287" duration="3485000" />
-      <workItem from="1472951235104" duration="68121000" />
+      <workItem from="1472951235104" duration="68262000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123390000" />
+    <option name="totallyTimeSpent" value="123531000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -923,10 +959,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/Movie-OMDb-api/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="31" column="75" selection-start-line="31" selection-start-column="75" selection-end-line="31" selection-end-column="75" />
+        <state relative-caret-position="289">
+          <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
           <folding>
-            <marker date="1473102474567" expanded="true" signature="3971:3984" ph="..." />
+            <marker date="1473102624401" expanded="true" signature="3962:3975" ph="..." />
           </folding>
         </state>
       </provider>
