@@ -93,7 +93,7 @@ $(function () {
                     $.each(movies.Search, function (index, movie) {
                         movieItem += '<li onclick="getMovie($(this))"><div class="poster-wrap">';
                         if(movie.Poster === 'N/A'){
-                            movieItem += '<img src="images/noImage.jpg" class="movie-poster-large"></div>';
+                            movieItem += '<img src="images/noImage.jpg" class="movie-poster"></div>';
                         }else{
                             movieItem += '<img class="movie-poster" src='+movie.Poster +'></div>';
                         }
