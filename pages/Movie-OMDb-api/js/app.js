@@ -81,7 +81,7 @@ $(function () {
             url: $(this).attr('action'),
             method: $(this).attr('method'),
             data: query,
-            dataType:'jsonp'
+            dataType:'jsonp',
             success: function (movies) {
                 // console.log(movies);
                 if (movies.Response === "False" ){
