@@ -105,8 +105,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/Movie-OMDb-api/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="359" column="0" selection-start-line="359" selection-start-column="0" selection-end-line="359" selection-end-column="0" />
+            <state relative-caret-position="170">
+              <caret line="300" column="14" selection-start-line="300" selection-start-column="14" selection-end-line="300" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -181,8 +181,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="232" />
-    <option name="y" value="28" />
+    <option name="x" value="52" />
+    <option name="y" value="114" />
     <option name="width" value="1370" />
     <option name="height" value="744" />
   </component>
@@ -435,15 +435,15 @@
       <workItem from="1472763705572" duration="18843000" />
       <workItem from="1472815728110" duration="291000" />
       <workItem from="1472816650287" duration="3485000" />
-      <workItem from="1472951235104" duration="66261000" />
+      <workItem from="1472951235104" duration="66753000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121530000" />
+    <option name="totallyTimeSpent" value="122022000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="232" y="28" width="1370" height="744" extended-state="0" />
+    <frame x="52" y="114" width="1370" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17799114" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -903,8 +903,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/Movie-OMDb-api/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="359" column="0" selection-start-line="359" selection-start-column="0" selection-end-line="359" selection-end-column="0" />
+        <state relative-caret-position="170">
+          <caret line="300" column="14" selection-start-line="300" selection-start-column="14" selection-end-line="300" selection-end-column="14" />
           <folding />
         </state>
       </provider>

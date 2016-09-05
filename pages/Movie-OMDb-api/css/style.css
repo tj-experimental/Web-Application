@@ -281,8 +281,7 @@ button {
   .movie-list li {
     width: 33.333333333%;
   }
-  .movie-poster-large,
-  #movie-header > i {
+  .movie-poster-large{
     height: 163%;;
     border: 10px solid #fff;
   }
@@ -299,10 +298,9 @@ button {
     clear: left;
   }
   #movie-header{
-    height: 13em;
+    height: 16em;
   }
-  .movie-poster-large,
-  #movie-header > i {
+  .movie-poster-large{
     border: 10px solid #fff;
     height: 176%;
   }
@@ -319,8 +317,7 @@ button {
   .movie-list li:nth-of-type(4n+1) {
     clear: left;
   }
-  .movie-poster-large,
-  #movie-header > i {
+  .movie-poster-large{
     border: 10px solid #fff;
     height: 190%;
   }
