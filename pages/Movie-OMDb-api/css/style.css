@@ -369,3 +369,8 @@ button {
   margin-top: 0;
   background: grey
 }
+
+#search:focus, #year:focus
+{
+  border: 2px solid #a4c1ff;
+}
