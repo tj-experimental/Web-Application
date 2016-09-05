@@ -42,9 +42,9 @@
         <entry file="file://$PROJECT_DIR$/pages/Movie-OMDb-api/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="31" column="67" selection-start-line="31" selection-start-column="67" selection-end-line="31" selection-end-column="67" />
+              <caret line="31" column="75" selection-start-line="31" selection-start-column="75" selection-end-line="31" selection-end-column="75" />
               <folding>
-                <marker date="1473102259341" expanded="true" signature="3963:3976" ph="..." />
+                <marker date="1473102474567" expanded="true" signature="3971:3984" ph="..." />
               </folding>
             </state>
           </provider>
@@ -457,12 +457,12 @@
       <workItem from="1472763705572" duration="18843000" />
       <workItem from="1472815728110" duration="291000" />
       <workItem from="1472816650287" duration="3485000" />
-      <workItem from="1472951235104" duration="67909000" />
+      <workItem from="1472951235104" duration="68121000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123178000" />
+    <option name="totallyTimeSpent" value="123390000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -924,9 +924,9 @@
     <entry file="file://$PROJECT_DIR$/pages/Movie-OMDb-api/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="31" column="67" selection-start-line="31" selection-start-column="67" selection-end-line="31" selection-end-column="67" />
+          <caret line="31" column="75" selection-start-line="31" selection-start-column="75" selection-end-line="31" selection-end-column="75" />
           <folding>
-            <marker date="1473102259341" expanded="true" signature="3963:3976" ph="..." />
+            <marker date="1473102474567" expanded="true" signature="3971:3984" ph="..." />
           </folding>
         </state>
       </provider>
