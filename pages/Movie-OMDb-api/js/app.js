@@ -10,6 +10,7 @@ var showSearchResult = function () {
 
 var getMovie;
 getMovie = function (element) {
+    $('#loading').show();
     var $liItem = element;
     var movieInfo = "";
     if (!$liItem.hasClass("no-movies")) {
@@ -52,7 +53,7 @@ getMovie = function (element) {
 
             },
             complete: function () {
-
+                $('#loading').hide();
             }
 
         })
@@ -68,10 +69,10 @@ $(function () {
         action: "https://www.omdbapi.com/?callback=?",
         method: "get"
     });
-
-
+    $('body').append('<img src="images/loading.gif" id="loading">');
 
     $searchForm.submit(function(event){
+        $('#loading').show();
         var movieItem = "";
         var query = $(this).serialize();
         var $moviesUl = $('#movies');
@@ -109,15 +110,10 @@ $(function () {
 
             },
             complete: function(){
-
+                $('#loading').hide();
             }
         });
 
     });
-
-    // $(window)[0].onpopstate = function(event, data){
-    //     event.preventDefault();
-    //     console.log(event, data);
-    // };
 
 });
