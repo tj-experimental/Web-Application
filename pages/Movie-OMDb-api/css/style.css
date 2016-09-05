@@ -250,8 +250,7 @@ button {
  .movie-title {
     padding-right: 1.25em;
  }
-  .movie-poster-large,
-  #movie-header > i {
+  .movie-poster-large{
     height: 130%;
     border: 5px solid #fff;
   }
