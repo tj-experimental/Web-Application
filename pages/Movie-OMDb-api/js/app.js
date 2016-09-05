@@ -66,7 +66,7 @@ $(function () {
     $searchYear.attr("name", "y");
 
     $searchForm.attr({
-        action: "http://www.omdbapi.com/",
+        action: "https://www.omdbapi.com/",
         method: "get"
     });
 
