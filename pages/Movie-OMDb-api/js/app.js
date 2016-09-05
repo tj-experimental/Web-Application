@@ -15,7 +15,8 @@ getMovie = function (element) {
     if (!$liItem.hasClass("no-movies")) {
         var query = {
             i: $liItem.children('.imdbID').text(),
-            r: "json"
+            r: "json",
+            callback: "jsonp"
         };
         $.ajax({
             url: $searchForm.attr("action"),
@@ -81,7 +82,7 @@ $(function () {
             url: $(this).attr('action'),
             method: $(this).attr('method'),
             data: query,
-            dataType:'json',
+            dataType:'jsonp',
             success: function (movies) {
                 // console.log(movies);
                 if (movies.Response === "False" ){
