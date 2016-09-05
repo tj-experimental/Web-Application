@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bda15ab5-6784-4017-84ee-549af04e957a" name="Default" comment=" modified the job search page">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/Movie-OMDb-api/css/style.css" afterPath="$PROJECT_DIR$/pages/Movie-OMDb-api/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/workopolisAPI/scripts/app.js" afterPath="$PROJECT_DIR$/pages/workopolisAPI/scripts/app.js" />
     </list>
     <ignored path="Web.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,17 +52,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="playlist.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/Object-prototype-JavaScript/OO-JavaScript-Media-Player/playlist.js">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pages/workopolisAPI/scripts/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="576">
+              <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+              <folding>
+                <marker date="1473119923847" expanded="true" signature="4120:4136" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/Movie-OMDb-api/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="550">
@@ -173,7 +175,6 @@
         <option value="$PROJECT_DIR$/scss/components/_slick.scss" />
         <option value="$PROJECT_DIR$/scss/form/_form.scss" />
         <option value="$PROJECT_DIR$/scss/components/_buttons.scss" />
-        <option value="$PROJECT_DIR$/pages/workopolisAPI/scripts/app.js" />
         <option value="$PROJECT_DIR$/pages/Movie-Search-App-with-the-OMDb-API/js/app.js" />
         <option value="$PROJECT_DIR$/pages/Movie-Search-App-with-the-OMDb-API/index.html" />
         <option value="$PROJECT_DIR$/pages/Movie-Search-with-OMDb-API/css/style.css" />
@@ -187,6 +188,7 @@
         <option value="$PROJECT_DIR$/scripts/library.js" />
         <option value="$PROJECT_DIR$/pages/Movie-OMDb-api/js/app.js" />
         <option value="$PROJECT_DIR$/pages/Movie-OMDb-api/css/style.css" />
+        <option value="$PROJECT_DIR$/pages/workopolisAPI/scripts/app.js" />
       </list>
     </option>
   </component>
@@ -197,9 +199,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
+    <option name="x" value="73" />
+    <option name="y" value="71" />
+    <option name="width" value="1370" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -292,22 +294,8 @@
               <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Movie-OMDb-api" />
+              <option name="myItemId" value="workopolisAPI" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -325,11 +313,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Movie-OMDb-api" />
+              <option name="myItemId" value="workopolisAPI" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="scripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -344,14 +332,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Movie-OMDb-api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -465,18 +445,18 @@
       <workItem from="1472763705572" duration="18843000" />
       <workItem from="1472815728110" duration="291000" />
       <workItem from="1472816650287" duration="3485000" />
-      <workItem from="1472951235104" duration="78170000" />
+      <workItem from="1472951235104" duration="79648000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133439000" />
+    <option name="totallyTimeSpent" value="134917000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="73" y="71" width="1370" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17642753" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17799114" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861635" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -719,16 +699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/workopolisAPI/scripts/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
-          <folding>
-            <marker date="1473008967847" expanded="true" signature="4205:4221" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/Movie-Search-with-OMDb-API/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
@@ -929,6 +899,16 @@
         <state relative-caret-position="550">
           <caret line="168" column="19" selection-start-line="168" selection-start-column="19" selection-end-line="168" selection-end-column="19" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/workopolisAPI/scripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+          <folding>
+            <marker date="1473119923847" expanded="true" signature="4120:4136" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

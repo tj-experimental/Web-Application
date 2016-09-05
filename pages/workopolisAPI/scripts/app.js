@@ -92,9 +92,8 @@ $(function(){
                 url: $form.attr("action"),
                 method: 'GET',
                 data : queryString,
-                contentType: 'application/x-www-form-urlencoded;charset=utf-8',
-                dataType:'application/xml',
                 success:function (data) {
+                    console.log(data);
                     $(data).find("jobs").find("job").each(function(){
                         image = $(this).find("companyImageUrl").text();
                         jobUrl =  $(this).find("jobViewUrl").text();
@@ -114,7 +113,7 @@ $(function(){
                     $(".search__result").html(job);
                 },
                 error: function (jXHR) {
-
+                    console.log(jXHR);
                 },
                 complete: function () {
                     $searchBox.prop("disabled", false);
