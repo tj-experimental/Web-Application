@@ -31,7 +31,7 @@ getMovie = function (element) {
                 if(movie.Poster === 'N/A') {
                     movieInfo += '<i class="material-icons poster-placeholder">crop_original</i>';
                 }else {
-                    movieInfo += '<img src='+ movie.Poster +' class="movie-poster-large" alt="movie-image">';
+                    movieInfo += '<img src='+ movie.Poster.replace("http","https")  +' class="movie-poster-large" alt="movie-image">';
                 }
                 movieInfo += '<h2>'+ movie.Title +' ('+ movie.Year +')</h2>';
                 movieInfo += '<span>IMDB Rating: '+ movie.imdbRating +'</span><br>';
@@ -95,7 +95,7 @@ $(function () {
                         if(movie.Poster === 'N/A'){
                             movieItem += '<i class="material-icons poster-placeholder">crop_original</i></div>';
                         }else{
-                            movieItem += '<img class="movie-poster" src='+movie.Poster +'></div>';
+                            movieItem += '<img class="movie-poster" src='+movie.Poster.replace("http","https") +'></div>';
                         }
                         movieItem += '<span class="movie-title">'+ movie.Title+'</span>';
                         movieItem += '<span class="movie-year">'+ movie.Year+'</span>';
