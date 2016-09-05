@@ -6,11 +6,11 @@
   background-color: #333;
 }
 
-li {
+.dropdown {
   float: left;
 }
 
-li a, .dropbtn {
+.dropdown a, .dropbtn {
   display: inline-block;
   color: white;
   text-align: center;
@@ -18,11 +18,11 @@ li a, .dropbtn {
   text-decoration: none;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
+.dropdown a:hover, .dropdown:hover .dropbtn {
   background-color: #848584;
 }
 
-li.dropdown {
+.dropdown {
   display: inline-block;
 }
 
@@ -43,10 +43,6 @@ li.dropdown {
 }
 
 .dropdown-content a:hover {background-color: #f1f1f1}
-
-//.dropdown:hover .dropdown-content {
-//
-//}
 
 .show-list{
   display: block;

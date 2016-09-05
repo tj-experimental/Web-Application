@@ -86,20 +86,20 @@ a {
   overflow: hidden;
   background-color: #333; }
 
-li {
+.dropdown {
   float: left; }
 
-li a, .dropbtn {
+.dropdown a, .dropbtn {
   display: inline-block;
   color: white;
   text-align: center;
   padding: 7px 7px;
   text-decoration: none; }
 
-li a:hover, .dropdown:hover .dropbtn {
+.dropdown a:hover, .dropdown:hover .dropbtn {
   background-color: #848584; }
 
-li.dropdown {
+.dropdown {
   display: inline-block; }
 
 .dropdown-content {
