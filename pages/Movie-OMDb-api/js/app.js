@@ -29,7 +29,7 @@ getMovie = function (element) {
                 movieInfo += '<div id="movie-header">';
                 movieInfo += '<button onclick="showSearchResult()" id="back-search">Search results</button>';
                 if(movie.Poster === 'N/A') {
-                    movieInfo += '<i class="material-icons poster-placeholder">crop_original</i>';
+                    movieInfo += '<img src="images/no_image.jpg">';
                 }else {
                     movieInfo += '<img src='+ movie.Poster +' class="movie-poster-large" alt="movie-image">';
                 }
