@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bda15ab5-6784-4017-84ee-549af04e957a" name="Default" comment=" modified the job search page">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/Movie-OMDb-api/css/style.css" afterPath="$PROJECT_DIR$/pages/Movie-OMDb-api/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/Movie-OMDb-api/js/app.js" afterPath="$PROJECT_DIR$/pages/Movie-OMDb-api/js/app.js" />
     </list>
     <ignored path="Web.iws" />
@@ -45,7 +44,7 @@
             <state relative-caret-position="306">
               <caret line="31" column="92" selection-start-line="31" selection-start-column="92" selection-end-line="31" selection-end-column="92" />
               <folding>
-                <marker date="1473102844139" expanded="true" signature="3988:4001" ph="..." />
+                <marker date="1473103240284" expanded="true" signature="3989:4002" ph="..." />
               </folding>
             </state>
           </provider>
@@ -494,12 +493,12 @@
       <workItem from="1472763705572" duration="18843000" />
       <workItem from="1472815728110" duration="291000" />
       <workItem from="1472816650287" duration="3485000" />
-      <workItem from="1472951235104" duration="68484000" />
+      <workItem from="1472951235104" duration="68875000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123753000" />
+    <option name="totallyTimeSpent" value="124144000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -963,7 +962,7 @@
         <state relative-caret-position="306">
           <caret line="31" column="92" selection-start-line="31" selection-start-column="92" selection-end-line="31" selection-end-column="92" />
           <folding>
-            <marker date="1473102844139" expanded="true" signature="3988:4001" ph="..." />
+            <marker date="1473103240284" expanded="true" signature="3989:4002" ph="..." />
           </folding>
         </state>
       </provider>
