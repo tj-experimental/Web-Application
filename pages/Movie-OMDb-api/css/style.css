@@ -199,8 +199,7 @@ button {
   .movie-list li {
     text-align: center;
   }
-  .movie-poster-large,
-  #movie-header > i {
+  .movie-poster-large{
     height: 40vh;
     border: 2px solid #fff;
   }
