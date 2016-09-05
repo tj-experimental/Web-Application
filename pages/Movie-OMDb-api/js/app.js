@@ -29,17 +29,17 @@ getMovie = function (element) {
                 movieInfo += '<div id="movie-description">';
                 movieInfo += '<div id="movie-header">';
                 movieInfo += '<button onclick="showSearchResult()" id="back-search">Search results</button>';
-                if(movie.Poster === 'N/A') {
+                if(movie[0].Poster === 'N/A') {
                     movieInfo += '<i class="material-icons poster-placeholder">crop_original</i>';
                 }else {
-                    movieInfo += '<img type="" src='+ movie.Poster.replace("http","https") +' class="movie-poster-large" alt="movie-image">';
+                    movieInfo += '<img type="" src='+ movie[0].Poster.replace("http","https") +' class="movie-poster-large" alt="movie-image">';
                 }
-                movieInfo += '<h2>'+ movie.Title +' ('+ movie.Year +')</h2>';
-                movieInfo += '<span>IMDB Rating: '+ movie.imdbRating +'</span><br>';
-                movieInfo += '<span>Genre:'+ movie.Genre +'  ,Rated: '+ movie.Rated+' </span><br>';
-                movieInfo += '<span>Actors: '+movie.Actors+'</span></div><br>';
+                movieInfo += '<h2>'+ movie[0].Title +' ('+ movie[0].Year +')</h2>';
+                movieInfo += '<span>IMDB Rating: '+ movie[0].imdbRating +'</span><br>';
+                movieInfo += '<span>Genre:'+ movie[0].Genre +'  ,Rated: '+ movie.Rated+' </span><br>';
+                movieInfo += '<span>Actors: '+movie[0].Actors+'</span></div><br>';
                 movieInfo += '<div id="plot"><h3> Plot Synopsis:</h3>';
-                movieInfo += '<p id="plot-description">'+movie.Plot+'<p>';
+                movieInfo += '<p id="plot-description">'+movie[0].Plot+'<p>';
                 movieInfo += '<a id="view-movie" href="http://www.imdb.com/title/'+ query.i +'">View on IMBD</a>';
                 movieInfo += '</div>';
 
@@ -92,7 +92,7 @@ $(function () {
                     movieItem  += '</li>';
                     $moviesUl.html(movieItem);
                 }else {
-                    $.each(movies.Search, function (index, movie) {
+                    $.each(movies.Search[0], function (index, movie) {
                         movieItem += '<li onclick="getMovie(this)"><div class="poster-wrap">';
                         if(movie.Poster === 'N/A'){
                             movieItem += '<i class="material-icons poster-placeholder">crop_original</i></div>';
