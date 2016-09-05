@@ -165,7 +165,7 @@ button {
   top: 0;
   left: 0;
   width: 100%;
-  background: #fff;
+    background: #ececec;
   min-height: 80px;
   z-index: 1000;
 }

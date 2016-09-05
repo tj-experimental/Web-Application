@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bda15ab5-6784-4017-84ee-549af04e957a" name="Default" comment=" modified the job search page">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/Movie-OMDb-api/css/style.css" afterPath="$PROJECT_DIR$/pages/Movie-OMDb-api/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/Movie-OMDb-api/js/app.js" afterPath="$PROJECT_DIR$/pages/Movie-OMDb-api/js/app.js" />
     </list>
     <ignored path="Web.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,7 +38,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/Movie-OMDb-api/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="527">
@@ -103,11 +102,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/Movie-OMDb-api/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="382" column="18" selection-start-line="382" selection-start-column="18" selection-end-line="382" selection-end-column="18" />
+            <state relative-caret-position="254">
+              <caret line="166" column="14" selection-start-line="166" selection-start-column="14" selection-end-line="166" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -177,8 +176,8 @@
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/requestHandler.js" />
         <option value="$PROJECT_DIR$/../node-profile-app/app.js" />
-        <option value="$PROJECT_DIR$/pages/Movie-OMDb-api/css/style.css" />
         <option value="$PROJECT_DIR$/pages/Movie-OMDb-api/js/app.js" />
+        <option value="$PROJECT_DIR$/pages/Movie-OMDb-api/css/style.css" />
       </list>
     </option>
   </component>
@@ -501,12 +500,12 @@
       <workItem from="1472763705572" duration="18843000" />
       <workItem from="1472815728110" duration="291000" />
       <workItem from="1472816650287" duration="3485000" />
-      <workItem from="1472951235104" duration="70952000" />
+      <workItem from="1472951235104" duration="71563000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126221000" />
+    <option name="totallyTimeSpent" value="126832000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -949,14 +948,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/Movie-OMDb-api/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="382" column="18" selection-start-line="382" selection-start-column="18" selection-end-line="382" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/Movie-OMDb-api/images/loading.gif">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -969,6 +960,14 @@
           <folding>
             <marker date="1473105382699" expanded="true" signature="4138:4151" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/Movie-OMDb-api/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="166" column="14" selection-start-line="166" selection-start-column="14" selection-end-line="166" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
