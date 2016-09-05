@@ -203,7 +203,7 @@ button {
     border: 2px solid #fff;
   }
   #movie-header{
-    height:27em;
+    height:33em;
   }
   body{
     font: 0.8em/1.5 'Roboto', sans-serif ;
@@ -302,7 +302,7 @@ button {
     height: 176%;
   }
   #back-search{
-    width: 30%;
+    width: 15%;
   }
 }
 
@@ -322,7 +322,7 @@ button {
     height:13em;
   }
   #back-search{
-    width: 32%;
+    width: 13%;
   }
 }
 
@@ -332,20 +332,18 @@ button {
 
 #back-search::before{
   content: '< ';
+  font-family: monospace, cursive;
 }
 
 #movie-header{
-  background: #49494e;
+  background: #545462;
   color: #fff;
 }
 
 .movie-poster-large{
   float: left;
   position: static;
-  margin-top: 33px;
-  margin-right: 6px;
-  margin-left: 31px;
-
+    margin: 56px 6px 0 26px;
 }
 
 #back-search{
@@ -359,9 +357,10 @@ button {
 }
 
 #view-movie{
-  background: #35b936;
-  color: white;
-  padding: 1%;
+    background: #35b936;
+    color: white;
+    border: 2px solid #49494e;
+    padding: 7px;
 }
 
 #movie-header > i {

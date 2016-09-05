@@ -10,18 +10,18 @@ var showSearchResult = function () {
 
 var getMovie;
 getMovie = function (element) {
-    var $liItem = $('.movie-list').find(element);
+    var $liItem = element;
     var movieInfo = "";
     if (!$liItem.hasClass("no-movies")) {
         var query = {
             i: $liItem.children('.imdbID').text(),
-            r: "jsonp"
+            r: "json"
         };
         $.ajax({
             url: $searchForm.attr("action"),
             method: $searchForm.attr("method"),
             data: $.param(query),
-            dataType:'jsonp',
+            dataType:'json',
             success: function (movie) {
                 console.log(movie);
                 $('.main-content').hide();
@@ -65,7 +65,7 @@ $(function () {
     $searchYear.attr("name", "y");
 
     $searchForm.attr({
-        action: "https://www.omdbapi.com/",
+        action: "https://www.omdbapi.com/?callback=?",
         method: "get"
     });
 
@@ -81,7 +81,7 @@ $(function () {
             url: $(this).attr('action'),
             method: $(this).attr('method'),
             data: query,
-            dataType:'jsonp',
+            dataType: 'json',
             success: function (movies) {
                 console.log(movies);
                 if (movies.Response === "False" ){
@@ -91,7 +91,7 @@ $(function () {
                     $moviesUl.html(movieItem);
                 }else {
                     $.each(movies.Search, function (index, movie) {
-                        movieItem += '<li onclick="getMovie(this)"><div class="poster-wrap">';
+                        movieItem += '<li onclick="getMovie($(this))"><div class="poster-wrap">';
                         if(movie.Poster === 'N/A'){
                             movieItem += '<i class="material-icons poster-placeholder">crop_original</i></div>';
                         }else{
