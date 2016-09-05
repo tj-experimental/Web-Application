@@ -30,7 +30,7 @@ input {
   height: 46px;
   padding-bottom: 1em;
   padding-left: 0;
-  background: none;
+  background-color: white;
   border: none;
   outline: 0;
   border-bottom: 4px solid #e4e4e4;
