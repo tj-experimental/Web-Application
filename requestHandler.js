@@ -42,7 +42,7 @@ function home(req, res) {
             contentType = 'text/css';
             break;
         case '.jpg':
-            contentType = 'image/jpg';
+            contentType = 'image/jpeg';
             break;
         case '.json':
             contentType = 'application/json';
@@ -62,8 +62,6 @@ function home(req, res) {
         case '.ttf':
             contentType = 'application/x-font-truetype';
             break;
-        default:
-            contentType = 'text/html';
     }
 
     fs.readFile(filePath, function(error, content){
