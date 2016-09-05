@@ -232,6 +232,10 @@ $(function(){
         }
     });
 
+    $('.dropbtn').on("blur", function (){
+        $('.dropdown-content').hide();
+    });
+
 
     $(".imgInfo__1").click(function(){
         chosenplan(0);
