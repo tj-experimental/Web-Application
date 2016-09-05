@@ -232,7 +232,7 @@ $(function(){
         }
     });
 
-    $('.dropbtn').on("click focusout", function (){
+    $('.dropbtn').click(function (){
         $('.dropdown-content').toggleClass("show-list");
     });
 

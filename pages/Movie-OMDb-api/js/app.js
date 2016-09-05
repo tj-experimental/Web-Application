@@ -41,7 +41,7 @@ getMovie = function (element) {
                 movieInfo += '<span>Actors: '+movie.Actors+'</span></div><br>';
                 movieInfo += '<div id="plot"><h3> Plot Synopsis:</h3>';
                 movieInfo += '<p id="plot-description">'+movie.Plot+'<p>';
-                movieInfo += '<a id="view-movie" href="http://www.imdb.com/title/'+ query.i +'">View on IMDB</a>';
+                movieInfo += '<a id="view-movie" target="_blank" href="http://www.imdb.com/title/'+ query.i +'">View on IMDB</a>';
                 movieInfo += '</div>';
 
                 if ($('#movie-description').length != 0) {
