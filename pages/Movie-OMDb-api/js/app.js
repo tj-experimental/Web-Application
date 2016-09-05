@@ -15,13 +15,14 @@ getMovie = function (element) {
     if (!$liItem.hasClass("no-movies")) {
         var query = {
             i: $liItem.children('.imdbID').text(),
-            r: "json"
+            r: "jsonp"
         };
         $.ajax({
             url: $searchForm.attr("action"),
             method: $searchForm.attr("method"),
             data: $.param(query),
-            dataType: 'json',
+            dataType:'jsonp',
+            jsonp: 'jsoncallback',
             success: function (movie) {
                 //console.log(movie);
                 $('.main-content').hide();
@@ -82,6 +83,7 @@ $(function () {
             method: $(this).attr('method'),
             data: query,
             dataType:'jsonp',
+            jsonp: 'jsoncallback',
             success: function (movies) {
                 // console.log(movies);
                 if (movies.Response === "False" ){
