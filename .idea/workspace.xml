@@ -64,10 +64,10 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/Movie-OMDb-api/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="93" column="18" selection-start-line="93" selection-start-column="18" selection-end-line="93" selection-end-column="18" />
+            <state relative-caret-position="508">
+              <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
               <folding>
-                <marker date="1473191431991" expanded="true" signature="4219:4232" ph="..." />
+                <marker date="1473192615267" expanded="true" signature="4213:4226" ph="..." />
               </folding>
             </state>
           </provider>
@@ -416,12 +416,12 @@
       <workItem from="1472763705572" duration="18843000" />
       <workItem from="1472815728110" duration="291000" />
       <workItem from="1472816650287" duration="3485000" />
-      <workItem from="1472951235104" duration="83868000" />
+      <workItem from="1472951235104" duration="85042000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139137000" />
+    <option name="totallyTimeSpent" value="140311000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -877,10 +877,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/Movie-OMDb-api/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="93" column="18" selection-start-line="93" selection-start-column="18" selection-end-line="93" selection-end-column="18" />
+        <state relative-caret-position="508">
+          <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
           <folding>
-            <marker date="1473191431991" expanded="true" signature="4219:4232" ph="..." />
+            <marker date="1473192615267" expanded="true" signature="4213:4226" ph="..." />
           </folding>
         </state>
       </provider>

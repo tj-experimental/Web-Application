@@ -18,7 +18,7 @@ getMovie = function (element) {
             i: $liItem.children('.imdbID').text(),
             r: "json"
         };
-        $.getJSON({
+        $.ajax({
             url: $searchForm.attr("action"),
             method: $searchForm.attr("method"),
             data: $.param(query),
@@ -79,7 +79,7 @@ $(function () {
         var $moviesUl = $('#movies');
         showSearchResult();
         event.preventDefault();
-        $.getJSON({
+        $.ajax({
             url: $(this).attr('action'),
             method: $(this).attr('method'),
             data: query,
@@ -117,8 +117,8 @@ $(function () {
 
     });
 
-    // if(window.location.protocol != "https:"){
-    //     window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
-    // }
+    if(window.location.protocol != "https:"){
+        window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+    }
 
 });
