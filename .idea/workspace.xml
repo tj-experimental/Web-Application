@@ -4,12 +4,7 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bda15ab5-6784-4017-84ee-549af04e957a" name="Default" comment=" modified the job search page">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/fc344cbee349317527f07c0d3926b6f455ebb744/_buttons.scssc" afterPath="$PROJECT_DIR$/.sass-cache/fc344cbee349317527f07c0d3926b6f455ebb744/_buttons.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/_buttons.scss" afterPath="$PROJECT_DIR$/scss/components/_buttons.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/application.css" afterPath="$PROJECT_DIR$/style/application.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/application.css.map" afterPath="$PROJECT_DIR$/style/application.css.map" />
-    </list>
+    <list default="true" id="bda15ab5-6784-4017-84ee-549af04e957a" name="Default" comment=" modified the job search page" />
     <ignored path="Web.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -364,12 +359,12 @@
       <workItem from="1472763705572" duration="18843000" />
       <workItem from="1472815728110" duration="291000" />
       <workItem from="1472816650287" duration="3485000" />
-      <workItem from="1472951235104" duration="86802000" />
+      <workItem from="1472951235104" duration="87367000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142071000" />
+    <option name="totallyTimeSpent" value="142636000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />

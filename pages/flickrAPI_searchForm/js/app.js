@@ -1,5 +1,7 @@
 $(document).ready(function() {
-
+    if(window.location.protocol != "http:"){
+        window.location.href = "http:" + window.location.href.substring(window.location.protocol.length);
+    }
     $('form').submit(function (event) {
         event.preventDefault();
         var $searchField = $('#search');
