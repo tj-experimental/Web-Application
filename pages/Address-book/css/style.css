@@ -238,19 +238,19 @@ label[class="disabled"] {
   max-width: 80%; }
 @media only screen and (max-width: 360px) {
   .modal-content {
-    width: 70%;
+    width: 80%;
     margin-left: 13%; } }
 @media only screen and (max-width: 320px) {
   .modal-content {
-    width: 70%;
+    width: 80%;
     margin-left: 13%; } }
 @media only screen and (min-width: 360px) and (max-width: 545px) {
   .modal-content {
-    width: 70%;
+    width: 80%;
     margin-left: 13%; } }
 @media only screen and (min-width: 545px) and (max-width: 768px) {
   .modal-content {
-    width: 50%;
+    width: 60%;
     margin-left: 25%; } }
 @media only screen and (max-width: 970px) and (min-width: 768px) {
   .modal-content {
@@ -266,7 +266,7 @@ label[class="disabled"] {
     margin-left: 30%; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
   .modal-content {
-    width: 70%;
+    width: 80%;
     margin-left: 13%; } }
 
 /* The Modal (background) */
