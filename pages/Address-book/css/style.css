@@ -1,0 +1,305 @@
+@charset "UTF-8";
+
+#contacts{
+  width: 36%;
+}
+
+/* =================================
+  Base Element Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+input,
+button {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  color: #184f68;
+  background: #accbd9;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45);
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/*==================================
+ Table Styles
+=====================================*/
+
+td{
+  text-align: center;
+}
+
+thead{
+  font-size: larger;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.icon-up::after {
+  content: "\25B2";
+}
+
+.icon-down::after {
+  content: "\25BC";
+}
+
+table {
+  border-collapse: collapse;
+  width: 70%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody > tr:hover{
+  background-color:#f5f5f5;
+  cursor: pointer;
+}
+/* =================================
+  Form Element Styles
+==================================== */
+
+form {
+  padding: .875em 1.875em 1.875em;
+  background: #85b5ca;
+}
+
+fieldset,
+legend,
+button {
+  padding: 0;
+  border: none;
+}
+
+fieldset {
+  margin-top: 1.5em;
+}
+
+legend,
+button {
+  font-size: 1.25em;
+}
+
+legend {
+  font-weight: 500;
+  padding-top: .5em;
+  border-top: 2px solid #679cb3;
+  margin-bottom: 1.125em;
+}
+
+input[type="text"],
+input[type="email"],
+legend {
+  width: 100%;
+}
+
+label {
+  color: #000;
+  display: block;
+  margin-bottom: .5em;
+}
+
+input,
+select {
+  margin-bottom: 1.125em;
+}
+
+input {
+  font-size: 1em;
+  font-weight: 500;
+  padding: .8em;
+  background: #c1deeb;
+  border: 2px solid #c1deeb;
+  outline: none;
+}
+
+input:focus {
+  background: #fff;
+  border-color: #5e97b0;
+  transition: border-color .4s, background-color .4s;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline-block;
+}
+
+button {
+  color: #fff;
+  padding: .55em 1.25em;
+  background: #22627e;
+  margin: 1.25em 0 .5em;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #184c62;
+}
+
+/* =================================
+  Page Styles
+==================================== */
+
+.container {
+  margin: auto;
+  max-width: 680px;
+}
+
+/*============================
+Sibling Classes
+==============================*/
+.shirt div > select,
+#payment
+{
+  height: 46px;
+  padding-right: 20px;
+  font-size: 16px;
+  color: #777;
+}
+
+/*============================
+Attribute Selector
+================================*/
+#color option[disabled="disabled"] {
+  display: none;
+  color: white;
+  font-size: 0;
+}
+
+/*label[for = "name"]::after, .shirt legend::after,
+label[for = "mail"]::after, #job-role::after,
+.activities legend::after, label[for="payment"]::after*/
+fieldset label::after{
+  content: "*";
+  color: red;
+  font-size: 20px;
+}
+
+fieldset.activities label::after{
+  content: " ";
+}
+
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 0) and (max-width: 679px) {
+  header {
+    padding: 2em 0;
+  }
+  button {
+    width: 100%;
+  }
+}
+
+@media (min-width: 680px) {
+  header {
+    padding: 4.65em 0 2.5em;
+  }
+}
+
+/*Disabled class*/
+
+label[class="disabled"] {
+  background-color: #a6a6a6;
+  cursor: not-allowed;
+}
+
+
+
+/* Modal Content */
+.modal-content {
+  background-color: #fff;
+  padding: 1%;
+  border: 2px solid #a6a6a6;
+  border-radius: 7px;
+  margin-top: 2%;
+  max-width: 80%; }
+@media only screen and (max-width: 360px) {
+  .modal-content {
+    width: 70%;
+    margin-left: 13%; } }
+@media only screen and (max-width: 320px) {
+  .modal-content {
+    width: 70%;
+    margin-left: 13%; } }
+@media only screen and (min-width: 360px) and (max-width: 545px) {
+  .modal-content {
+    width: 70%;
+    margin-left: 13%; } }
+@media only screen and (min-width: 545px) and (max-width: 768px) {
+  .modal-content {
+    width: 50%;
+    margin-left: 25%; } }
+@media only screen and (max-width: 970px) and (min-width: 768px) {
+  .modal-content {
+    width: 45%;
+    margin-left: 25%; } }
+@media only screen and (max-width: 1600px) and (min-width: 970px) {
+  .modal-content {
+    width: 45%;
+    margin-left: 25%; } }
+@media only screen and (min-width: 1600px) {
+  .modal-content {
+    width: 55%;
+    margin-left: 30%; } }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .modal-content {
+    width: 70%;
+    margin-left: 13%; } }
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 25px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: hidden;
+  /* Enable scroll if needed */
+  background-color: #000;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */ }
+
+/* The Close Button */
+.close {
+  color: #282424;
+  font-size: 32px;
+  font-weight: bold;
+  float: right;
+}
+
+.close:hover,
+.close:focus{
+  color: #000;
+  text-decoration: none; }

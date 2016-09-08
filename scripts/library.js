@@ -78,10 +78,7 @@ $overlay.click(function(event){
         name.value = "";
         password.value = "";
         email.value = "";
-
-        if (checkbox.checked){
-            checkbox.checked = false;
-        }
+        checkbox.checked = false;
         //hide the modal and contents upon closing it
         $(this).hide();
     }
