@@ -82,6 +82,13 @@ var AddressBook = {
         //remove all chars, except dash and digits
         phoneNumber.value = phoneNumber.value.replace(/[^\-0-9]/g, '');
     },
+    //Methhod to add a textnode to each table data
+    addData: function (element, data) {
+        for (var i=0; i < data.length; i++){
+            var text = document.createTextNode(data[i]);
+            element[i].appendChild(text);
+        }
+    },
     //Method to AddContact details to the table prompt the user with a red border indicating error with field data
     addContact: function () {
         //regular expression to check the pattern of the phone number
@@ -109,9 +116,9 @@ var AddressBook = {
             for(var i=0 ; i < children.length; i++){
                 this.addChildElement(tr,children[i]);
             }
-            first.innerHTML = firstName.value;
-            last.innerHTML = lastName.value;
-            phone.innerHTML = phoneNumber.value;
+            var data = [firstName.value, lastName.value, phoneNumber.value];
+            var element = [first, last, phone];
+            this.addData(element, data);
             tableBody.appendChild(tr);
             this.closeModal();
         }
