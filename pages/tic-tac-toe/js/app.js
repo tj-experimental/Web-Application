@@ -207,7 +207,7 @@ gameModule = function (exports) {
         var $header = $("<header>");
         $header.append("<h1>Tic Tac Toe</h1>");
         $header.append('<p class="message">' + player + '</p>');
-        $header.append('<a href="#" class="button" onclick= gameModule.restart()>New game</a>');
+        $header.append("<a href=\"#\" class=\"button\" onclick= gameModule.restart()>New game</a>");
         $windiv.append($header);
         $("body").append($windiv);
     };
