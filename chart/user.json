@@ -1,0 +1,26 @@
+[
+  {
+    "image":"images/irina.jpg",
+    "name": "Irina Bykova",
+    "job": "Photographer",
+    "team": "works with Slack team",
+    "message1": "Just Started Using awesome Module. Great way to boost the hard designing or prototyping process.",
+    "message2": " Also a perfect tool for creative studios and freelancers"
+  },
+  {
+    "image":"images/jane.jpg",
+    "name": "Jane Peter",
+    "job": "UI Developer",
+    "team": "works with Genpak team",
+    "message1": "It works great I can make new protoypes faster and with high detial orientation.",
+    "message2": " What a relive from a user standpoint."
+  },
+  {
+    "image":"images/john.jpg",
+    "name": "John Mark",
+    "job": "Tech Writer",
+    "team": "works with Flexnet Team",
+    "message1": "Great way to boost output and makes design changes easy.Will definately recommend",
+    "message2": "this product to freelancers,It's a 5 star rating for me."
+  }
+]

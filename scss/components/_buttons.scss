@@ -1,0 +1,31 @@
+.button{
+    border-radius: 8px;
+    font-size: 15px;  
+}
+
+.button:hover, .chat:hover{
+	box-shadow: 0 10px 13px 0 rgba(0,0,0,0.10),0 17px 50px 0 rgba(0,0,0,0.10);
+	background-color: $color-button;
+    color: $white;
+}
+
+
+.btn-floating1,.btn-floating2 {
+	font-size:26px;
+	color: $silver-chalice;
+	position:absolute;
+
+}
+
+.btn-floating1{
+	left:0;
+}
+
+.btn-floating2{
+	right:0;
+}
+
+.account-action label[for="signin"]{
+	float: right;
+	clear: right;
+}

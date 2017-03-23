@@ -1,0 +1,55 @@
+div.users{
+	width: 90%;
+	padding: 10% 0%;
+	text-align: initial;
+	position: initial;
+	max-width: 93%;
+	@extend %box-sizing;
+}
+
+#container {
+ 	min-width: 55%;
+}
+
+div.top-right{
+	font-size: 12px;
+	padding: 40px 60px 40px 0px;
+
+}
+
+div.middle{
+	padding: 145px 0px 51px 0px;
+}
+
+
+div.top-left{
+	  border-radius: 30px 30px 5px;
+}
+
+#divider{
+	word-spacing: 2px;
+	color: $mercury;
+	font-size: 18px;
+
+}
+
+div.join {
+    padding: 18% 0%;
+    @extend %width-max;
+    clear: both;
+    @extend %box-sizing;
+}
+
+
+div.choose-license{
+	@extend %width-max;
+	background-color: $concrete;
+	padding: 2%;
+}
+
+
+div#info{
+	text-align: inherit;
+	margin-left: 20px;
+	line-height: 25px;
+}

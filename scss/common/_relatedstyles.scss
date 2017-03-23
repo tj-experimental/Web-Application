@@ -1,0 +1,66 @@
+/*Common Styles*/
+
+#logo, .small, .btn-floating2, .small, .imginfo, div.top-right,
+.close ,.planclose, .buyclose
+{
+   float: right;
+}
+
+a, .text_info, h3, h2, #logo, .small, div#info, .head, #second
+{
+  font-family: Arial, serif;
+}
+
+.user-information > label, .account_type > select,
+.account_type > h1 , #user-img, .plan, .planA,
+div#info, .btn-floating1, .account-info label ,
+.name, .pwd, .account-action .btn, .account-action label,
+div.top-left, div.top-left
+{
+  float: left;
+}
+
+.account-action .btn, .button:hover, .chat:hover,
+.close:hover, .planclose:hover, .buyclose:hover, .buyclose:hover,
+.close:focus, .planclose:focus, .btn-floating1:hover,.btn-floating2:hover
+{
+  cursor: pointer;
+}
+
+.line, .actions, div.join, #container, .texty
+{
+  text-align: center;
+}
+
+.account-info label, .account-info input, div.join
+{
+  display: block;
+}
+
+.text_info, .account_type, .licenses
+{
+  display: inline;
+}
+
+.user-information > label, hr.scroll::after, div.users,
+.user-information > label + input, .useremail, 
+#member1, .chat , #logo
+{
+  display: inline-block;
+}
+
+#agn, #pers, #unl, .imginfo, .modal, .planmodal,
+.buymodal
+{
+    display: none; /* Hidden by default */
+}
+
+.plan, .planA, .head, .text_info, #license, #member, #start
+{
+  font-stretch: semi-condensed;
+}
+
+.buy3, .chat, .p1, .p2, .p3, .buy3
+{
+   color: white;
+}

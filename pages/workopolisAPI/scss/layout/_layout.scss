@@ -1,0 +1,45 @@
+ul{
+  list-style: none none;
+  font-size: 1.6em;
+}
+
+.search__result > div:nth-of-type(2n){
+  background-color: $dove-grey;
+}
+
+.c__image{
+  height: 77px;
+  width: 110px;
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 3%;
+  display: block;
+}
+
+
+.job__info{
+  margin-left: 1%;
+}
+
+.job__info > p , .job__info > a {
+  text-align: left;
+}
+
+.job__info > a{
+   margin-right: 5% ;
+}
+
+.job__info > p{
+  font-size: 1em;
+  font-family: $stack-arial-font;
+}
+
+#loading{
+  width: 20%;
+  height: 15%;
+  top: 40%;
+  left: 40%;
+  position: absolute;
+  background: transparent;
+  z-index: -1;
+}

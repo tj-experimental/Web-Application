@@ -1,0 +1,90 @@
+
+/* Modal Content */
+.modal-content, .plancontent, .buycontent {
+    background-color: $white;
+    padding: 1%;
+    border: 2px solid #a6a6a6;
+    border-radius: 7px;
+    margin-top: 7%;
+    @extend %box-sizing;
+    max-width: 80%;
+}
+
+
+
+/* Modal Content */
+.modal-content, .plancontent, .buycontent {
+  background-color: $white;
+  padding: 1%;
+  border: 2px solid #a6a6a6;
+  border-radius: 7px;
+  margin-top: 4%;
+  @extend %box-sizing;
+  max-width: 89%;
+}
+
+.modal-content{
+  @include modalContent($width: 85%,$margin-left: 6%, $device: $brk-smartphone-landscape);
+  @include modalContent($width: 85%,$margin-left: 6%, $device: $brk-smartphone-portrait);
+  @include modalContent($width: 85%,$margin-left: 6%, $device: $brk-small-screen-width);
+  @include modalContent($width: 50%,$margin-left: 23%, $device: $brk-medium-screen-width);
+  @include modalContent($width: 50%,$margin-left: 23%, $device: $brk-tablets);
+  @include modalContent($width: 40%,$margin-left: 25%, $device: $brk-desktops-laptops);
+  @include modalContent($width: 50%,$margin-left: 30%, $device: $brk-large-screen-width);
+  @include modalContent($width: 80%,$margin-left: 13%, $device: $brk-iphone4);
+}
+
+.plancontent, .buycontent{
+  @include modalContent($width: 80%, $device: $brk-smartphone-landscape, $height: 55%);
+  @include modalContent($width: 80%, $device: $brk-smartphone-portrait);
+  @include modalContent($width: 80%, $device: $brk-small-screen-width, $height: 55%);
+  @include modalContent($width: 80%, $device: $brk-medium-screen-width);
+  @include modalContent($width: 80%, $device: $brk-tablets);
+  @include modalContent($width: 80%, $device: $brk-desktops-laptops);
+  @include modalContent($width: 80%, $device: $brk-large-screen-width);
+  @include modalContent($width: 80%, $device: $brk-iphone4);
+}
+
+
+  /* The Modal (background) */
+.modal,.planmodal,.buymodal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 25px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+ // background-color: $black; /* Fallback color */
+  background-color: rgba($black, 0.4); /* Black w/ opacity */
+}
+
+.buycontent
+{
+  margin-left: 13%;
+}
+.plancontent
+{
+  margin-left: 10%;
+}
+/* The Close Button */
+
+.close ,.planclose, .buyclose{
+  color: $silver-chalice;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.buycontent{
+  width: 70%;
+  margin-top: 3%;
+  border: 2px solid #ffa949;
+}
+
+.close:hover, .planclose:hover,
+.buyclose:hover,.buyclose:hover,
+.close:focus, .planclose:focus{
+  color: $black;
+  text-decoration: none;
+}

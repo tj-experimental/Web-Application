@@ -1,0 +1,36 @@
+/*Child Classes */
+
+.selectedPlan > option,
+.selectedPlan{
+	font-size: 	18px;
+}
+
+.user-information > label
+{
+	@extend %margin-top;
+	clear:both;
+	@extend %break-word;
+    font-weight: bold;
+    width: 30%;
+}
+
+.user-information > label + input
+{
+	@extend %break-word;
+	margin-right: 10%;
+	width: 60%;
+	clear: right;
+	@extend %margin-top;
+    margin-left: 0;
+}
+
+.account_type > select {
+    margin-top: 4%;
+    padding-left: 13px;
+    margin-left: 5%;
+}
+
+.account_type > h1 {
+	margin-left: 5%;
+	font-size:200%;
+}

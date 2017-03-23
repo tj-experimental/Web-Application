@@ -1,0 +1,9 @@
+
+@mixin modalContent($width: null,$margin-left: null, $device: null, $height: null){
+    @media only screen and #{$device}{
+        width: $width;
+        margin-left: $margin-left;
+        height: $height;
+    }
+}
+

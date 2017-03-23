@@ -1,0 +1,22 @@
+#error_page > img{
+  height: 99vh;
+  width: 100vw;
+}
+
+#error_page > a {
+  border-radius: 8px;
+  border: 2px outset #fff;
+  margin: 0;
+  padding: 1%;
+  right: 46%;
+  background-color: #e6e6e6;
+  color: #395870;
+  position: fixed;
+  bottom: 15%;
+}
+
+
+#error_page > a:hover{
+  background-color: #a7b5e6;
+  color: #edffcd;
+}

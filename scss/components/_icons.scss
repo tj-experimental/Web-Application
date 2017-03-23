@@ -1,0 +1,50 @@
+#pointers{
+	width: 93%;
+}
+
+.imginfo:hover{
+	cursor: help;
+}
+
+.imginfo{
+	clear:left;
+	@media only screen and #{$brk-smartphone-landscape}{
+	   margin: 0 0 3px -37px;
+	}
+	@media only screen and #{$brk-smartphone-portrait}{
+		margin: 0 0 3px -37px;
+	}
+    @media only screen and #{$brk-small-screen-width}{
+	    margin: 0 0 3px -37px;
+	}
+	@media only screen and #{$brk-ipads-landscape} 
+	{
+	   margin:0 0 3px -37px;
+	}
+	@media only screen and #{$brk-ipdas-portrait}{
+       margin: 0 0 3px -37px;
+	}
+	@media only screen and #{$brk-medium-screen-width}{
+	   margin: 0 0 3px -37px;
+	}
+	@media only screen and #{$brk-tablets}{
+      margin: 0 0 3px -37px;
+	}
+	@media only screen and #{$brk-desktops-laptops}{
+	  margin: 0 0 3px -37px;
+	}
+	@media only screen and #{$brk-large-screen-width}{
+      margin:0 0 3px -37px;
+	}
+	@media only screen and #{$brk-iphone4}{
+      margin:0 0 3px -37px;
+	}
+}
+
+#logo {
+    margin-right: 5%;
+    margin-top: -4%;
+    clear: left;
+    color: $alto;
+    font-size: 14px;
+}

@@ -1,0 +1,21 @@
+This test will require HTML, CSS and JavaScript.
+
+Create a form with a text input for keywords and a button to submit the form
+Don't allow the form to submit unless the keyword input has a value
+Pay to attention to keyboard navigation and accessibility
+Use SMACSS or BEM naming for classes
+Use Sass for CSS authoring
+You can use a Sass framework if you want
+Submitting the form should hit the Workopolis JobSearch API and return a list of results based on the keyword
+Return a list of search results with the showing the job title
+The Job Title should link to the job posting page
+The Workopolis API returns XML, you may need to set the content type to JSON depending on your approach
+API Information: //The API URL is https://www.workopolis.com/jobsearch/api/jobs/search?keyword= //Look in the Jobs array for search results data
+
+
+Input:
+Create search widget that matches the attached image.
+
+
+Output:
+The widget should render search results based on the keyword and should match the screenshot as closely as possible.
