@@ -4,7 +4,7 @@ userModule.controller("userCtrl",['$scope', '$http', function($scope, $http){
             .success(function (userData) {
                 $scope.user = userData;
             }).error(function (userData, status, error, config) {
-              alert (userData, status, erroe, config);
+              	console.error("Error retrieving user data", error, status);
             });
 }]);
 
