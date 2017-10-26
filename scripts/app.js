@@ -2,7 +2,7 @@ var graphModule = angular.module("GraphApp", ['n3-line-chart']);
 
 graphModule.controller("graphCtrl", ['$scope', function($scope, $http){
 	    d3.json('chart/chart.json', function(error, data){
-		$scope.data = { dataset: data["numbers"]};
+		$scope.data = { dataset: data[0]["numbers"]};
 		$scope.options = {
 		   axes: { 
 			   x: { key: "month"}
@@ -57,7 +57,7 @@ graphModule.controller("graphCtrl", ['$scope', function($scope, $http){
 			}
 		      ]
 		    };
-	       $scope.apply();
+	       $scope.$apply();
 	    });
 }]);
 
@@ -68,7 +68,7 @@ userModule.controller("userCtrl",['$scope', function($scope){
 		  d3.json('chart/user.json', function (error, data) {
 			  $scope.user = data;
 			  if(error) console.error("Error retrieving user data", error);
-			  $scope.apply();
+			  $scope.$apply();
             	  });
 }]);
 
