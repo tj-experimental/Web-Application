@@ -65,7 +65,7 @@ graphModule.controller("graphCtrl", ['$scope', function($scope, $http){
 var userModule = angular.module("WebApp", ['GraphApp']);
 
 userModule.controller("userCtrl",['$scope', function($scope){
-		  d3.json('chart/user.json' function (error, data) {
+		  d3.json('chart/user.json', function (error, data) {
 			  $scope.user = data;
 			  if(error) console.error("Error retrieving user data", error);
 			  $scope.apply();
