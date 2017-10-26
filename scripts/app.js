@@ -55,34 +55,75 @@ userModule.controller("footerCtrl", ['$scope', function ($scope) {
 
 }]);
 
-var graphModule = angular.module("GraphApp",['n3-line-chart']);
+var graphModule = angular.module("GraphApp", ['n3-line-chart']);
 
-//
-// graphModule.factory("Graph",[ function($scope, $http){
-// 	$http.get('chart/chart.json')
-// 		.success(function(userData){
-// 			var factory = {};
-//
-// 			factory.getChart= function() {
-//
-// 				return userData[0];
-//
-// 			};
-//
-// 			return factory;
-// 		})
-// 		.error(function(userData, status, error, config){
-// 			$scope.content = '<p>Error Getting JSON data object: </p>' + status + error + config;
-// 		});
-//
-// });
-// graphModule.controller("graphCtrl", function(Graph){
-// 	  console.log(Graph.getChart());
-// });
-//
+graphModule.controller("graphCtrl", ['$scope', '$http', function($scope, $http){
+            $http.get('chart/chart.json')
+	    	     .success(function (userData) {
+                	$scope.data = { dataset: data["numbers"]};
+		        $scope.options = {
+			      axes: {
+				x: {
+				  key: "month"
+				}
+			      },
+			      tooltipHook: function(d){
+				return {
+				  abscissas: "Social Revenue Impact",
+				  rows:  d.map(function(s){
+				    return {
+				      label: s.series.label,
+				      value: s.row.y1,
+				      color: s.series.color,
+				      id: s.series.id 
+				    }
+				  })
+				}
+			      },
+			      series: [
+				{
+				  dataset: "dataset", 
+				  key: 'money', 
+				  label: 'Money', 
+				  type: ['line', 'dot', 'line', 'area'],
+				  color: "rgb(126, 181, 63)",
+				  interpolation: {mode: 'cardinal', tension: 0.7}
+				},
+				{
+				  dataset: "dataset",
+				  key: 'like',
+				  type: ['line', 'dot', 'area'],
+				  label: 'Likes',
+				  color: "rgb(200, 96, 69)",
+				  interpolation: {mode: 'cardinal', tension: 0.7}
+				},
+			        {
+				  dataset: "dataset",
+				  key: 'views',
+				  type: ['line', 'dot', 'area'],
+				  label: 'Views',
+				  color: "rgb(193, 92, 69)",
+				  interpolation: {mode: 'cardinal', tension: 0.7}
+				},
+				{
+				  dataset: "dataset",
+				  key: 'share',
+				  type: ['line', 'dot', 'area'],
+				  label: 'Share',
+				  color: "rgb(119, 48, 131)",
+				  interpolation: {mode: 'cardinal', tension: 0.7}
+				}
+			      ]
+			    };
+	    		})
+		    .error(function(userData, status, error, config) {
+              		console.error("Error retrieving graph data", error, status);
+	   	 });
+}]);
 
 
 angular.element(document).ready(function(){
+	angular.bootstrap(document.getElementById("chart"),['GraphApp']);
 	setTimeout(function () {
 		$('.users').slick({
 			infinite: true,
@@ -99,6 +140,5 @@ angular.element(document).ready(function(){
 			swipeToSlide: true
 		});
 	},700);
-	//angular.bootstrap(document.getElementById("chart"),['GraphApp']);
 });
 
