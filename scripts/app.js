@@ -1,79 +1,75 @@
 var graphModule = angular.module("GraphApp", ['n3-line-chart']);
 
-graphModule.controller("graphCtrl", ['$scope', '$http', function($scope, $http){
-            $http.get('chart/chart.json')
-	    	     .success(function (data) {
-                	$scope.data = { dataset: data["numbers"]};
-		        $scope.options = {
-			   axes: { 
-				   x: { key: "month"}
-				 },
-			    tooltipHook: function(d){
-			         if (d){
-					return {
-				  		abscissas: "Social Revenue Impact",
-				  		rows:  d.map(function(s){
-				    			return {
-				      				label: s.series.label,
-						        	value: s.row.y1,
-						        	color: s.series.color,
-						        	id: s.series.id 
-						 		}
-				  			})
-						}
+graphModule.controller("graphCtrl", ['$scope', function($scope, $http){
+	    d3.json('chart/chart.json', function(error, data){
+		$scope.data = { dataset: data["numbers"]};
+		$scope.options = {
+		   axes: { 
+			   x: { key: "month"}
+			 },
+		    tooltipHook: function(d){
+			 if (d){
+				return {
+					abscissas: "Social Revenue Impact",
+					rows:  d.map(function(s){
+						return {
+							label: s.series.label,
+							value: s.row.y1,
+							color: s.series.color,
+							id: s.series.id 
+							}
+						})
 					}
-			      },
-			      series: [
-				{
-				  dataset: "dataset", 
-				  key: 'money', 
-				  label: 'Money', 
-				  type: ['line', 'dot', 'line', 'area'],
-				  color: "rgb(126, 181, 63)",
-				  interpolation: {mode: 'cardinal', tension: 0.7}
-				},
-				{
-				  dataset: "dataset",
-				  key: 'like',
-				  type: ['line', 'dot', 'area'],
-				  label: 'Likes',
-				  color: "rgb(200, 96, 69)",
-				  interpolation: {mode: 'cardinal', tension: 0.7}
-				},
-			        {
-				  dataset: "dataset",
-				  key: 'views',
-				  type: ['line', 'dot', 'area'],
-				  label: 'Views',
-				  color: "rgb(193, 92, 69)",
-				  interpolation: {mode: 'cardinal', tension: 0.7}
-				},
-				{
-				  dataset: "dataset",
-				  key: 'share',
-				  type: ['line', 'dot', 'area'],
-				  label: 'Share',
-				  color: "rgb(119, 48, 131)",
-				  interpolation: {mode: 'cardinal', tension: 0.7}
 				}
-			      ]
-			    };
-	    		})
-		    .error(function(userData, status, error, config) {
-              		console.error("Error retrieving graph data", error, status);
-	   	 });
+		      },
+		      series: [
+			{
+			  dataset: "dataset", 
+			  key: 'money', 
+			  label: 'Money', 
+			  type: ['line', 'dot', 'line', 'area'],
+			  color: "rgb(126, 181, 63)",
+			  interpolation: {mode: 'cardinal', tension: 0.7}
+			},
+			{
+			  dataset: "dataset",
+			  key: 'like',
+			  type: ['line', 'dot', 'area'],
+			  label: 'Likes',
+			  color: "rgb(200, 96, 69)",
+			  interpolation: {mode: 'cardinal', tension: 0.7}
+			},
+			{
+			  dataset: "dataset",
+			  key: 'views',
+			  type: ['line', 'dot', 'area'],
+			  label: 'Views',
+			  color: "rgb(193, 92, 69)",
+			  interpolation: {mode: 'cardinal', tension: 0.7}
+			},
+			{
+			  dataset: "dataset",
+			  key: 'share',
+			  type: ['line', 'dot', 'area'],
+			  label: 'Share',
+			  color: "rgb(119, 48, 131)",
+			  interpolation: {mode: 'cardinal', tension: 0.7}
+			}
+		      ]
+		    };
+	       $scope.apply();
+	    });
 }]);
 
 
 var userModule = angular.module("WebApp", ['GraphApp']);
 
-userModule.controller("userCtrl",['$scope', '$http', function($scope, $http){
-		  $http.get('chart/user.json')
-            .success(function (userData) {
-                $scope.user = userData;
-            }).error(function (userData, status, error, config) {
-              	console.error("Error retrieving user data", error, status);
-            });
+userModule.controller("userCtrl",['$scope', function($scope){
+		  d3.json('chart/user.json' function (error, data) {
+			  $scope.user = data;
+			  if(error) console.error("Error retrieving user data", error);
+			  $scope.apply();
+            	  });
 }]);
 
 userModule.controller("emailCtrl",['$scope', function($scope){
