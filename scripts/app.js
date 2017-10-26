@@ -28,32 +28,28 @@ graphModule.controller("graphCtrl", ['$scope', function($scope, $http){
 			  key: 'money', 
 			  label: 'Money', 
 			  type: ['line', 'dot', 'line', 'area'],
-			  color: "rgb(126, 181, 63)",
-			  interpolation: {mode: 'cardinal', tension: 0.7}
+			  color: "rgb(126, 181, 63)"
 			},
 			{
 			  dataset: "dataset",
 			  key: 'like',
 			  type: ['line', 'dot', 'area'],
 			  label: 'Likes',
-			  color: "rgb(200, 96, 69)",
-			  interpolation: {mode: 'cardinal', tension: 0.7}
+			  color: "rgb(200, 96, 69)"
 			},
 			{
 			  dataset: "dataset",
 			  key: 'views',
 			  type: ['line', 'dot', 'area'],
 			  label: 'Views',
-			  color: "rgb(193, 92, 69)",
-			  interpolation: {mode: 'cardinal', tension: 0.7}
+			  color: "rgb(193, 92, 69)"
 			},
 			{
 			  dataset: "dataset",
 			  key: 'share',
 			  type: ['line', 'dot', 'area'],
 			  label: 'Share',
-			  color: "rgb(119, 48, 131)",
-			  interpolation: {mode: 'cardinal', tension: 0.7}
+			  color: "rgb(119, 48, 131)"
 			}
 		      ]
 		    };
