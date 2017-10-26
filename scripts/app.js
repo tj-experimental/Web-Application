@@ -2,7 +2,7 @@ var graphModule = angular.module("GraphApp", ['n3-line-chart']);
 
 graphModule.controller("graphCtrl", ['$scope', '$http', function($scope, $http){
             $http.get('chart/chart.json')
-	    	     .success(function (userData) {
+	    	     .success(function (data) {
                 	$scope.data = { dataset: data["numbers"]};
 		        $scope.options = {
 			      axes: {
