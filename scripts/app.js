@@ -5,23 +5,23 @@ graphModule.controller("graphCtrl", ['$scope', '$http', function($scope, $http){
 	    	     .success(function (data) {
                 	$scope.data = { dataset: data["numbers"]};
 		        $scope.options = {
-			      axes: {
-				x: {
-				  key: "month"
-				}
-			      },
-			      tooltipHook: function(d){
-				return {
-				  abscissas: "Social Revenue Impact",
-				  rows:  d.map(function(s){
-				    return {
-				      label: s.series.label,
-				      value: s.row.y1,
-				      color: s.series.color,
-				      id: s.series.id 
-				    }
-				  })
-				}
+			   axes: { 
+				   x: { key: "month"}
+				 },
+			    tooltipHook: function(d){
+			         if (d){
+					return {
+				  		abscissas: "Social Revenue Impact",
+				  		rows:  d.map(function(s){
+				    			return {
+				      				label: s.series.label,
+						        	value: s.row.y1,
+						        	color: s.series.color,
+						        	id: s.series.id 
+						 		}
+				  			})
+						}
+					}
 			      },
 			      series: [
 				{
