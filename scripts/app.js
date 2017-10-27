@@ -5,7 +5,9 @@ graphModule.controller("graphCtrl", ['$scope', function($scope, $http){
 		$scope.data = { dataset: data[0]["numbers"]};
 		$scope.options = {
 		   margin: {top: 5},
-		   axes: {x: { key: "month" }},
+		   axes: {x:{ key: "month" },
+			  y1:{ type: "linear" },
+			  y2:{ type: "linear" }},
 		   legend: { display: false },
 		   tooltipHook: function(d){
 			 if(d){
