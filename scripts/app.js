@@ -65,7 +65,7 @@ graphModule.controller("graphCtrl", ['$scope', function($scope, $http){
 // 			  color: "rgb(119, 48, 131)"
 // 			}
 		     ]};
-	       $scope.$apply();
+// 	       $scope.$apply();
 	    });
 }]);
 
