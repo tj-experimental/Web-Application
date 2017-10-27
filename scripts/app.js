@@ -5,12 +5,10 @@ graphModule.controller("graphCtrl", ['$scope', function($scope, $http){
 		$scope.data = { dataset: data[0]["numbers"]};
 		$scope.options = {
 		   margin: {top: 5},
-		   axes: { 
-			   x: { key: "month" }
-			 },
+		   axes: {x: { key: "month" }},
 		   legend: { display: false },
 		   tooltipHook: function(d){
-			 if (d){
+			 if(d){
 				return {
 					abscissas: "Social Revenue Impact",
 					rows:  d.map(function(s){
@@ -25,24 +23,25 @@ graphModule.controller("graphCtrl", ['$scope', function($scope, $http){
 				}
 		      },
 		   series: [
-// 			{
-// 		          axis: 'y',
-// 			  id: 'money0',
-// 			  dataset: "dataset", 
-// 			  key: 'money', 
-// 			  label: 'Money', 
-// 			  type: ['line', 'dot', 'area'],
-// 			  color: "rgb(126, 181, 63)"
-// 			},
-// 			{
-// 		  	  axis: 'y',
-// 			  id: 'like0',
-// 			  dataset: "dataset",
-// 			  key: 'like',
-// 			  type: ['line', 'dot', 'area'],
-// 			  label: 'Likes',
-// 			  color: "rgb(200, 96, 69)"
-// 			},
+			{
+		          axis: 'y',
+			  id: 'mySeries0',
+			  dataset: "dataset", 
+			  key: 'money', 
+			  label: 'Money', 
+			  type: ['line', 'dot', 'area'],
+			  color: "rgb(126, 181, 63)"
+			},
+			{
+		  	  axis: 'y',
+			  id: 'mySeries1',
+			  dataset: "dataset",
+			  key: 'like',
+			  type: ['line', 'dot', 'area'],
+			  label: 'Likes',
+			  color: "rgb(200, 96, 69)"
+			}
+// 			,
 // 			{
 // 		          axis: 'y',
 // 		          id: 'views0',
