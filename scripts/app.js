@@ -35,34 +35,34 @@ graphModule.controller("graphCtrl", ['$scope', function($scope, $http){
 			  type: ['line', 'dot', 'area'],
 			  color: "rgb(126, 181, 63)"
 			},
-			{
-		  	  axis: 'y',
-			  id: 'like0',
-			  dataset: "dataset",
-			  key: 'like',
-			  type: ['line', 'dot', 'area'],
-			  label: 'Likes',
-			  color: "rgb(200, 96, 69)"
-			},
-			{
-		          axis: 'y',
-		          id: 'views0',
-			  dataset: "dataset",
-			  key: 'views',
-			  type: ['line', 'dot', 'area'],
-			  label: 'Views',
-			  color: "rgb(193, 92, 69)"
-			},
-			{
-			  axis: 'y',
-			  dataset: "dataset",
-			  key: 'share',
-			  type: ['line', 'dot', 'area'],
-			  label: 'Share',
-		          id: "share0",
-			  color: "rgb(119, 48, 131)"
-			}],
-		    };
+// 			{
+// 		  	  axis: 'y',
+// 			  id: 'like0',
+// 			  dataset: "dataset",
+// 			  key: 'like',
+// 			  type: ['line', 'dot', 'area'],
+// 			  label: 'Likes',
+// 			  color: "rgb(200, 96, 69)"
+// 			},
+// 			{
+// 		          axis: 'y',
+// 		          id: 'views0',
+// 			  dataset: "dataset",
+// 			  key: 'views',
+// 			  type: ['line', 'dot', 'area'],
+// 			  label: 'Views',
+// 			  color: "rgb(193, 92, 69)"
+// 			},
+// 			{
+// 			  axis: 'y',
+// 			  dataset: "dataset",
+// 			  key: 'share',
+// 			  type: ['line', 'dot', 'area'],
+// 			  label: 'Share',
+// 		          id: "share0",
+// 			  color: "rgb(119, 48, 131)"
+// 			}
+		     ]};
 	       $scope.$apply();
 	    });
 }]);
