@@ -4,10 +4,13 @@ graphModule.controller("graphCtrl", ['$scope', function($scope, $http){
 	    d3.json('chart/chart.json', function(error, data){
 		$scope.data = { dataset: data[0]["numbers"]};
 		$scope.options = {
+		   margin: {top: 5},
 		   axes: { 
-			   x: { key: "month"}
+			   x: { key: "month" type: "date"},
+			   y: {type: "linear"}
 			 },
-		    tooltipHook: function(d){
+		   legend: { display: false },
+		   tooltipHook: function(d){
 			 if (d){
 				return {
 					abscissas: "Social Revenue Impact",
@@ -22,15 +25,19 @@ graphModule.controller("graphCtrl", ['$scope', function($scope, $http){
 					}
 				}
 		      },
-		      series: [
+		   series: [
 			{
+		          axis: 'y',
+			  id: 'money0',
 			  dataset: "dataset", 
 			  key: 'money', 
 			  label: 'Money', 
-			  type: ['line', 'dot', 'line', 'area'],
+			  type: ['line', 'dot', 'area'],
 			  color: "rgb(126, 181, 63)"
 			},
 			{
+		  	  axis: 'y',
+			  id: 'like0',
 			  dataset: "dataset",
 			  key: 'like',
 			  type: ['line', 'dot', 'area'],
@@ -38,6 +45,8 @@ graphModule.controller("graphCtrl", ['$scope', function($scope, $http){
 			  color: "rgb(200, 96, 69)"
 			},
 			{
+		          axis: 'y',
+		          id: 'views0',
 			  dataset: "dataset",
 			  key: 'views',
 			  type: ['line', 'dot', 'area'],
@@ -45,13 +54,14 @@ graphModule.controller("graphCtrl", ['$scope', function($scope, $http){
 			  color: "rgb(193, 92, 69)"
 			},
 			{
+			  axis: 'y',
 			  dataset: "dataset",
 			  key: 'share',
 			  type: ['line', 'dot', 'area'],
 			  label: 'Share',
+		          id: "share0",
 			  color: "rgb(119, 48, 131)"
-			}
-		      ]
+			}],
 		    };
 	       $scope.$apply();
 	    });
