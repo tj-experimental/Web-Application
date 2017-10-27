@@ -6,7 +6,7 @@ graphModule.controller("graphCtrl", ['$scope', function($scope, $http){
 		$scope.options = {
 		   margin: {top: 5},
 		   axes: { 
-			   x: { key: "month" type: "date"},
+			   x: { key: "month", type: "date"},
 			   y: {type: "linear"}
 			 },
 		   legend: { display: false },
