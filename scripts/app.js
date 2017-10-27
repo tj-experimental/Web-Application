@@ -6,8 +6,7 @@ graphModule.controller("graphCtrl", ['$scope', function($scope, $http){
 		$scope.options = {
 		   margin: {top: 5},
 		   axes: { 
-			   x: { key: "month" },
-			   y1: {type: "linear"}
+			   x: { key: "month" }
 			 },
 		   legend: { display: false },
 		   tooltipHook: function(d){
