@@ -2,12 +2,12 @@ var graphModule = angular.module("GraphApp", ['n3-line-chart']);
 
 graphModule.controller("graphCtrl", ['$scope', function($scope, $http){
 	    d3.json('chart/chart.json', function(error, data){
-		$scope.data = { dataset: data[0]["numbers"]};
+		$scope.data = {dataset: data[0].numbers};
 		$scope.options = {
-		   margin: {top: 5},
 		   axes: {x:{ key: "month" },
-			  y1:{ type: "linear" },
-			  y2:{ type: "linear" }},
+			  y: { type: "linear"},
+			  y0:{ type: "linear" },
+			  y1:{ type: "linear" }},
 		   legend: { display: false },
 		   tooltipHook: function(d){
 			 if(d){
@@ -26,6 +26,7 @@ graphModule.controller("graphCtrl", ['$scope', function($scope, $http){
 		      },
 		   series: [
 			{
+		          y: 'money',
 		          axis: 'y',
 			  id: 'mySeries0',
 			  dataset: "dataset", 
@@ -35,6 +36,7 @@ graphModule.controller("graphCtrl", ['$scope', function($scope, $http){
 			  color: "rgb(126, 181, 63)"
 			},
 			{
+			  y: 'like',
 		  	  axis: 'y',
 			  id: 'mySeries1',
 			  dataset: "dataset",
