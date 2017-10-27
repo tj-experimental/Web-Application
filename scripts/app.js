@@ -7,7 +7,7 @@ graphModule.controller("graphCtrl", ['$scope', function($scope, $http){
 		   margin: {top: 5},
 		   axes: { 
 			   x: { key: "month" },
-			   y: {type: "linear"}
+			   y1: {type: "linear"}
 			 },
 		   legend: { display: false },
 		   tooltipHook: function(d){
@@ -26,15 +26,15 @@ graphModule.controller("graphCtrl", ['$scope', function($scope, $http){
 				}
 		      },
 		   series: [
-			{
-		          axis: 'y',
-			  id: 'money0',
-			  dataset: "dataset", 
-			  key: 'money', 
-			  label: 'Money', 
-			  type: ['line', 'dot', 'area'],
-			  color: "rgb(126, 181, 63)"
-			},
+// 			{
+// 		          axis: 'y',
+// 			  id: 'money0',
+// 			  dataset: "dataset", 
+// 			  key: 'money', 
+// 			  label: 'Money', 
+// 			  type: ['line', 'dot', 'area'],
+// 			  color: "rgb(126, 181, 63)"
+// 			},
 // 			{
 // 		  	  axis: 'y',
 // 			  id: 'like0',
