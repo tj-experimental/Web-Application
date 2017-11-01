@@ -28,16 +28,16 @@ graphModule.controller("graphCtrl", ['$scope', function($scope, $http){
 // 				}
 // 		      },
 		   series: [
-			{
-		          axis: "y",
-			  dataset: "dataset", 
-			  key: "money", 
-			  label: "Money", 
-			  type: ['line', 'dot'],
-			  id: "mySeries0",
-			  visible: true,
-			  color: "rgb(126, 181, 63)"
-			}
+// 			{
+// 		          axis: "y",
+// 			  dataset: "dataset", 
+// 			  key: "money", 
+// 			  label: "Money", 
+// 			  type: ['line', 'dot'],
+// 			  id: "mySeries0",
+// 			  visible: true,
+// 			  color: "rgb(126, 181, 63)"
+// 			}
 // 			,
 // 			{
 // 		  	  axis: "y",
@@ -69,6 +69,7 @@ graphModule.controller("graphCtrl", ['$scope', function($scope, $http){
 // 			}
 		     ]};
 	       $scope.$apply();
+	       console.dir($scope.data);
 	    });
 }]);
 
