@@ -2,14 +2,21 @@ var graphModule = angular.module("GraphApp", ['n3-line-chart']);
 
 graphModule.controller("graphCtrl", ['$scope', function($scope, $http){
 	    d3.json('chart/chart.json', function(error, data){
+	        var dateToInt = function (monthStr){
+		    return new Date(monthStr+'-1-01').getMonth()+1
+		}
 		$scope.data = {dataset: data[0].numbers};
 		$scope.options = {
 		   axes: {
-			   x:{ key: "month",
-			       labelFunction: function (monthStr){
-				    return new Date(monthStr+'-1-01').getMonth()+1
-				}
-			     },
+			  x:{ key: "month",
+			      ticksFormatter: function(d, i){
+			         var test = 0;
+			       	 if($scope.dataset[i] != undefined){
+				    test = dateToInt($scope.dataset[i]);
+				 }	
+				 return test;
+			      }
+			   },
 			   y:{ min: 0, max: 11000 }
 		   },
 // 		   tooltipHook: function(d){
