@@ -12,8 +12,8 @@
 	<link href= 'style/application.css' rel='stylesheet' type='text/css'>
 	<script src='vendor/angular.min.js' type='text/javascript' ></script>
 	<script src='scripts/d3.js' type='text/javascript' ></script>
- 	<script src="//d3js.org/topojson.v1.min.js"></script>
-	<script src="scripts/line_chart/LineChart.min.js" type="text/javascript"></script>
+<!--  	<script src="//d3js.org/topojson.v1.min.js"></script>
+	<script src="scripts/line_chart/LineChart.min.js" type="text/javascript"></script> -->
 </head>
 
 <body ng-app="WebApp">
@@ -41,9 +41,10 @@
 		<h3 id= "motto">We push ourselves to new levels of inspired excellence with each <br> project and we sweat creativity </h3>
 	</div>
     <button class="button buy2" onclick="buynow()"><b>Buy now</b><span id="divider"> | </span>&euro;23</button>
-    <div ng-controller='graphCtrl' id="chart">
+<!--     <div ng-controller='graphCtrl' id="chart">
         <linechart data="data" options="options" height="100" width="200" ></linechart>
-    </div>
+    </div> -->
+	<div id="chartContainer" style="height: 370px; width: 100%;"></div>
 </header>
 <main>
 	<div class = "objective">
@@ -183,5 +184,6 @@
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 <script src="scripts/animsition/animsition.min.js" type="text/javascript"></script>
 <script src='scripts/library.js' type='text/javascript'></script>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 </body>
 </html>
