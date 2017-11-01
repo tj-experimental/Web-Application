@@ -5,7 +5,11 @@ graphModule.controller("graphCtrl", ['$scope', function($scope, $http){
 		$scope.data = {dataset: data[0].numbers};
 		$scope.options = {
 		   axes: {
-			   x:{ key: "month" },
+			   x:{ key: "month",
+			       labelFunction: function (monthStr){
+				    return new Date(monthStr+'-1-01').getMonth()+1
+				}
+			     },
 			   y:{ min: 0, max: 11000 }
 		   },
 // 		   tooltipHook: function(d){
