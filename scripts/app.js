@@ -6,7 +6,7 @@ graphModule.controller("graphCtrl", ['$scope', function($scope, $http){
 		$scope.options = {
 		   axes: {
 			   x:{ key: "month" },
-			   y:{ min: 0, max: 20000 }
+			   y:{ min: 0, max: 11000 }
 		   },
 // 		   tooltipHook: function(d){
 // 			 if(d){
