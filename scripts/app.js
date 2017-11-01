@@ -5,33 +5,36 @@ graphModule.controller("graphCtrl", ['$scope', function($scope, $http){
 	        var dateToInt = function (monthStr){
 		    return new Date(monthStr+'-1-01').getMonth()+1
 		}
-		$scope.data = data[0].numbers;
+		$scope.data = {
+			dataset: data[0].numbers
+		};
 		$scope.options = {
-		   axes: {
-			  x:{ key: "month"},
-			  y:{ min: 0, max: 11000 }
-		   },
-// 		   tooltipHook: function(d){
-// 			 if(d){
-// 				return {
-// 					abscissas: "Social Revenue Impact",
-// 					rows:  d.map(function(s){
-// 						return {
-// 							label: s.series.label,
-// 							value: s.row.y1,
-// 							color: s.series.color,
-// 							id: s.series.id 
-// 							}
-// 						})
-// 					}
-// 				}
-// 		      },
+		   tooltipHook: function(d){
+			 if(d){
+				return {
+					abscissas: "Social Revenue Impact",
+					rows:  d.map(function(s){
+						return {
+							label: "New " + s.series.label,
+							value: s.row.y1,
+							color: s.series.color,
+							id: s.series.id 
+							}
+						})
+					}
+				}
+		      },
 		   series: [
 			{
 		          axis: "y", 
-			  key: "money", 
+			  dataset: "dataset",
+			  key: {y0: "money", y1: "like"}, 
 			  label: "Money", 
-			  type: ['line', 'dot'],
+			  type: ['line', 'dot', 'area'],
+			  interpolation: {mode: 'cardinal', tension: 0.7},
+			  defined: function(value) {
+			      return value.y1 !== undefined;
+			  },
 			  id: "mySeries0",
 			  visible: true,
 			  color: "rgb(126, 181, 63)"
@@ -65,7 +68,19 @@ graphModule.controller("graphCtrl", ['$scope', function($scope, $http){
 // 		          id: "share0",
 // 			  color: "rgb(119, 48, 131)"
 // 			}
-		     ]};
+		     ],
+		     axes: {
+			  x:{ key: "month",
+			      type: 'linear'
+// 			     ,
+// 			      tickFormat: function(d, i){ 
+// 			          return dateToInt(d);
+// 			      }
+			  },
+			  y:{ min: 0, max: 11000 },
+		          y2: {min: 0, max: 12000 }
+		    }
+		};
 	       $scope.$apply();
 	       console.dir($scope.data);
 	    });
