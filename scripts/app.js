@@ -37,17 +37,18 @@ graphModule.controller("graphCtrl", ['$scope', function($scope, $http){
 			  id: "mySeries0",
 			  visible: true,
 			  color: "rgb(126, 181, 63)"
-			},
-			{
-		  	  axis: "y",
-			  dataset: "dataset",
-			  key: {y0: "like", y1: "views", y2: "share"},
-			  type: ['line', 'dot', 'area'],
-			  label: "Social presence",
-			  color: "rgb(200, 96, 69)",
-			  visible: true,
-			  id: "social",
 			}
+// 			,
+// 			{
+// 		  	  axis: "y",
+// 			  dataset: "dataset",
+// 			  key: {y0: "like", y1: "views", y2: "share"},
+// 			  type: ['line', 'dot', 'area'],
+// 			  label: "Social presence",
+// 			  color: "rgb(200, 96, 69)",
+// 			  visible: true,
+// 			  id: "social",
+// 			}
 // 			,{
 // 		          axis: 'y',
 // 		          id: 'views0',
