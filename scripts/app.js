@@ -9,7 +9,7 @@ graphModule.controller("graphCtrl", ['$scope', function($scope, $http){
 		$scope.options = {
 		   axes: {
 			  x:{ key: "month",
-			     tickFormatter: function(d, i){
+			     ticksFormatter(d, i){
 			     	return $scope.data.dataset[i].month;
 			     },
 			     min: 0,
