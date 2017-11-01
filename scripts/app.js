@@ -5,17 +5,11 @@ graphModule.controller("graphCtrl", ['$scope', function($scope, $http){
 	        var dateToInt = function (monthStr){
 		    return new Date(monthStr+'-1-01').getMonth()+1
 		}
-		$scope.data = {dataset: data[0].numbers};
+		$scope.data = data[0].numbers;
 		$scope.options = {
 		   axes: {
-			  x:{ key: "month",
-			     ticksFormatter(d, i){
-			     	return $scope.data.dataset[i].month;
-			     },
-			     min: 0,
-			     max: $scope.data.dataset.length
-			   },
-			   y:{ min: 0, max: 11000 }
+			  x:{ key: "month"},
+			  y:{ min: 0, max: 11000 }
 		   },
 // 		   tooltipHook: function(d){
 // 			 if(d){
@@ -34,16 +28,12 @@ graphModule.controller("graphCtrl", ['$scope', function($scope, $http){
 // 		      },
 		   series: [
 			{
-		          axis: "y",
-			  dataset: "dataset", 
+		          axis: "y", 
 			  key: "money", 
 			  label: "Money", 
 			  type: ['line', 'dot'],
 			  id: "mySeries0",
 			  visible: true,
-			  ticksFormatter(d, i){
-			     	return $scope.data.dataset[i].month;
-			  },
 			  color: "rgb(126, 181, 63)"
 			}
 // 			,
