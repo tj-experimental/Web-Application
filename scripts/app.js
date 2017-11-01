@@ -9,13 +9,6 @@ graphModule.controller("graphCtrl", ['$scope', function($scope, $http){
 		$scope.options = {
 		   axes: {
 			  x:{ key: "month",
-			      ticksFormatter: function(d, i){
-			         var test = 0;
-			       	 if($scope.dataset[i] != undefined){
-				    test = dateToInt($scope.dataset[i]);
-				 }	
-				 return test;
-			      },
 			     min: 0,
 			     max: $scope.data.dataset.length
 			   },
