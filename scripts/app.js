@@ -4,49 +4,47 @@ graphModule.controller("graphCtrl", ['$scope', function($scope, $http){
 	    d3.json('chart/chart.json', function(error, data){
 		$scope.data = {dataset: data[0].numbers};
 		$scope.options = {
-		   axes: {x:{ key: "month" },
-			  y: { type: "linear"},
-			  y0:{ type: "linear" },
-			  y1:{ type: "linear" }},
-		   legend: { display: false },
-		   tooltipHook: function(d){
-			 if(d){
-				return {
-					abscissas: "Social Revenue Impact",
-					rows:  d.map(function(s){
-						return {
-							label: s.series.label,
-							value: s.row.y1,
-							color: s.series.color,
-							id: s.series.id 
-							}
-						})
-					}
-				}
-		      },
+		   axes: {
+			   x:{ key: "month" },
+			   y:{ min: 0, max: 20000 }
+		   },
+// 		   tooltipHook: function(d){
+// 			 if(d){
+// 				return {
+// 					abscissas: "Social Revenue Impact",
+// 					rows:  d.map(function(s){
+// 						return {
+// 							label: s.series.label,
+// 							value: s.row.y1,
+// 							color: s.series.color,
+// 							id: s.series.id 
+// 							}
+// 						})
+// 					}
+// 				}
+// 		      },
 		   series: [
 			{
-		          y: 'money',
-		          axis: 'y',
-			  id: 'mySeries0',
+		          axis: "y",
 			  dataset: "dataset", 
-			  key: 'money', 
-			  label: 'Money', 
-			  type: ['line', 'dot', 'area'],
+			  key: "money", 
+			  label: "Money", 
+			  type: ['line', 'dot'],
+			  id: "mySeries0",
+			  visible: true,
 			  color: "rgb(126, 181, 63)"
 			},
 			{
-			  y: 'like',
-		  	  axis: 'y',
-			  id: 'mySeries1',
+		  	  axis: "y",
 			  dataset: "dataset",
-			  key: 'like',
+			  key: {y0: "like", y1: "views", y2: "share"},
 			  type: ['line', 'dot', 'area'],
-			  label: 'Likes',
-			  color: "rgb(200, 96, 69)"
+			  label: "Social presence",
+			  color: "rgb(200, 96, 69)",
+			  visible: true,
+			  id: "social",
 			}
-// 			,
-// 			{
+// 			,{
 // 		          axis: 'y',
 // 		          id: 'views0',
 // 			  dataset: "dataset",
@@ -65,7 +63,7 @@ graphModule.controller("graphCtrl", ['$scope', function($scope, $http){
 // 			  color: "rgb(119, 48, 131)"
 // 			}
 		     ]};
-// 	       $scope.$apply();
+	       $scope.$apply();
 	    });
 }]);
 
