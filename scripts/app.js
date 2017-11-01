@@ -16,7 +16,8 @@ graphModule.controller("graphCtrl", ['$scope', function($scope, $http){
 				 }	
 				 return test;
 			      },
-			     ticks: $scope.data.dataset.length
+			     min: 0,
+			     max: $scope.data.dataset.length
 			   },
 			   y:{ min: 0, max: 11000 }
 		   },
