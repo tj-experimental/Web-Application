@@ -15,7 +15,8 @@ graphModule.controller("graphCtrl", ['$scope', function($scope, $http){
 				    test = dateToInt($scope.dataset[i]);
 				 }	
 				 return test;
-			      }
+			      },
+			     ticks: $scope.data.dataset.length
 			   },
 			   y:{ min: 0, max: 11000 }
 		   },
